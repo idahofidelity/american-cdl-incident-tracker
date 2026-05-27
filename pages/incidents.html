@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Incidents — American CDL Incident Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    body { overflow: auto; }
+    #map { display: none; }
+    .page-container {
+      min-height: calc(100vh - var(--header-h) - var(--footer-h));
+      padding: 24px;
+      overflow: auto;
+    }
+    .filter-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .search-input {
+      background: var(--steel-dark);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 13px;
+      padding: 6px 12px;
+      border-radius: 3px;
+      width: 260px;
+      outline: none;
+    }
+    .search-input:focus { border-color: var(--blue-light); }
+    .record-count {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-left: auto;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+    .data-table td { white-space: nowrap; }
+    .td-desc { white-space: normal !important; max-width: 300px; }
+    .sort-arrow { color: var(--blue-light); margin-left: 4px; }
+    .view-link {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--blue-light);
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <span class="header-flag">🇺🇸</span>
+      <div>
+        <div class="header-title">American CDL Incident Tracker</div>
+        <div class="header-sub">National Commercial Vehicle Crash Database</div>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="../index.html" class="nav-link">Map</a>
+      <a href="incidents.html" class="nav-link active">Incidents</a>
+      <a href="companies.html" class="nav-link">Companies</a>
+      <a href="about.html" class="nav-link">About & Data</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-container">
+  <div class="page-title">Incident Database</div>
+  <div class="page-subtitle">All CDL-vehicle incidents in the tracker. Fault classified by documented facts only. Click any row to view full record.</div>
+
+  <div class="filter-row">
+    <input type="text" id="search" class="search-input" placeholder="Search description, driver, carrier, state…" />
+    <select id="f-fault" class="control-select">
+      <option value="">All Fault Types</option>
+      <option value="AT_FAULT">Trucker At Fault</option>
+      <option value="NOT_AT_FAULT">Trucker Not At Fault</option>
+      <option value="NO_FAULT_STATED">Fault Not Stated</option>
+    </select>
+    <select id="f-state" class="control-select">
+      <option value="">All States</option>
+    </select>
+    <select id="f-year" class="control-select">
+      <option value="">All Years</option>
+    </select>
+    <select id="f-foreign" class="control-select">
+      <option value="">All Drivers</option>
+      <option value="yes">Foreign Driver Flagged</option>
+    </select>
+    <span class="record-count" id="record-count">Loading…</span>
+  </div>
+
+  <div class="table-wrap">
+    <table class="data-table" id="incident-table">
+      <thead>
+        <tr>
+          <th data-sort="date">Date <span class="sort-arrow">↓</span></th>
+          <th data-sort="state">State</th>
+          <th data-sort="fault">Fault</th>
+          <th data-sort="at_fault_driver">At-Fault Driver</th>
+          <th data-sort="carrier_name">Carrier</th>
+          <th data-sort="fatalities">Fatal</th>
+          <th data-sort="injuries">Injured</th>
+          <th data-sort="cost">Est. Cost</th>
+          <th>Foreign</th>
+          <th>Description</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="incident-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      American CDL Incident Tracker — <a href="https://idahofidelity.com" target="_blank">Idaho Fidelity</a>.
+      Data: FMCSA, NHTSA FARS, NTSB, public reporting. Fault based on documented facts only.
+    </div>
+    <div class="footer-right">
+      <a href="about.html">Methodology</a> ·
+      <a href="https://github.com/idahofidelity/american-cdl-incident-tracker" target="_blank">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const FAULT_LABELS = {
+  AT_FAULT: "At Fault",
+  NOT_AT_FAULT: "Not At Fault",
+  NO_FAULT_STATED: "Not Stated",
+};
+const STATE_ABBR = {
+  AL:"Alabama",AK:"Alaska",AZ:"Arizona",AR:"Arkansas",CA:"California",
+  CO:"Colorado",CT:"Connecticut",DE:"Delaware",FL:"Florida",GA:"Georgia",
+  HI:"Hawaii",ID:"Idaho",IL:"Illinois",IN:"Indiana",IA:"Iowa",KS:"Kansas",
+  KY:"Kentucky",LA:"Louisiana",ME:"Maine",MD:"Maryland",MA:"Massachusetts",
+  MI:"Michigan",MN:"Minnesota",MS:"Mississippi",MO:"Missouri",MT:"Montana",
+  NE:"Nebraska",NV:"Nevada",NH:"New Hampshire",NJ:"New Jersey",NM:"New Mexico",
+  NY:"New York",NC:"North Carolina",ND:"North Dakota",OH:"Ohio",OK:"Oklahoma",
+  OR:"Oregon",PA:"Pennsylvania",RI:"Rhode Island",SC:"South Carolina",
+  SD:"South Dakota",TN:"Tennessee",TX:"Texas",UT:"Utah",VT:"Vermont",
+  VA:"Virginia",WA:"Washington",WV:"West Virginia",WI:"Wisconsin",WY:"Wyoming",
+};
+
+let allIncidents = [];
+let sortKey = "date";
+let sortDir = -1;
+
+async function init() {
+  const res = await fetch("../data/incidents.json");
+  allIncidents = await res.json();
+  populateFilters();
+  render();
+  bindEvents();
+}
+
+function populateFilters() {
+  const states = [...new Set(allIncidents.map(i => i.state).filter(Boolean))].sort();
+  const stateSelect = document.getElementById("f-state");
+  states.forEach(s => {
+    const o = document.createElement("option");
+    o.value = s; o.textContent = `${STATE_ABBR[s]||s} (${s})`;
+    stateSelect.appendChild(o);
+  });
+
+  const years = [...new Set(allIncidents.map(i => i.date?.slice(0,4)).filter(Boolean))].sort().reverse();
+  const yearSelect = document.getElementById("f-year");
+  years.forEach(y => {
+    const o = document.createElement("option");
+    o.value = y; o.textContent = y;
+    yearSelect.appendChild(o);
+  });
+}
+
+function getFiltered() {
+  const search  = document.getElementById("search").value.toLowerCase();
+  const fault   = document.getElementById("f-fault").value;
+  const state   = document.getElementById("f-state").value;
+  const year    = document.getElementById("f-year").value;
+  const foreign = document.getElementById("f-foreign").value;
+
+  return allIncidents.filter(i => {
+    if (fault   && i.fault !== fault) return false;
+    if (state   && i.state !== state) return false;
+    if (year    && i.date?.slice(0,4) !== year) return false;
+    if (foreign === "yes" && !i.foreign_driver_flag) return false;
+    if (search) {
+      const blob = `${i.description} ${i.at_fault_driver} ${i.carrier_name} ${i.state} ${i.highway}`.toLowerCase();
+      if (!blob.includes(search)) return false;
+    }
+    return true;
+  });
+}
+
+function sortData(data) {
+  return [...data].sort((a, b) => {
+    let av, bv;
+    switch(sortKey) {
+      case "date":       av = a.date || ""; bv = b.date || ""; break;
+      case "state":      av = a.state || ""; bv = b.state || ""; break;
+      case "fault":      av = a.fault || ""; bv = b.fault || ""; break;
+      case "at_fault_driver": av = a.at_fault_driver || ""; bv = b.at_fault_driver || ""; break;
+      case "carrier_name": av = a.carrier_name || ""; bv = b.carrier_name || ""; break;
+      case "fatalities": av = a.severity?.fatalities || 0; bv = b.severity?.fatalities || 0; break;
+      case "injuries":   av = a.severity?.injuries || 0; bv = b.severity?.injuries || 0; break;
+      case "cost":       av = a.cost?.estimated_usd || 0; bv = b.cost?.estimated_usd || 0; break;
+      default:           av = ""; bv = "";
+    }
+    if (av < bv) return -1 * sortDir;
+    if (av > bv) return  1 * sortDir;
+    return 0;
+  });
+}
+
+function render() {
+  const filtered = sortData(getFiltered());
+  document.getElementById("record-count").textContent = `${filtered.length.toLocaleString()} records`;
+
+  const tbody = document.getElementById("incident-tbody");
+  tbody.innerHTML = filtered.map(i => {
+    const fault = i.fault || "NO_FAULT_STATED";
+    const fatalCount = i.severity?.fatalities || 0;
+    const injCount   = i.severity?.injuries || 0;
+    const estCost    = i.cost?.estimated_usd;
+    const badgeClass = fault === "AT_FAULT" ? "badge-red" : fault === "NOT_AT_FAULT" ? "badge-green" : "badge-gray";
+    const fLabel     = FAULT_LABELS[fault] || fault;
+
+    return `<tr style="cursor:pointer" onclick="window.location='../index.html?id=${i.id}'">
+      <td>${i.date || "—"}</td>
+      <td>${i.state || "—"}</td>
+      <td><span class="badge ${badgeClass}">${fLabel}</span></td>
+      <td style="color:${fault==="AT_FAULT"?"var(--red-light)":"inherit"}">${i.at_fault_driver || (fault==="AT_FAULT"?"Not identified":"—")}</td>
+      <td>${i.carrier_name || "—"}</td>
+      <td style="color:${fatalCount>0?"var(--red)":"inherit"};font-weight:${fatalCount>0?700:400}">${fatalCount||"—"}</td>
+      <td style="color:${injCount>0?"var(--orange)":"inherit"}">${injCount||"—"}</td>
+      <td style="color:var(--yellow)">${estCost ? "$"+formatCost(estCost) : "—"}</td>
+      <td>${i.foreign_driver_flag ? '<span class="badge badge-yellow">⚠ Yes</span>' : "—"}</td>
+      <td class="td-desc">${(i.description||"").slice(0,100)}${(i.description||"").length>100?"…":""}</td>
+      <td><a class="view-link" href="../index.html?id=${i.id}">View →</a></td>
+    </tr>`;
+  }).join("");
+}
+
+function formatCost(n) {
+  if (n >= 1e9) return (n/1e9).toFixed(1)+"B";
+  if (n >= 1e6) return (n/1e6).toFixed(1)+"M";
+  if (n >= 1e3) return (n/1e3).toFixed(0)+"K";
+  return n.toLocaleString();
+}
+
+function bindEvents() {
+  ["search","f-fault","f-state","f-year","f-foreign"].forEach(id => {
+    document.getElementById(id).addEventListener("input", render);
+    document.getElementById(id).addEventListener("change", render);
+  });
+
+  document.querySelectorAll("th[data-sort]").forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.sort;
+      if (sortKey === key) sortDir *= -1;
+      else { sortKey = key; sortDir = -1; }
+      document.querySelectorAll(".sort-arrow").forEach(a => a.textContent = "");
+      th.querySelector(".sort-arrow") || th.insertAdjacentHTML("beforeend", '<span class="sort-arrow"></span>');
+      th.querySelector(".sort-arrow").textContent = sortDir === -1 ? " ↓" : " ↑";
+      render();
+    });
+  });
+}
+
+init();
+</script>
+</body>
+</html>

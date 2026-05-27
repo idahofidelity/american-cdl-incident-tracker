@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About & Data — American CDL Incident Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    body { overflow: auto; }
+    #map { display: none; }
+    .page-container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 24px;
+      min-height: calc(100vh - var(--header-h) - var(--footer-h));
+    }
+    h2 {
+      font-family: var(--font-head);
+      font-weight: 900;
+      font-size: 20px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+      margin: 28px 0 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    h2:first-of-type { margin-top: 0; }
+    p { font-size: 14px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 12px; }
+    .source-card {
+      background: var(--steel); border: 1px solid var(--border); border-radius: 4px;
+      padding: 14px 18px; margin-bottom: 10px;
+    }
+    .source-name {
+      font-family: var(--font-head); font-weight: 700; font-size: 15px;
+      letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .source-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+    .source-url { font-size: 11px; margin-top: 6px; }
+    .rule-list { list-style: none; padding: 0; margin: 0 0 12px; }
+    .rule-list li {
+      font-size: 13px; color: var(--text-secondary); line-height: 1.6;
+      padding: 6px 0 6px 20px; position: relative; border-bottom: 1px solid var(--border);
+    }
+    .rule-list li::before {
+      content: "→"; position: absolute; left: 0; color: var(--blue-light); font-weight: 700;
+    }
+    .cost-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 12px; }
+    .cost-table th {
+      font-family: var(--font-head); font-weight: 700; font-size: 11px;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted);
+      padding: 8px 12px; border-bottom: 2px solid var(--border); text-align: left; background: var(--steel-dark);
+    }
+    .cost-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+    .highlight { color: var(--yellow); font-weight: 600; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <span class="header-flag">🇺🇸</span>
+      <div>
+        <div class="header-title">American CDL Incident Tracker</div>
+        <div class="header-sub">National Commercial Vehicle Crash Database</div>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="../index.html" class="nav-link">Map</a>
+      <a href="incidents.html" class="nav-link">Incidents</a>
+      <a href="companies.html" class="nav-link">Companies</a>
+      <a href="about.html" class="nav-link active">About & Data</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-container">
+
+  <div class="page-title">About & Data Sources</div>
+  <p>Published by <a href="https://idahofidelity.com" target="_blank">Idaho Fidelity</a>.
+  This tracker documents CDL-vehicle incidents across the United States from 2000 to present.
+  It is built on public government data, public news reporting, and official investigative records.
+  All sources are cited on every incident. Nothing is inferred — if a source doesn't say it, we don't either.</p>
+
+  <h2>What We Track</h2>
+  <p>Any incident involving a vehicle requiring a Commercial Driver's License (CDL) — generally vehicles with
+  a gross vehicle weight rating over 26,000 lbs. This includes semi trucks, tanker trucks, flatbeds, dump trucks,
+  and other large commercial vehicles. School buses and passenger carriers are outside current scope.</p>
+  <p>Coverage: 2000 to present, all 50 states. Use the state filter on the map or incident table to view Idaho-only
+  or any other state's data.</p>
+
+  <h2>Fault Classification Rules</h2>
+  <p>Fault is classified strictly by documented facts from primary sources. No editorial judgment is applied.</p>
+  <ul class="rule-list">
+    <li><strong>AT_FAULT (Trucker At Fault):</strong> Police report, court record, NTSB finding, or official citation
+    names the CDL driver as the responsible party. Examples: DUI, fatigue, improper lane change, running red light,
+    following too closely, unsecured load, speeding.</li>
+    <li><strong>NOT_AT_FAULT (Trucker Not At Fault):</strong> Official record establishes the other driver, road condition,
+    or weather as the cause, and the CDL driver had no contributing factor documented. Pure weather incidents qualify
+    only when no poor driving for conditions is noted.</li>
+    <li><strong>NO_FAULT_STATED:</strong> Source does not contain enough documented information to classify. Investigation pending,
+    disputed, or simply not reported. This is the default.</li>
+    <li>Classification may be updated when follow-up reporting or official findings are published. Updates are noted in the record.</li>
+    <li>Fault status is never inferred from article tone, assumptions about nationality, or any other non-factual basis.</li>
+  </ul>
+
+  <h2>Foreign Driver Flag</h2>
+  <p>The foreign driver flag is set <span class="highlight">only when a source explicitly documents</span> that the driver
+  held a non-domiciled CDL, was identified as a foreign national, or immigration status was a documented factor in the incident
+  record. It is never inferred from a name, ethnicity, or assumed from any other characteristic.
+  The note field on each flagged record shows exactly what the source stated.</p>
+  <p>This data point exists because federal agencies including the FMCSA, NTSB, and DOT have documented a pattern of
+  non-domiciled CDL issuance issues and enforcement gaps. Sources are cited. We report what is documented.</p>
+
+  <h2>Cost Methodology</h2>
+  <p>Two cost figures are shown for every incident where applicable:</p>
+  <table class="cost-table">
+    <thead>
+      <tr><th>Field</th><th>Definition</th><th>Color</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Stated Cost</td><td>Dollar figure reported in source material (insurance, cleanup contract, rebuild cost, etc.)</td><td>White — as reported</td></tr>
+      <tr><td>Estimated Cost</td><td>Calculated using FHWA Comprehensive Crash Cost model (2024 dollars)</td><td style="color:var(--yellow)">Yellow — estimated</td></tr>
+    </tbody>
+  </table>
+  <p>FHWA baseline values used:</p>
+  <table class="cost-table">
+    <thead><tr><th>Category</th><th>Per-Unit Cost (2024)</th></tr></thead>
+    <tbody>
+      <tr><td>Fatal crash (per fatality)</td><td>$12,000,000</td></tr>
+      <tr><td>Injury crash (per crash)</td><td>$600,000</td></tr>
+      <tr><td>Property Damage Only crash</td><td>$12,000</td></tr>
+    </tbody>
+  </table>
+  <p>These are conservative estimates. Actual costs including emergency response, road closure, freight loss,
+  environmental cleanup, and litigation often exceed these figures. When follow-up reporting provides actual
+  cost figures, the stated cost field is updated.</p>
+  <p>Source: <a href="https://www.transportation.gov/sites/dot.gov/files/2022-03/Revised%20Departmental%20Guidance%20on%20Valuation%20of%20a%20Statistical%20Life%20in%20Economic%20Analysis.pdf" target="_blank">FHWA Departmental Guidance on Value of a Statistical Life (2022)</a></p>
+
+  <h2>Company Per-Capita Rates</h2>
+  <p>Raw incident counts favor singling out large carriers simply because they have more drivers and more trucks on the road.
+  The per-capita rate (incidents per 100 drivers) provides a fairer comparison. Both are shown on the Companies page.</p>
+  <p>Driver count data source priority:</p>
+  <ul class="rule-list">
+    <li>CDL driver count from FMCSA Motor Carrier Census (self-reported by carrier)</li>
+    <li>Total driver count from FMCSA Motor Carrier Census (if CDL count not available)</li>
+    <li>Registered power units as proxy denominator (if no driver count available)</li>
+  </ul>
+  <p>This is not a complete carrier safety record. The <a href="https://ai.fmcsa.dot.gov/SMS" target="_blank">FMCSA Safety Measurement System (SMS)</a>
+  contains full inspection and crash data for all registered carriers. This tracker focuses on incidents with
+  public documentation and named sources.</p>
+
+  <h2>Data Sources</h2>
+
+  <div class="source-card">
+    <div class="source-name">NHTSA Fatality Analysis Reporting System (FARS)</div>
+    <div class="source-desc">Census of all fatal motor vehicle crashes on U.S. public roadways, maintained by the National Highway Traffic Safety Administration. Considered the most reliable national fatal crash database. Used for fatal incident baseline data from 2000 to present.</div>
+    <div class="source-url"><a href="https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars" target="_blank">nhtsa.gov/research-data/fatality-analysis-reporting-system-fars</a></div>
+  </div>
+
+  <div class="source-card">
+    <div class="source-name">FMCSA Motor Carrier Census</div>
+    <div class="source-desc">Public dataset of all USDOT-registered motor carriers including driver counts, CDL counts, power units, and safety ratings. Updated daily. Accessed via FMCSA Open Data Socrata API. Used for company per-capita calculations.</div>
+    <div class="source-url"><a href="https://data.transportation.gov/resource/d9yx-zzpk.json" target="_blank">data.transportation.gov (FMCSA Socrata API)</a></div>
+  </div>
+
+  <div class="source-card">
+    <div class="source-name">FMCSA SAFER System</div>
+    <div class="source-desc">Safety and Fitness Electronic Records system. Provides company snapshots including safety ratings, crash histories, inspection summaries, and operating authority. Used for carrier enrichment on individual incident records.</div>
+    <div class="source-url"><a href="https://safer.fmcsa.dot.gov" target="_blank">safer.fmcsa.dot.gov</a></div>
+  </div>
+
+  <div class="source-card">
+    <div class="source-name">FMCSA SMS Monthly Crash Download</div>
+    <div class="source-desc">Monthly updated publicly available crash data file used in FMCSA's Safety Measurement System calculations. Contains federally reportable crashes (tow-away, injury, or fatality) by carrier USDOT number.</div>
+    <div class="source-url"><a href="https://ai.fmcsa.dot.gov/SMS/Tools/Index.aspx" target="_blank">ai.fmcsa.dot.gov/SMS</a></div>
+  </div>
+
+  <div class="source-card">
+    <div class="source-name">NTSB Accident Reports</div>
+    <div class="source-desc">National Transportation Safety Board full investigation reports for significant commercial vehicle accidents. Primary source for official fault determinations in high-profile incidents.</div>
+    <div class="source-url"><a href="https://www.ntsb.gov/investigations" target="_blank">ntsb.gov/investigations</a></div>
+  </div>
+
+  <div class="source-card">
+    <div class="source-name">Public News Reporting</div>
+    <div class="source-desc">State highway patrol press releases, local news outlets, and national trucking trade press (Transport Topics, Overdrive, Freightwaves, Truckers News, Fleet Owner, Land Line Magazine). Every incident includes direct source links. No incident is entered without a verifiable source.</div>
+  </div>
+
+  <h2>Update Schedule</h2>
+  <p>The scraper runs on the 1st and 15th of each month via GitHub Actions. New incidents are placed in a
+  pending review queue and opened as a pull request for editorial review before being published to the live database.
+  No incident is published automatically without human review.</p>
+
+  <h2>Corrections & Submissions</h2>
+  <p>If you have a correction, an incident to report, or documentation that should update an existing record,
+  open an issue on <a href="https://github.com/idahofidelity/american-cdl-incident-tracker" target="_blank">GitHub</a>
+  or contact <a href="https://idahofidelity.com" target="_blank">Idaho Fidelity</a> directly. All updates require source documentation.</p>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      American CDL Incident Tracker — Published by <a href="https://idahofidelity.com" target="_blank">Idaho Fidelity</a>.
+      All data sourced from public records. All incidents linked to original sources.
+    </div>
+    <div class="footer-right">
+      <a href="https://github.com/idahofidelity/american-cdl-incident-tracker" target="_blank">GitHub</a> · Updated 1st &amp; 15th monthly
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

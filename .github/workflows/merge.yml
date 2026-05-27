@@ -1,0 +1,37 @@
+name: Merge Approved Incidents
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+jobs:
+  merge-incidents:
+    # Only run when a scrape/review PR is merged (not closed without merging)
+    if: >
+      github.event.pull_request.merged == true &&
+      startsWith(github.event.pull_request.head.ref, 'scrape/review-')
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Merge pending incidents into main dataset
+        run: python scripts/merge_pending.py
+
+      - name: Commit merged data
+        run: |
+          git config user.name "CDL Tracker Bot"
+          git config user.email "bot@idahofidelity.com"
+          git add data/incidents.json data/pending_review.json data/companies.json
+          git diff --staged --quiet || git commit -m "✅ Merge approved incidents — $(date +%Y-%m-%d)"
+          git push

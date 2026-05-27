@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>American CDL Incident Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── Header ────────────────────────────────────────────────────────────── -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <span class="header-flag">🇺🇸</span>
+      <div>
+        <div class="header-title">American CDL Incident Tracker</div>
+        <div class="header-sub">National Commercial Vehicle Crash Database · <span id="incident-count">—</span> incidents tracked since 2000</div>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html" class="nav-link active">Map</a>
+      <a href="pages/incidents.html" class="nav-link">Incidents</a>
+      <a href="pages/companies.html" class="nav-link">Companies</a>
+      <a href="pages/about.html" class="nav-link">About & Data</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ── Controls Bar ──────────────────────────────────────────────────────── -->
+<div class="controls-bar">
+  <div class="controls-inner">
+
+    <div class="control-group">
+      <label class="control-label">State</label>
+      <select id="filter-state" class="control-select">
+        <option value="">All States</option>
+      </select>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label">Fault</label>
+      <select id="filter-fault" class="control-select">
+        <option value="">All</option>
+        <option value="AT_FAULT">Trucker At Fault</option>
+        <option value="NOT_AT_FAULT">Trucker Not At Fault</option>
+        <option value="NO_FAULT_STATED">Fault Not Stated</option>
+      </select>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label">Year</label>
+      <select id="filter-year" class="control-select">
+        <option value="">All Years</option>
+      </select>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label">Severity</label>
+      <select id="filter-severity" class="control-select">
+        <option value="">All</option>
+        <option value="fatal">Fatal</option>
+        <option value="injury">Injury</option>
+        <option value="pdo">Property Damage Only</option>
+      </select>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label">Foreign Driver</label>
+      <select id="filter-foreign" class="control-select">
+        <option value="">All</option>
+        <option value="yes">Flagged</option>
+        <option value="no">Not Flagged</option>
+      </select>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label">Map View</label>
+      <select id="map-view" class="control-select">
+        <option value="incidents">Incident Pins</option>
+        <option value="heatmap">Density Heatmap</option>
+        <option value="state-rate">State Rate (per capita)</option>
+      </select>
+    </div>
+
+    <button id="btn-reset" class="btn-reset">Reset Filters</button>
+
+  </div>
+</div>
+
+<!-- ── Stats Bar ─────────────────────────────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="stat-pill">
+    <span class="stat-num" id="stat-total">—</span>
+    <span class="stat-label">Incidents</span>
+  </div>
+  <div class="stat-pill stat-red">
+    <span class="stat-num" id="stat-fatal">—</span>
+    <span class="stat-label">Fatalities</span>
+  </div>
+  <div class="stat-pill stat-orange">
+    <span class="stat-num" id="stat-injured">—</span>
+    <span class="stat-label">Injured</span>
+  </div>
+  <div class="stat-pill stat-blue">
+    <span class="stat-num" id="stat-at-fault">—</span>
+    <span class="stat-label">Trucker At Fault</span>
+  </div>
+  <div class="stat-pill stat-green">
+    <span class="stat-num" id="stat-not-fault">—</span>
+    <span class="stat-label">Trucker Not At Fault</span>
+  </div>
+  <div class="stat-pill stat-yellow">
+    <span class="stat-num" id="stat-foreign">—</span>
+    <span class="stat-label">Foreign Driver Flagged</span>
+  </div>
+  <div class="stat-pill stat-gray">
+    <span class="stat-num" id="stat-cost">—</span>
+    <span class="stat-label">Est. Total Cost</span>
+  </div>
+</div>
+
+<!-- ── Map ───────────────────────────────────────────────────────────────── -->
+<div id="map"></div>
+
+<!-- ── Incident Popup (slide-in) ─────────────────────────────────────────── -->
+<div id="incident-panel" class="incident-panel hidden">
+  <button id="panel-close" class="panel-close">✕</button>
+  <div id="panel-content"></div>
+</div>
+
+<!-- ── Legend ────────────────────────────────────────────────────────────── -->
+<div class="map-legend">
+  <div class="legend-title">Fault Classification</div>
+  <div class="legend-item"><span class="legend-dot dot-red"></span> Trucker At Fault</div>
+  <div class="legend-item"><span class="legend-dot dot-green"></span> Trucker Not At Fault</div>
+  <div class="legend-item"><span class="legend-dot dot-gray"></span> Fault Not Stated</div>
+  <div class="legend-divider"></div>
+  <div class="legend-title">Severity</div>
+  <div class="legend-item"><span class="legend-size large"></span> Fatal</div>
+  <div class="legend-item"><span class="legend-size medium"></span> Injury</div>
+  <div class="legend-item"><span class="legend-size small"></span> Property Damage</div>
+</div>
+
+<!-- ── Footer ────────────────────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <strong>American CDL Incident Tracker</strong> — Published by <a href="https://idahofidelity.com" target="_blank">Idaho Fidelity</a>.
+      Data sourced from FMCSA, NHTSA FARS, NTSB, and public news reporting. All incidents linked to original sources.
+      Fault classification based solely on documented facts — police reports, court records, or NTSB findings.
+      Estimated costs use <a href="https://www.transportation.gov/sites/dot.gov/files/2022-03/Revised%20Departmental%20Guidance%20on%20Valuation%20of%20a%20Statistical%20Life%20in%20Economic%20Analysis.pdf" target="_blank">FHWA comprehensive cost model (2024 dollars)</a>.
+    </div>
+    <div class="footer-right">
+      <a href="pages/about.html">Data Sources & Methodology</a> ·
+      <a href="https://github.com/idahofidelity/american-cdl-incident-tracker" target="_blank">GitHub</a> ·
+      Updated 1st &amp; 15th monthly
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="js/map.js"></script>
+</body>
+</html>

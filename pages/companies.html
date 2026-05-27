@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Companies — American CDL Incident Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    body { overflow: auto; }
+    #map { display: none; }
+    .page-container { min-height: calc(100vh - var(--header-h) - var(--footer-h)); padding: 24px; }
+    .filter-row { display: flex; gap: 12px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; }
+    .search-input {
+      background: var(--steel-dark); border: 1px solid var(--border);
+      color: var(--text-primary); font-family: var(--font-body); font-size: 13px;
+      padding: 6px 12px; border-radius: 3px; width: 260px; outline: none;
+    }
+    .search-input:focus { border-color: var(--blue-light); }
+    .record-count { font-size: 12px; color: var(--text-muted); margin-left: auto; }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 4px; }
+    .sort-arrow { color: var(--blue-light); }
+    .rate-bar-wrap { display: flex; align-items: center; gap: 8px; }
+    .rate-bar { height: 8px; border-radius: 2px; background: var(--blue); min-width: 2px; }
+    .rate-bar.high { background: var(--red); }
+    .rate-bar.med  { background: var(--orange); }
+    .methodology-note {
+      background: var(--steel-mid); border: 1px solid var(--border); border-radius: 4px;
+      padding: 14px 18px; margin-bottom: 20px; font-size: 12px; color: var(--text-secondary); line-height: 1.6;
+    }
+    .methodology-note strong { color: var(--text-primary); }
+    .view-link { font-family: var(--font-head); font-weight: 700; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blue-light); }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <span class="header-flag">🇺🇸</span>
+      <div>
+        <div class="header-title">American CDL Incident Tracker</div>
+        <div class="header-sub">National Commercial Vehicle Crash Database</div>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="../index.html" class="nav-link">Map</a>
+      <a href="incidents.html" class="nav-link">Incidents</a>
+      <a href="companies.html" class="nav-link active">Companies</a>
+      <a href="about.html" class="nav-link">About & Data</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-container">
+  <div class="page-title">Company Safety Patterns</div>
+  <div class="page-subtitle">Incident rates by carrier. Both raw counts and per-driver rates shown separately for fair comparison.</div>
+
+  <div class="methodology-note">
+    <strong>How per-driver rates are calculated:</strong>
+    Driver counts sourced from FMCSA Motor Carrier Census (self-reported by carriers, updated daily).
+    When CDL driver count is available, it is used. When not, total drivers is used.
+    When neither is available, registered power units serve as a proxy denominator.
+    <strong>Raw counts and rates are displayed separately</strong> — a large carrier with many incidents may have
+    a lower rate than a small carrier. Both views matter.
+    FMCSA safety ratings shown where available. Click USDOT link to view full FMCSA record.
+  </div>
+
+  <div class="filter-row">
+    <input type="text" id="search" class="search-input" placeholder="Search carrier name or USDOT…" />
+    <select id="f-sort" class="control-select">
+      <option value="incident_count">Sort: Most Incidents</option>
+      <option value="incidents_per_100_drivers">Sort: Highest Rate (per 100 drivers)</option>
+      <option value="fatal_count">Sort: Most Fatalities</option>
+      <option value="at_fault_count">Sort: Most At-Fault</option>
+    </select>
+    <select id="f-rating" class="control-select">
+      <option value="">All Safety Ratings</option>
+      <option value="Satisfactory">Satisfactory</option>
+      <option value="Conditional">Conditional</option>
+      <option value="Unsatisfactory">Unsatisfactory</option>
+      <option value="Not Rated">Not Rated</option>
+    </select>
+    <span class="record-count" id="record-count">Loading…</span>
+  </div>
+
+  <div class="table-wrap">
+    <table class="data-table" id="company-table">
+      <thead>
+        <tr>
+          <th>Carrier</th>
+          <th>USDOT</th>
+          <th>Safety Rating</th>
+          <th>CDL Drivers</th>
+          <th>Total Incidents</th>
+          <th>At-Fault</th>
+          <th>Fatalities</th>
+          <th>Rate per 100 Drivers ↓</th>
+          <th>At-Fault Rate</th>
+          <th>Est. Total Cost</th>
+        </tr>
+      </thead>
+      <tbody id="company-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      American CDL Incident Tracker — <a href="https://idahofidelity.com" target="_blank">Idaho Fidelity</a>.
+      Driver counts: FMCSA Motor Carrier Census. Incidents only include those with identified carriers in this database.
+      This is not a complete safety record — consult <a href="https://ai.fmcsa.dot.gov/SMS" target="_blank">FMCSA SMS</a> for full carrier safety data.
+    </div>
+    <div class="footer-right">
+      <a href="about.html">Methodology</a> · <a href="https://github.com/idahofidelity/american-cdl-incident-tracker" target="_blank">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+let allCompanies = [];
+
+async function init() {
+  try {
+    const res = await fetch("../data/companies.json");
+    allCompanies = await res.json();
+  } catch(e) {
+    allCompanies = [];
+  }
+  render();
+  bindEvents();
+}
+
+function getFiltered() {
+  const search = document.getElementById("search").value.toLowerCase();
+  const rating = document.getElementById("f-rating").value;
+  return allCompanies.filter(c => {
+    if (rating && c.safety_rating !== rating) return false;
+    if (search) {
+      const blob = `${c.carrier_name} ${c.carrier_usdot}`.toLowerCase();
+      if (!blob.includes(search)) return false;
+    }
+    return true;
+  });
+}
+
+function render() {
+  const sortKey = document.getElementById("f-sort").value;
+  const filtered = [...getFiltered()].sort((a, b) => (b[sortKey] || 0) - (a[sortKey] || 0));
+  document.getElementById("record-count").textContent = `${filtered.length} carriers`;
+
+  // Find max rate for bar scaling
+  const maxRate = Math.max(...filtered.map(c => c.incidents_per_100_drivers || 0), 1);
+  const maxCount = Math.max(...filtered.map(c => c.incident_count || 0), 1);
+
+  const tbody = document.getElementById("company-tbody");
+  tbody.innerHTML = filtered.map(c => {
+    const rate     = c.incidents_per_100_drivers || 0;
+    const afRate   = c.at_fault_per_100_drivers || 0;
+    const barPct   = Math.round((rate / maxRate) * 120);
+    const barClass = rate > maxRate * 0.66 ? "high" : rate > maxRate * 0.33 ? "med" : "";
+    const ratingBadge = ratingBadgeHtml(c.safety_rating);
+    const drivers  = c.cdl_drivers || c.total_drivers || c.power_units;
+    const driverNote = c.cdl_drivers ? "CDL" : c.total_drivers ? "total" : "units";
+    const incidents = allIncidents(c);
+    const totalCost = incidents.reduce ? 0 : 0; // placeholder — incidents not loaded here
+
+    return `<tr>
+      <td style="color:var(--text-primary);font-weight:600">${c.carrier_name || "Unknown"}</td>
+      <td>${c.carrier_usdot
+        ? `<a href="https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&query_type=queryCarrierSnapshot&query_param=USDOT&query_string=${c.carrier_usdot}" target="_blank">${c.carrier_usdot}</a>`
+        : "—"}</td>
+      <td>${ratingBadge}</td>
+      <td>${drivers ? `${drivers.toLocaleString()} <span style="color:var(--text-muted);font-size:10px">(${driverNote})</span>` : '<span style="color:var(--text-muted)">Unknown</span>'}</td>
+      <td style="font-weight:700;color:var(--text-primary)">${c.incident_count || 0}</td>
+      <td style="color:var(--red-light)">${c.at_fault_count || 0}</td>
+      <td style="color:var(--red);font-weight:${(c.fatal_count||0)>0?700:400}">${c.fatal_count || 0}</td>
+      <td>
+        <div class="rate-bar-wrap">
+          <div class="rate-bar ${barClass}" style="width:${barPct}px"></div>
+          <span style="font-size:12px;color:var(--text-secondary)">${rate.toFixed(3)}</span>
+        </div>
+      </td>
+      <td style="font-size:12px;color:var(--text-secondary)">${afRate.toFixed(3)}</td>
+      <td style="color:var(--yellow)">—</td>
+    </tr>`;
+  }).join("");
+}
+
+function allIncidents(c) { return []; } // incidents not loaded on this page
+
+function ratingBadgeHtml(rating) {
+  if (!rating || rating === "Not Rated") return '<span class="badge badge-gray">Not Rated</span>';
+  if (rating === "Satisfactory")   return '<span class="badge badge-green">Satisfactory</span>';
+  if (rating === "Conditional")    return '<span class="badge badge-yellow">Conditional</span>';
+  if (rating === "Unsatisfactory") return '<span class="badge badge-red">Unsatisfactory</span>';
+  return `<span class="badge badge-gray">${rating}</span>`;
+}
+
+function bindEvents() {
+  ["search","f-sort","f-rating"].forEach(id => {
+    document.getElementById(id).addEventListener("input", render);
+    document.getElementById(id).addEventListener("change", render);
+  });
+}
+
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+name: Scrape CDL Incidents
+
+on:
+  schedule:
+    # 1st of month at 6am MT (noon UTC)
+    - cron: "0 12 1 * *"
+    # 15th of month at 6am MT (noon UTC)
+    - cron: "0 12 15 * *"
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 feedparser
+
+      - name: Run scraper
+        id: scrape
+        run: |
+          python scripts/scraper.py | tee scrape_output.txt
+          echo "output<<EOF" >> $GITHUB_OUTPUT
+          cat scrape_output.txt >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Check for new incidents
+        id: check
+        run: |
+          COUNT=$(python -c "
+          import json
+          pending = json.load(open('data/pending_review.json'))
+          print(len(pending))
+          ")
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+          echo "New incidents found: $COUNT"
+
+      - name: Create review branch and PR
+        if: steps.check.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE=$(date +%Y-%m-%d)
+          BRANCH="scrape/review-${DATE}-${{ github.run_number }}"
+          COUNT=${{ steps.check.outputs.count }}
+
+          git config user.name "CDL Tracker Bot"
+          git config user.email "bot@idahofidelity.com"
+          git checkout -b $BRANCH
+          git add data/pending_review.json data/companies.json
+          git commit -m "Scrape ${DATE}: ${COUNT} new incident(s) pending review"
+          git push origin $BRANCH
+
+          # Build PR body with incident summary
+          python - << 'PYEOF'
+          import json, os
+
+          pending = json.load(open("data/pending_review.json"))
+          lines = [
+            f"## {len(pending)} New CDL Incident(s) Found\n",
+            f"**Scrape date:** {os.popen('date +%Y-%m-%d').read().strip()}\n",
+            "**Review each incident below. Merge to approve all, or edit `data/pending_review.json` to remove individual entries before merging.**\n",
+            "---\n",
+          ]
+          for i, inc in enumerate(pending, 1):
+            fault_emoji = {"AT_FAULT": "🔴", "NOT_AT_FAULT": "🟢", "NO_FAULT_STATED": "⚪"}.get(inc["fault"], "⚪")
+            foreign = "🚨 Foreign driver flag" if inc.get("foreign_driver_flag") else ""
+            lines.append(
+              f"### {i}. {inc['id']} — {inc.get('date','')} | {inc.get('state','')} {fault_emoji} {foreign}\n"
+              f"**Description:** {inc.get('description','N/A')[:200]}\n"
+              f"**Fault:** {inc['fault']} | **Driver:** {inc.get('at_fault_driver') or 'Not identified'}\n"
+              f"**Severity:** {inc['severity']['fatalities']} fatal / {inc['severity']['injuries']} injured\n"
+              f"**Estimated cost:** ${inc['cost']['estimated_usd']:,} | **Stated cost:** {'$' + str(inc['cost']['stated_usd']) if inc['cost']['stated_usd'] else 'Not reported'}\n"
+              f"**Sources:** {', '.join(inc.get('sources', [])[:2])}\n\n---\n"
+            )
+          with open("pr_body.md", "w") as f:
+            f.write("\n".join(lines))
+          PYEOF
+
+          gh pr create \
+            --title "📋 Review: ${COUNT} New CDL Incidents — ${DATE}" \
+            --body-file pr_body.md \
+            --base main \
+            --head $BRANCH \
+            --label "incident-review"
+
+      - name: No new incidents
+        if: steps.check.outputs.count == '0'
+        run: echo "✅ No new incidents found this run. Nothing to review."
