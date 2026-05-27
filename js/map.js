@@ -1,7 +1,8 @@
 /**
  * American CDL Incident Tracker — Map JS
- * Loads data/index.json first, then fetches per-year files on demand.
- * Avoids loading the full 94MB dataset at once.
+ * - Lazy loads by year
+ * - Pie-chart cluster icons (at-fault vs not-at-fault)
+ * - Proper source URL handling
  */
 
 let allIncidents = [];
@@ -29,6 +30,36 @@ const STATE_ABBR = {
   VA:"Virginia",WA:"Washington",WV:"West Virginia",WI:"Wisconsin",WY:"Wyoming",
 };
 
+// ── Loading UI ────────────────────────────────────────────────────────────────
+
+function showLoading(msg, sub) {
+  let el = document.getElementById("loading-overlay");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "loading-overlay";
+    el.style.cssText = "position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,15,18,0.88);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;font-family:'Barlow Condensed',sans-serif;";
+    el.innerHTML = `
+      <div style="color:#e8edf4;font-size:22px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px" id="load-msg"></div>
+      <div style="color:#5a6a80;font-size:13px" id="load-sub"></div>
+      <div style="margin-top:18px;width:240px;height:4px;background:#252b36;border-radius:2px"><div id="load-bar" style="height:4px;background:#2970c8;border-radius:2px;width:0%;transition:width .3s"></div></div>`;
+    document.body.appendChild(el);
+  }
+  document.getElementById("load-msg").textContent = msg || "Loading…";
+  document.getElementById("load-sub").textContent = sub || "";
+}
+
+function updateLoading(msg, pct) {
+  const m = document.getElementById("load-msg");
+  const b = document.getElementById("load-bar");
+  if (m) m.textContent = msg;
+  if (b && pct !== undefined) b.style.width = pct + "%";
+}
+
+function hideLoading() {
+  const el = document.getElementById("loading-overlay");
+  if (el) el.remove();
+}
+
 // ── Init ──────────────────────────────────────────────────────────────────────
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -37,45 +68,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   await loadIndex();
   populateFilters();
   handleUrlParams();
-  // Load last 3 years by default for fast initial render
   await loadRecentYears(3);
   hideLoading();
   applyFilters();
   bindEvents();
 });
-
-// ── Loading UI ────────────────────────────────────────────────────────────────
-
-function showLoading(msg) {
-  let el = document.getElementById("loading-overlay");
-  if (!el) {
-    el = document.createElement("div");
-    el.id = "loading-overlay";
-    el.style.cssText = `
-      position:fixed;top:0;left:0;right:0;bottom:0;
-      background:rgba(13,15,18,0.85);
-      display:flex;flex-direction:column;align-items:center;justify-content:center;
-      z-index:9999;font-family:'Barlow Condensed',sans-serif;
-    `;
-    el.innerHTML = `
-      <div style="color:#e8edf4;font-size:22px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px" id="loading-msg">${msg}</div>
-      <div style="color:#5a6a80;font-size:13px" id="loading-sub">Please wait…</div>
-    `;
-    document.body.appendChild(el);
-  } else {
-    document.getElementById("loading-msg").textContent = msg;
-  }
-}
-
-function updateLoadingMsg(msg) {
-  const el = document.getElementById("loading-msg");
-  if (el) el.textContent = msg;
-}
-
-function hideLoading() {
-  const el = document.getElementById("loading-overlay");
-  if (el) el.remove();
-}
 
 // ── Data Loading ──────────────────────────────────────────────────────────────
 
@@ -86,51 +83,48 @@ async function loadIndex() {
     document.getElementById("incident-count").textContent =
       indexData.total_incidents.toLocaleString();
   } catch (e) {
-    console.error("Failed to load index:", e);
-    // Fallback: try loading full incidents.json
-    try {
-      showLoading("Loading full dataset…");
-      const res = await fetch("data/incidents.json");
-      allIncidents = await res.json();
-      document.getElementById("incident-count").textContent =
-        allIncidents.length.toLocaleString();
-    } catch (e2) {
-      console.error("Full load also failed:", e2);
-    }
+    console.error("Index load failed:", e);
   }
 }
 
 async function loadYear(year) {
-  if (loadedYears.has(year)) return;
+  if (loadedYears.has(String(year))) return 0;
   try {
     const res = await fetch(`data/by_year/${year}.json`);
-    if (!res.ok) return;
+    if (!res.ok) return 0;
     const incs = await res.json();
     allIncidents = allIncidents.concat(incs);
-    loadedYears.add(year);
+    loadedYears.add(String(year));
+    return incs.length;
   } catch (e) {
-    console.warn(`Failed to load year ${year}:`, e);
+    console.warn(`Failed to load ${year}:`, e);
+    return 0;
   }
 }
 
 async function loadRecentYears(n) {
   if (!indexData) return;
   const years = Object.keys(indexData.years).sort().reverse().slice(0, n);
-  for (const year of years) {
-    updateLoadingMsg(`Loading ${year}…`);
-    await loadYear(year);
+  const total = years.length;
+  for (let i = 0; i < years.length; i++) {
+    updateLoading(`Loading ${years[i]}…`, Math.round((i / total) * 100));
+    await loadYear(years[i]);
   }
 }
 
 async function loadAllYears() {
   if (!indexData) return;
   const years = Object.keys(indexData.years).sort().reverse();
-  showLoading("Loading all years…");
-  for (const year of years) {
-    updateLoadingMsg(`Loading ${year}…`);
-    await loadYear(year);
+  const total = years.length;
+  showLoading("Loading all years…", "This may take 30–60 seconds");
+  for (let i = 0; i < years.length; i++) {
+    updateLoading(`Loading ${years[i]}… (${i+1}/${total})`, Math.round((i / total) * 100));
+    await loadYear(years[i]);
+    // Yield to browser every 3 years to prevent freeze
+    if (i % 3 === 2) await new Promise(r => setTimeout(r, 0));
   }
   hideLoading();
+  populateStateFilter();
   applyFilters();
 }
 
@@ -138,39 +132,75 @@ async function loadAllYears() {
 
 function initMap() {
   map = L.map("map", {
-    center: [39.5, -98.35],
-    zoom: 4,
-    zoomControl: true,
-    preferCanvas: true,
+    center: [39.5, -98.35], zoom: 4,
+    zoomControl: true, preferCanvas: true,
   });
 
   L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    subdomains: "abcd",
-    maxZoom: 19,
+    subdomains: "abcd", maxZoom: 19,
   }).addTo(map);
 
   markerLayer = L.markerClusterGroup({
-    maxClusterRadius: 40,
+    maxClusterRadius: 50,
     showCoverageOnHover: false,
-    iconCreateFunction: createClusterIcon,
+    iconCreateFunction: createPieClusterIcon,
   });
   map.addLayer(markerLayer);
 }
 
-function createClusterIcon(cluster) {
+// ── Pie Chart Cluster Icon ────────────────────────────────────────────────────
+
+function createPieClusterIcon(cluster) {
   const markers = cluster.getAllChildMarkers();
-  const fatalCount   = markers.filter(m => m.options.incident?.severity?.fatalities > 0).length;
-  const atFaultCount = markers.filter(m => m.options.incident?.fault === "AT_FAULT").length;
-  const total = markers.length;
+  const total     = markers.length;
+  const atFault   = markers.filter(m => m.options.fault === "AT_FAULT").length;
+  const notFault  = markers.filter(m => m.options.fault === "NOT_AT_FAULT").length;
+  const noStated  = total - atFault - notFault;
+  const hasFatal  = markers.some(m => m.options.fatal);
 
-  let color = "#5a6a80";
-  if (fatalCount > 0)                    color = "#d63030";
-  else if (atFaultCount > total * 0.5)   color = "#e07020";
+  const size = total > 200 ? 48 : total > 50 ? 40 : total > 10 ? 32 : 26;
+  const r    = size / 2;
+  const cx   = r, cy = r;
 
-  const size = total > 100 ? 44 : total > 20 ? 36 : 28;
+  // Build SVG pie slices
+  const slices = [
+    { count: atFault,  color: "#d63030" },
+    { count: notFault, color: "#2e9e58" },
+    { count: noStated, color: "#5a6a80" },
+  ].filter(s => s.count > 0);
+
+  let svgPie = "";
+  if (slices.length === 1) {
+    // Single color — simple circle
+    svgPie = `<circle cx="${cx}" cy="${cy}" r="${r-1}" fill="${slices[0].color}" />`;
+  } else {
+    let startAngle = -Math.PI / 2;
+    slices.forEach(slice => {
+      const angle = (slice.count / total) * 2 * Math.PI;
+      const endAngle = startAngle + angle;
+      const x1 = cx + (r-1) * Math.cos(startAngle);
+      const y1 = cy + (r-1) * Math.sin(startAngle);
+      const x2 = cx + (r-1) * Math.cos(endAngle);
+      const y2 = cy + (r-1) * Math.sin(endAngle);
+      const large = angle > Math.PI ? 1 : 0;
+      svgPie += `<path d="M${cx},${cy} L${x1},${y1} A${r-1},${r-1} 0 ${large},1 ${x2},${y2} Z" fill="${slice.color}" />`;
+      startAngle = endAngle;
+    });
+  }
+
+  // Fatal ring
+  const ring = hasFatal
+    ? `<circle cx="${cx}" cy="${cy}" r="${r-1}" fill="none" stroke="#ff6060" stroke-width="2" opacity="0.8"/>`
+    : `<circle cx="${cx}" cy="${cy}" r="${r-1}" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>`;
+
+  const fontSize = size > 38 ? 13 : size > 28 ? 11 : 9;
+  const label = `<text x="${cx}" y="${cy+fontSize*0.38}" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="700" font-size="${fontSize}" fill="white" style="text-shadow:0 1px 3px rgba(0,0,0,.8)">${total > 999 ? Math.round(total/1000)+"k" : total}</text>`;
+
+  const svg = `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" xmlns="http://www.w3.org/2000/svg">${svgPie}${ring}${label}</svg>`;
+
   return L.divIcon({
-    html: `<div style="width:${size}px;height:${size}px;background:${color};border:2px solid rgba(255,255,255,0.5);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:${size>36?14:12}px;color:#fff">${total}</div>`,
+    html: svg,
     className: "",
     iconSize: [size, size],
     iconAnchor: [size/2, size/2],
@@ -180,41 +210,36 @@ function createClusterIcon(cluster) {
 // ── Filters ───────────────────────────────────────────────────────────────────
 
 function populateFilters() {
-  // States — from index
-  const stateSet = new Set();
-  if (indexData) {
-    // States will populate after data loads; re-call after loadAllYears
-  }
-
-  // Years — from index
+  if (!indexData) return;
   const yearSelect = document.getElementById("filter-year");
-  if (indexData) {
-    Object.keys(indexData.years).sort().reverse().forEach(y => {
-      const opt = document.createElement("option");
-      opt.value = y;
-      opt.textContent = y;
-      yearSelect.appendChild(opt);
-    });
-  }
+  // Clear dynamic options
+  while (yearSelect.options.length > 1) yearSelect.remove(1);
 
-  // Add "Load All Years" option
-  const loadAllOpt = document.createElement("option");
-  loadAllOpt.value = "_all";
-  loadAllOpt.textContent = "All Years (load all data)";
-  yearSelect.appendChild(loadAllOpt);
+  Object.keys(indexData.years).sort().reverse().forEach(y => {
+    const opt = document.createElement("option");
+    opt.value = y;
+    opt.textContent = y;
+    yearSelect.appendChild(opt);
+  });
+
+  const allOpt = document.createElement("option");
+  allOpt.value = "_all";
+  allOpt.textContent = "All Years (load all — ~60s)";
+  yearSelect.appendChild(allOpt);
 }
 
 function populateStateFilter() {
-  const stateSelect = document.getElementById("filter-state");
-  // Clear existing options except first
-  while (stateSelect.options.length > 1) stateSelect.remove(1);
+  const sel = document.getElementById("filter-state");
+  const cur = sel.value;
+  while (sel.options.length > 1) sel.remove(1);
   const states = [...new Set(allIncidents.map(i => i.state).filter(s => s && s !== "UNKNOWN"))].sort();
   states.forEach(s => {
     const opt = document.createElement("option");
     opt.value = s;
-    opt.textContent = `${STATE_ABBR[s] || s} (${s})`;
-    stateSelect.appendChild(opt);
+    opt.textContent = `${STATE_ABBR[s]||s} (${s})`;
+    sel.appendChild(opt);
   });
+  sel.value = cur;
 }
 
 function getFilters() {
@@ -227,16 +252,19 @@ function getFilters() {
   };
 }
 
-function applyFilters() {
+async function applyFilters() {
   const f = getFilters();
 
-  // If a specific year is selected and not loaded yet, load it first
-  if (f.year && f.year !== "_all" && !loadedYears.has(f.year)) {
-    loadYear(f.year).then(() => {
-      populateStateFilter();
-      _doFilter(f);
-    });
+  if (f.year === "_all") {
+    await loadAllYears();
+    document.getElementById("filter-year").value = "";
     return;
+  }
+
+  if (f.year && !loadedYears.has(f.year)) {
+    showLoading(`Loading ${f.year}…`);
+    await loadYear(f.year);
+    hideLoading();
   }
 
   populateStateFilter();
@@ -249,8 +277,8 @@ function _doFilter(f) {
     if (f.fault    && inc.fault !== f.fault) return false;
     if (f.year && f.year !== "_all" && inc.date?.slice(0,4) !== f.year) return false;
     if (f.severity) {
-      if (f.severity === "fatal"  && !inc.severity?.fatalities) return false;
-      if (f.severity === "injury" && (inc.severity?.fatalities > 0 || !inc.severity?.injuries)) return false;
+      if (f.severity === "fatal"  && !(inc.severity?.fatalities > 0)) return false;
+      if (f.severity === "injury" && (inc.severity?.fatalities > 0 || !(inc.severity?.injuries > 0))) return false;
       if (f.severity === "pdo"    && !inc.severity?.property_damage_only) return false;
     }
     if (f.foreign === "yes" && !inc.foreign_driver_flag) return false;
@@ -266,13 +294,11 @@ function _doFilter(f) {
 
 function renderMarkers() {
   markerLayer.clearLayers();
-
-  // Only render incidents with coordinates
   const withCoords = filteredIncidents.filter(i => i.lat && i.lng);
 
   withCoords.forEach(inc => {
-    const fatal  = inc.severity?.fatalities > 0;
-    const injury = !fatal && inc.severity?.injuries > 0;
+    const fatal  = (inc.severity?.fatalities || 0) > 0;
+    const injury = !fatal && (inc.severity?.injuries || 0) > 0;
     const size   = fatal ? "sz-fatal" : injury ? "sz-injury" : "sz-pdo";
     const fault  = inc.fault || "NO_FAULT_STATED";
 
@@ -282,29 +308,48 @@ function renderMarkers() {
       iconAnchor: fatal ? [8,8] : injury ? [5.5,5.5] : [3.5,3.5],
     });
 
-    const marker = L.marker([inc.lat, inc.lng], { icon, incident: inc });
+    const marker = L.marker([inc.lat, inc.lng], {
+      icon,
+      incident: inc,
+      fault: fault,
+      fatal: fatal,
+    });
     marker.bindPopup(buildPopupHtml(inc), { maxWidth: 340 });
     marker.on("click", () => openPanel(inc));
     markerLayer.addLayer(marker);
   });
 }
 
+// ── Source URL Resolver ───────────────────────────────────────────────────────
+
+function formatSourceUrl(url) {
+  if (!url) return null;
+  // Google News redirect URLs — show as Google News search link instead
+  if (url.includes("news.google.com/rss/articles/")) {
+    return { display: "Google News (cached)", href: null, isGnews: true };
+  }
+  // FARS — direct reference string, not a clickable URL
+  if (url.startsWith("NHTSA FARS")) {
+    return { display: url, href: "https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars", isRef: true };
+  }
+  return { display: url.replace(/^https?:\/\//, "").slice(0, 80), href: url };
+}
+
 // ── Popup & Panel ─────────────────────────────────────────────────────────────
 
 function buildPopupHtml(inc) {
   const fault = inc.fault || "NO_FAULT_STATED";
-  const faultColor = fault === "AT_FAULT" ? "#d63030" : fault === "NOT_AT_FAULT" ? "#2e9e58" : "#5a6a80";
+  const faultColor = fault==="AT_FAULT" ? "#d63030" : fault==="NOT_AT_FAULT" ? "#2e9e58" : "#5a6a80";
   const fatal   = inc.severity?.fatalities || 0;
   const injured = inc.severity?.injuries   || 0;
   return `
-    <div class="popup-header">${inc.state || "?"} — ${formatDate(inc.date)}</div>
+    <div class="popup-header">${inc.state||"?"} — ${formatDate(inc.date)}</div>
     <div class="popup-row"><strong style="color:${faultColor}">${FAULT_LABELS[fault]||fault}</strong></div>
     ${inc.foreign_driver_flag ? `<div class="popup-row" style="color:#d4a820">⚠ Foreign driver flagged</div>` : ""}
-    ${fatal   ? `<div class="popup-row"><strong class="severity-fatal">${fatal} fatalit${fatal===1?"y":"ies"}</strong></div>` : ""}
-    ${injured ? `<div class="popup-row"><strong class="severity-injury">${injured} injured</strong></div>` : ""}
+    ${fatal   ? `<div class="popup-row"><strong style="color:#d63030">${fatal} fatalit${fatal===1?"y":"ies"}</strong></div>` : ""}
+    ${injured ? `<div class="popup-row"><strong style="color:#e07020">${injured} injured</strong></div>` : ""}
     <div class="popup-row">${(inc.description||"").slice(0,120)}${(inc.description||"").length>120?"…":""}</div>
-    <button class="popup-open-btn" onclick="openPanelById('${inc.id}')">View Full Record →</button>
-  `;
+    <button class="popup-open-btn" onclick="openPanelById('${inc.id}')">View Full Record →</button>`;
 }
 
 function openPanelById(id) {
@@ -313,80 +358,94 @@ function openPanelById(id) {
 }
 
 function openPanel(inc) {
-  const panel = document.getElementById("incident-panel");
-  document.getElementById("panel-content").innerHTML = buildPanelHtml(inc);
-  panel.classList.remove("hidden");
+  document.getElementById("panel-content").innerHTML = buildPanelHtml2(inc);
+  document.getElementById("incident-panel").classList.remove("hidden");
 }
 
-function buildPanelHtml(inc) {
-  const fault = inc.fault || "NO_FAULT_STATED";
+function buildPanelHtml2(inc) {
+  const fault   = inc.fault || "NO_FAULT_STATED";
   const fatal   = inc.severity?.fatalities || 0;
   const injured = inc.severity?.injuries   || 0;
   const statedCost = inc.cost?.stated_usd;
   const estCost    = inc.cost?.estimated_usd;
 
+  // Build source links properly
+  const sourceLinks = (inc.sources || []).map(s => {
+    const parsed = formatSourceUrl(s);
+    if (!parsed) return "";
+    if (parsed.isGnews) {
+      return `<span class="source-link" style="color:var(--text-muted)">Google News article (link not directly accessible — search title in browser)</span>`;
+    }
+    if (parsed.isRef) {
+      return `<a class="source-link" href="${parsed.href}" target="_blank" rel="noopener">NHTSA FARS Database ↗</a>`;
+    }
+    return `<a class="source-link" href="${parsed.href}" target="_blank" rel="noopener">${parsed.display}</a>`;
+  }).join("");
+
   return `
     <div class="panel-id">${inc.id}</div>
-    <div class="panel-date">${formatDate(inc.date)} · ${inc.state||"?"}${inc.highway ? " · "+inc.highway : ""}${inc.county ? ", "+inc.county : ""}</div>
+    <div class="panel-date">${formatDate(inc.date)} · ${inc.state||"?"}${inc.highway?" · "+inc.highway:""}${inc.county?", "+inc.county:""}</div>
     <span class="fault-badge ${fault}">${FAULT_LABELS[fault]||fault}</span>
     ${inc.foreign_driver_flag ? `<span class="foreign-badge">⚠ Foreign Driver Flagged</span>` : ""}
-    <div class="panel-desc">${inc.description||"No description available."}</div>
-    ${inc.foreign_driver_note ? `<div class="panel-section"><div class="panel-section-title">Foreign Driver Note</div><div style="font-size:12px;color:var(--yellow)">${inc.foreign_driver_note}</div></div>` : ""}
+    <div class="panel-desc" style="margin-top:10px">${inc.description||"No description available."}</div>
+
+    ${inc.foreign_driver_note ? `
+    <div class="panel-section">
+      <div class="panel-section-title">Foreign Driver Note</div>
+      <div style="font-size:12px;color:var(--yellow)">${inc.foreign_driver_note}</div>
+    </div>` : ""}
+
     <div class="panel-section">
       <div class="panel-section-title">Severity</div>
       <div class="panel-row"><span class="panel-row-label">Fatalities</span><span class="panel-row-value ${fatal>0?"severity-fatal":""}">${fatal}</span></div>
       <div class="panel-row"><span class="panel-row-label">Injured</span><span class="panel-row-value ${injured>0?"severity-injury":""}">${injured}</span></div>
+      <div class="panel-row"><span class="panel-row-label">Type</span><span class="panel-row-value">${inc.vehicle_type||"Large Truck"}</span></div>
     </div>
+
     <div class="panel-section">
       <div class="panel-section-title">Carrier / Driver</div>
       <div class="panel-row"><span class="panel-row-label">Carrier</span><span class="panel-row-value">${inc.carrier_name||"Not identified"}</span></div>
-      ${inc.carrier_usdot ? `<div class="panel-row"><span class="panel-row-label">USDOT #</span><span class="panel-row-value"><a href="https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&query_type=queryCarrierSnapshot&query_param=USDOT&query_string=${inc.carrier_usdot}" target="_blank">${inc.carrier_usdot}</a></span></div>` : ""}
+      ${inc.carrier_usdot ? `<div class="panel-row"><span class="panel-row-label">USDOT #</span><span class="panel-row-value"><a href="https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&query_type=queryCarrierSnapshot&query_param=USDOT&query_string=${inc.carrier_usdot}" target="_blank">${inc.carrier_usdot} ↗</a></span></div>` : ""}
       <div class="panel-row"><span class="panel-row-label">At-Fault Driver</span><span class="panel-row-value" style="color:${fault==="AT_FAULT"?"var(--red-light)":"inherit"}">${inc.at_fault_driver||(fault==="AT_FAULT"?"At fault — name not available":"N/A")}</span></div>
     </div>
+
     <div class="panel-section">
       <div class="panel-section-title">Cost</div>
-      <div class="panel-row"><span class="panel-row-label">Stated</span><span class="panel-row-value cost-stated">${statedCost?"$"+statedCost.toLocaleString():"Not reported"}</span></div>
+      <div class="panel-row"><span class="panel-row-label">Stated (reported)</span><span class="panel-row-value cost-stated">${statedCost?"$"+statedCost.toLocaleString():"Not reported"}</span></div>
       <div class="panel-row"><span class="panel-row-label">Estimated</span><span class="panel-row-value cost-est">${estCost?"$"+estCost.toLocaleString():"N/A"}</span></div>
       ${estCost?`<div class="cost-note">${inc.cost?.estimated_basis||"FHWA cost model"}</div>`:""}
     </div>
+
     <div class="panel-section">
       <div class="panel-section-title">Sources</div>
-      ${(inc.sources||[]).map(s=>`<a class="source-link" href="${s}" target="_blank" rel="noopener">${s}</a>`).join("")||"<span style='color:var(--text-muted);font-size:12px'>No sources on file</span>"}
-    </div>
-  `;
+      ${sourceLinks || `<span style="color:var(--text-muted);font-size:12px">No sources on file</span>`}
+    </div>`;
 }
 
 // ── Stats ──────────────────────────────────────────────────────────────────────
 
 function updateStats() {
-  const total    = filteredIncidents.length;
-  const fatal    = filteredIncidents.reduce((s,i) => s+(i.severity?.fatalities||0), 0);
-  const injured  = filteredIncidents.reduce((s,i) => s+(i.severity?.injuries||0), 0);
-  const atFault  = filteredIncidents.filter(i => i.fault==="AT_FAULT").length;
-  const notFault = filteredIncidents.filter(i => i.fault==="NOT_AT_FAULT").length;
-  const foreign  = filteredIncidents.filter(i => i.foreign_driver_flag).length;
-  const cost     = filteredIncidents.reduce((s,i) => s+(i.cost?.estimated_usd||0), 0);
+  const total   = filteredIncidents.length;
+  const fatal   = filteredIncidents.reduce((s,i)=>s+(i.severity?.fatalities||0),0);
+  const injured = filteredIncidents.reduce((s,i)=>s+(i.severity?.injuries||0),0);
+  const atFault = filteredIncidents.filter(i=>i.fault==="AT_FAULT").length;
+  const notFault= filteredIncidents.filter(i=>i.fault==="NOT_AT_FAULT").length;
+  const foreign = filteredIncidents.filter(i=>i.foreign_driver_flag).length;
+  const cost    = filteredIncidents.reduce((s,i)=>s+(i.cost?.estimated_usd||0),0);
 
-  document.getElementById("stat-total").textContent    = total.toLocaleString();
-  document.getElementById("stat-fatal").textContent    = fatal.toLocaleString();
-  document.getElementById("stat-injured").textContent  = injured.toLocaleString();
-  document.getElementById("stat-at-fault").textContent = atFault.toLocaleString();
-  document.getElementById("stat-not-fault").textContent= notFault.toLocaleString();
-  document.getElementById("stat-foreign").textContent  = foreign.toLocaleString();
-  document.getElementById("stat-cost").textContent     = formatCost(cost);
+  document.getElementById("stat-total").textContent     = total.toLocaleString();
+  document.getElementById("stat-fatal").textContent     = fatal.toLocaleString();
+  document.getElementById("stat-injured").textContent   = injured.toLocaleString();
+  document.getElementById("stat-at-fault").textContent  = atFault.toLocaleString();
+  document.getElementById("stat-not-fault").textContent = notFault.toLocaleString();
+  document.getElementById("stat-foreign").textContent   = foreign.toLocaleString();
+  document.getElementById("stat-cost").textContent      = formatCost(cost);
 }
 
-// ── Events ─────────────────────────────────────────────────────────────────────
+// ── Events ────────────────────────────────────────────────────────────────────
 
 function bindEvents() {
-  document.getElementById("filter-year").addEventListener("change", async e => {
-    if (e.target.value === "_all") {
-      await loadAllYears();
-      e.target.value = "";
-    }
-    applyFilters();
-  });
-
+  document.getElementById("filter-year").addEventListener("change", applyFilters);
   ["filter-state","filter-fault","filter-severity","filter-foreign","map-view"]
     .forEach(id => document.getElementById(id).addEventListener("change", applyFilters));
 
@@ -402,20 +461,16 @@ function bindEvents() {
   });
 }
 
-// ── URL Params ─────────────────────────────────────────────────────────────────
+// ── URL Params ────────────────────────────────────────────────────────────────
 
 function handleUrlParams() {
-  const params = new URLSearchParams(window.location.search);
-  if (params.get("state")) document.getElementById("filter-state").value = params.get("state");
-  if (params.get("fault")) document.getElementById("filter-fault").value = params.get("fault");
-  if (params.get("year"))  document.getElementById("filter-year").value  = params.get("year");
-  if (params.get("id")) {
-    const inc = allIncidents.find(i => i.id === params.get("id"));
-    if (inc) openPanel(inc);
-  }
+  const p = new URLSearchParams(window.location.search);
+  if (p.get("state")) document.getElementById("filter-state").value = p.get("state");
+  if (p.get("fault")) document.getElementById("filter-fault").value = p.get("fault");
+  if (p.get("year"))  document.getElementById("filter-year").value  = p.get("year");
 }
 
-// ── Helpers ────────────────────────────────────────────────────────────────────
+// ── Helpers ───────────────────────────────────────────────────────────────────
 
 function formatDate(d) {
   if (!d) return "Date unknown";

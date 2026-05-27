@@ -219,9 +219,13 @@ def download_year(year):
 
 
 def read_csv_from_zip(zf, filename_pattern):
-    """Find and read a CSV from a zip by partial filename match."""
+    """Find and read a CSV. Handles upper/lowercase filenames across FARS years.
+    Matches exact basename only (vehicle -> vehicle.csv, not pvehiclesf.csv).
+    """
+    pat = filename_pattern.lower()
     for name in zf.namelist():
-        if (filename_pattern.lower() + '.csv') in name.lower() or (filename_pattern.lower() + '.CSV') in name.upper():
+        base = name.split("/")[-1].lower()
+        if base in (pat + ".csv", pat + "s.csv", pat.upper() + ".CSV"):
             with zf.open(name) as f:
                 text = f.read().decode("utf-8-sig", errors="replace")
                 reader = csv.DictReader(io.StringIO(text))
@@ -305,13 +309,19 @@ def process_year(year, zip_content):
         day   = str(safe_int(acc.get("DAY", 1))).zfill(2)
         date  = f"{year}-{month}-{day}"
 
-        # Coordinates
+        # Coordinates — field names vary by year (upper/lower case, NAME suffix)
         try:
-            lat = float(acc.get("LATITUDE") or acc.get("LATITUDENAME") or 0)
-            lng = float(acc.get("LONGITUD") or acc.get("LONGITUDNAME") or 0)
-            # FARS uses 77/88/99 as unknown codes
-            if lat > 90 or lat == 0: lat = None
-            if lng < -180 or lng == 0: lng = None
+            lat = float(
+                acc.get("LATITUDE") or acc.get("latitude") or
+                acc.get("LATITUDENAME") or 0
+            )
+            lng = float(
+                acc.get("LONGITUD") or acc.get("longitud") or
+                acc.get("LONGITUDNAME") or 0
+            )
+            # FARS uses 77/88/99 as unknown sentinel codes
+            if abs(lat) > 90  or lat == 0: lat = None
+            if abs(lng) > 180 or lng == 0: lng = None
         except (ValueError, TypeError):
             lat = lng = None
 
@@ -321,8 +331,17 @@ def process_year(year, zip_content):
         persons = safe_int(acc.get("PERSONS", 0))
         injuries_est = max(0, persons - fatals)
 
-        # Body type description
-        body_type = truck.get("BODY_TYPNAME", "Large Truck")
+        # Body type description — early FARS years lack BODY_TYPNAME
+        BODY_TYPE_NAMES = {
+            "63": "Single-unit truck (GVWR >26,000 lbs)",
+            "64": "Single-unit truck (GVWR unknown)",
+            "66": "Truck-tractor",
+            "67": "Medium/heavy truck",
+            "78": "Unknown medium/heavy truck",
+            "79": "Unknown truck type",
+        }
+        bt_code = str(safe_int(truck.get("BODY_TYP", 0)))
+        body_type = truck.get("BODY_TYPNAME") or BODY_TYPE_NAMES.get(bt_code, "Large Truck")
 
         # County
         county_name = acc.get("COUNTYNAME", "")

@@ -330,6 +330,16 @@ def fetch_gnews(existing_sources):
                 stated   = extract_stated_cost(article_text)
                 est      = estimate_cost(severity)
 
+                # Build a real, resolvable source URL from title + source domain
+                source_el = item.find("source")
+                source_domain = source_el.attrib.get("url", "") if source_el is not None else ""
+                source_name = source_el.text if source_el is not None else ""
+                article_title_clean = title.rsplit(" - ", 1)[0].strip()
+                if source_domain:
+                    real_url = f"{source_domain.rstrip("/")}/search?q={requests.utils.quote(article_title_clean)}"
+                else:
+                    real_url = f"https://www.google.com/search?q={requests.utils.quote(article_title_clean)}"
+
                 inc = {
                     "id":              make_id(pub_date, state or "XX", link),
                     "date":            pub_date,
@@ -353,7 +363,7 @@ def fetch_gnews(existing_sources):
                         "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)",
                     },
                     "description":  title,
-                    "sources":      [link],
+                    "sources":      [real_url],
                     "added":        datetime.now().strftime("%Y-%m-%d"),
                     "reviewed":     False,
                 }
