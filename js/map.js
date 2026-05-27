@@ -281,8 +281,11 @@ function _doFilter(f) {
       if (f.severity === "injury" && (inc.severity?.fatalities > 0 || !(inc.severity?.injuries > 0))) return false;
       if (f.severity === "pdo"    && !inc.severity?.property_damage_only) return false;
     }
-    if (f.foreign === "yes" && !inc.foreign_driver_flag) return false;
-    if (f.foreign === "no"  &&  inc.foreign_driver_flag) return false;
+    if (f.foreign === "foreign_confirmed" && !inc.foreign_driver_confirmed) return false;
+    if (f.foreign === "foreign_probable"  && !inc.foreign_driver_probable)  return false;
+    if (f.foreign === "foreign_possible"  && !inc.foreign_driver_possible)  return false;
+    if (f.foreign === "any_foreign"       && !inc.foreign_driver_flag)      return false;
+    if (f.foreign === "american"          && !inc.american_driver_flag)     return false;
     return true;
   });
 
@@ -363,50 +366,72 @@ function openPanel(inc) {
 }
 
 function buildPanelHtml2(inc) {
-  const fault   = inc.fault || "NO_FAULT_STATED";
-  const fatal   = inc.severity?.fatalities || 0;
-  const injured = inc.severity?.injuries   || 0;
+  const fault      = inc.fault || "NO_FAULT_STATED";
+  const fatal      = inc.severity?.fatalities || 0;
+  const injured    = inc.severity?.injuries   || 0;
   const statedCost = inc.cost?.stated_usd;
   const estCost    = inc.cost?.estimated_usd;
+  const driver     = inc.at_fault_driver;
 
-  // Build source links properly
+  // Driver origin badge — four tiers
+  let foreignBadge = "";
+  if (inc.foreign_driver_confirmed) {
+    foreignBadge = `<span class="foreign-badge" style="background:var(--red);color:#fff">🚨 Foreign Driver — Confirmed</span>`;
+  } else if (inc.foreign_driver_probable) {
+    foreignBadge = `<span class="foreign-badge" style="background:var(--orange);color:#fff">⚠ Foreign Driver — Probable (No Name Given)</span>`;
+  } else if (inc.foreign_driver_possible) {
+    foreignBadge = `<span class="foreign-badge" style="background:var(--yellow);color:#111">? Foreign Driver — Possible (verify)</span>`;
+  } else if (inc.american_driver_flag) {
+    foreignBadge = `<span class="foreign-badge" style="background:#1a3a6b;color:#fff;border:1px solid #2970c8">🇺🇸 American-Origin Name — Possible (verify)</span>`;
+  } else if (inc.foreign_driver_flag) {
+    foreignBadge = `<span class="foreign-badge">⚠ Foreign Driver Flagged</span>`;
+  }
+
+  // Source links
   const sourceLinks = (inc.sources || []).map(s => {
     const parsed = formatSourceUrl(s);
     if (!parsed) return "";
-    if (parsed.isGnews) {
-      return `<span class="source-link" style="color:var(--text-muted)">Google News article (link not directly accessible — search title in browser)</span>`;
-    }
-    if (parsed.isRef) {
-      return `<a class="source-link" href="${parsed.href}" target="_blank" rel="noopener">NHTSA FARS Database ↗</a>`;
-    }
+    if (parsed.isGnews) return `<span class="source-link" style="color:var(--text-muted)">Google News article — search title in browser</span>`;
+    if (parsed.isRef)   return `<a class="source-link" href="${parsed.href}" target="_blank" rel="noopener">NHTSA FARS Database ↗</a>`;
     return `<a class="source-link" href="${parsed.href}" target="_blank" rel="noopener">${parsed.display}</a>`;
   }).join("");
 
   return `
     <div class="panel-id">${inc.id}</div>
     <div class="panel-date">${formatDate(inc.date)} · ${inc.state||"?"}${inc.highway?" · "+inc.highway:""}${inc.county?", "+inc.county:""}</div>
+
+    ${driver ? `
+    <div style="background:var(--steel-mid);border-left:3px solid ${fault==="AT_FAULT"?"var(--red)":"var(--border)"};padding:10px 12px;margin:10px 0;border-radius:0 3px 3px 0">
+      <div style="font-family:var(--font-head);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:3px">${fault==="AT_FAULT"?"At-Fault Driver":"Driver"}</div>
+      <div style="font-family:var(--font-head);font-weight:900;font-size:20px;color:${fault==="AT_FAULT"?"var(--red-light)":"var(--text-primary)"};letter-spacing:.03em">${driver}</div>
+    </div>` : fault==="AT_FAULT" ? `
+    <div style="background:var(--steel-mid);border-left:3px solid var(--red);padding:10px 12px;margin:10px 0;border-radius:0 3px 3px 0">
+      <div style="font-family:var(--font-head);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:3px">At-Fault Driver</div>
+      <div style="font-size:13px;color:var(--text-muted);font-style:italic">Name not available in source</div>
+    </div>` : ""}
+
     <span class="fault-badge ${fault}">${FAULT_LABELS[fault]||fault}</span>
-    ${inc.foreign_driver_flag ? `<span class="foreign-badge">⚠ Foreign Driver Flagged</span>` : ""}
+    ${foreignBadge}
+
     <div class="panel-desc" style="margin-top:10px">${inc.description||"No description available."}</div>
 
     ${inc.foreign_driver_note ? `
     <div class="panel-section">
       <div class="panel-section-title">Foreign Driver Note</div>
-      <div style="font-size:12px;color:var(--yellow)">${inc.foreign_driver_note}</div>
+      <div style="font-size:12px;color:var(--yellow);line-height:1.5">${inc.foreign_driver_note}</div>
     </div>` : ""}
 
     <div class="panel-section">
       <div class="panel-section-title">Severity</div>
       <div class="panel-row"><span class="panel-row-label">Fatalities</span><span class="panel-row-value ${fatal>0?"severity-fatal":""}">${fatal}</span></div>
       <div class="panel-row"><span class="panel-row-label">Injured</span><span class="panel-row-value ${injured>0?"severity-injury":""}">${injured}</span></div>
-      <div class="panel-row"><span class="panel-row-label">Type</span><span class="panel-row-value">${inc.vehicle_type||"Large Truck"}</span></div>
+      <div class="panel-row"><span class="panel-row-label">Vehicle Type</span><span class="panel-row-value">${inc.vehicle_type||"Large Truck"}</span></div>
     </div>
 
     <div class="panel-section">
-      <div class="panel-section-title">Carrier / Driver</div>
-      <div class="panel-row"><span class="panel-row-label">Carrier</span><span class="panel-row-value">${inc.carrier_name||"Not identified"}</span></div>
+      <div class="panel-section-title">Carrier</div>
+      <div class="panel-row"><span class="panel-row-label">Name</span><span class="panel-row-value">${inc.carrier_name||"Not identified"}</span></div>
       ${inc.carrier_usdot ? `<div class="panel-row"><span class="panel-row-label">USDOT #</span><span class="panel-row-value"><a href="https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&query_type=queryCarrierSnapshot&query_param=USDOT&query_string=${inc.carrier_usdot}" target="_blank">${inc.carrier_usdot} ↗</a></span></div>` : ""}
-      <div class="panel-row"><span class="panel-row-label">At-Fault Driver</span><span class="panel-row-value" style="color:${fault==="AT_FAULT"?"var(--red-light)":"inherit"}">${inc.at_fault_driver||(fault==="AT_FAULT"?"At fault — name not available":"N/A")}</span></div>
     </div>
 
     <div class="panel-section">
@@ -418,7 +443,7 @@ function buildPanelHtml2(inc) {
 
     <div class="panel-section">
       <div class="panel-section-title">Sources</div>
-      ${sourceLinks || `<span style="color:var(--text-muted);font-size:12px">No sources on file</span>`}
+      ${sourceLinks||`<span style="color:var(--text-muted);font-size:12px">No sources on file</span>`}
     </div>`;
 }
 
@@ -439,6 +464,7 @@ function updateStats() {
   document.getElementById("stat-at-fault").textContent  = atFault.toLocaleString();
   document.getElementById("stat-not-fault").textContent = notFault.toLocaleString();
   document.getElementById("stat-foreign").textContent   = foreign.toLocaleString();
+  // american stat not in bar currently — tracked in data only
   document.getElementById("stat-cost").textContent      = formatCost(cost);
 }
 

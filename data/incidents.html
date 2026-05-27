@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Incidents — American CDL Incident Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    body { overflow: auto; }
+    .page-container { padding: 20px 24px; min-height: calc(100vh - var(--header-h) - var(--footer-h)); }
+    .filter-row { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; flex-wrap: wrap; }
+    .search-input {
+      background: var(--steel-dark); border: 1px solid var(--border);
+      color: var(--text-primary); font-family: var(--font-body); font-size: 13px;
+      padding: 6px 12px; border-radius: 3px; width: 220px; outline: none;
+    }
+    .search-input:focus { border-color: var(--blue-light); }
+    .record-count { font-size: 12px; color: var(--text-muted); margin-left: auto; white-space: nowrap; }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 4px; max-height: calc(100vh - 280px); overflow-y: auto; }
+    .data-table td { white-space: nowrap; }
+    .td-desc { white-space: normal !important; max-width: 260px; font-size: 12px; }
+    .view-link { font-family: var(--font-head); font-weight: 700; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--blue-light); white-space: nowrap; }
+    .pagination { display: flex; align-items: center; gap: 8px; margin-top: 12px; }
+    .page-btn {
+      font-family: var(--font-head); font-weight: 700; font-size: 12px; letter-spacing: .06em;
+      text-transform: uppercase; background: var(--steel-mid); border: 1px solid var(--border);
+      color: var(--text-secondary); padding: 5px 14px; border-radius: 3px; cursor: pointer;
+      transition: all .15s;
+    }
+    .page-btn:hover:not(:disabled) { border-color: var(--blue-light); color: var(--text-primary); }
+    .page-btn:disabled { opacity: .35; cursor: default; }
+    .page-info { font-size: 12px; color: var(--text-muted); }
+    .year-select-multi {
+      background: var(--steel-dark); border: 1px solid var(--border);
+      color: var(--text-primary); font-family: var(--font-body); font-size: 12px;
+      border-radius: 3px; padding: 3px 6px; height: 80px; min-width: 90px;
+    }
+    .year-label { font-family: var(--font-head); font-weight: 600; font-size: 11px;
+      letter-spacing: .08em; text-transform: uppercase; color: var(--text-muted); }
+    .load-btn {
+      font-family: var(--font-head); font-weight: 700; font-size: 12px; letter-spacing: .06em;
+      text-transform: uppercase; background: var(--blue); border: none;
+      color: #fff; padding: 6px 14px; border-radius: 3px; cursor: pointer; transition: background .15s;
+    }
+    .load-btn:hover { background: var(--blue-light); }
+    .loading-row td { text-align: center; color: var(--text-muted); padding: 24px; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <span class="header-flag">🇺🇸</span>
+      <div>
+        <div class="header-title">American CDL Incident Tracker</div>
+        <div class="header-sub">National Commercial Vehicle Crash Database</div>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="../index.html" class="nav-link">Map</a>
+      <a href="incidents.html" class="nav-link active">Incidents</a>
+      <a href="companies.html" class="nav-link">Companies</a>
+      <a href="about.html" class="nav-link">About & Data</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-container">
+  <div class="page-title">Incident Database</div>
+  <div class="page-subtitle" style="margin-bottom:14px">Fault classified by documented facts only. Select one or more years to load, then filter and search.</div>
+
+  <div class="filter-row">
+    <!-- Year multi-select -->
+    <div style="display:flex;flex-direction:column;gap:3px">
+      <span class="year-label">Years (ctrl+click multi)</span>
+      <select id="year-picker" class="year-select-multi" multiple size="5"></select>
+    </div>
+    <button class="load-btn" id="load-years-btn">Load Selected</button>
+
+    <div style="width:1px;height:40px;background:var(--border);margin:0 4px"></div>
+
+    <input type="text" id="search" class="search-input" placeholder="Search description, driver, carrier…" />
+    <select id="f-fault" class="control-select">
+      <option value="">All Fault Types</option>
+      <option value="AT_FAULT">Trucker At Fault</option>
+      <option value="NOT_AT_FAULT">Trucker Not At Fault</option>
+      <option value="NO_FAULT_STATED">Fault Not Stated</option>
+    </select>
+    <select id="f-state" class="control-select">
+      <option value="">All States</option>
+    </select>
+    <select id="f-severity" class="control-select">
+      <option value="">All Severity</option>
+      <option value="fatal">Fatal</option>
+      <option value="injury">Injury</option>
+      <option value="pdo">Property Damage</option>
+    </select>
+    <select id="f-foreign" class="control-select">
+      <option value="">All Drivers</option>
+      <option value="foreign_confirmed">Foreign — Confirmed</option>
+      <option value="foreign_probable">Foreign — Probable</option>
+      <option value="foreign_possible">Foreign — Possible</option>
+      <option value="any_foreign">Any Foreign Flag</option>
+      <option value="american">🇺🇸 American-Origin Name</option>
+    </select>
+    <span class="record-count" id="record-count">Select years and click Load</span>
+  </div>
+
+  <div class="table-wrap">
+    <table class="data-table" id="incident-table">
+      <thead>
+        <tr>
+          <th data-sort="date">Date</th>
+          <th data-sort="state">State</th>
+          <th data-sort="fault">Fault</th>
+          <th data-sort="at_fault_driver">Driver</th>
+          <th data-sort="carrier_name">Carrier</th>
+          <th data-sort="fatalities">Fatal</th>
+          <th data-sort="injuries">Injured</th>
+          <th data-sort="cost">Est. Cost</th>
+          <th>Foreign</th>
+          <th>Description</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody id="incident-tbody">
+        <tr class="loading-row"><td colspan="11">Select one or more years above and click Load Selected to begin.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pagination">
+    <button class="page-btn" id="btn-prev" disabled>← Prev</button>
+    <span class="page-info" id="page-info">—</span>
+    <button class="page-btn" id="btn-next" disabled>Next →</button>
+    <span class="page-info" style="margin-left:8px" id="coord-note"></span>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">American CDL Incident Tracker — <a href="https://idahofidelity.com" target="_blank">Idaho Fidelity</a>. Data: FMCSA, NHTSA FARS, NTSB, public reporting.</div>
+    <div class="footer-right"><a href="about.html">Methodology</a> · <a href="https://github.com/idahofidelity/american-cdl-incident-tracker" target="_blank">GitHub</a></div>
+  </div>
+</footer>
+
+<script>
+const PAGE_SIZE = 100;
+const FAULT_LABELS = { AT_FAULT:"At Fault", NOT_AT_FAULT:"Not At Fault", NO_FAULT_STATED:"Not Stated" };
+const STATE_ABBR = {AL:"Alabama",AK:"Alaska",AZ:"Arizona",AR:"Arkansas",CA:"California",CO:"Colorado",CT:"Connecticut",DE:"Delaware",FL:"Florida",GA:"Georgia",HI:"Hawaii",ID:"Idaho",IL:"Illinois",IN:"Indiana",IA:"Iowa",KS:"Kansas",KY:"Kentucky",LA:"Louisiana",ME:"Maine",MD:"Maryland",MA:"Massachusetts",MI:"Michigan",MN:"Minnesota",MS:"Mississippi",MO:"Missouri",MT:"Montana",NE:"Nebraska",NV:"Nevada",NH:"New Hampshire",NJ:"New Jersey",NM:"New Mexico",NY:"New York",NC:"North Carolina",ND:"North Dakota",OH:"Ohio",OK:"Oklahoma",OR:"Oregon",PA:"Pennsylvania",RI:"Rhode Island",SC:"South Carolina",SD:"South Dakota",TN:"Tennessee",TX:"Texas",UT:"Utah",VT:"Vermont",VA:"Virginia",WA:"Washington",WV:"West Virginia",WI:"Wisconsin",WY:"Wyoming"};
+
+let allLoaded = [];
+let filtered  = [];
+let currentPage = 1;
+let sortKey = "date", sortDir = -1;
+let indexData = null;
+
+async function init() {
+  try {
+    const res = await fetch("../data/index.json");
+    indexData = await res.json();
+    populateYearPicker();
+  } catch(e) {
+    console.error("Index load failed:", e);
+    document.getElementById("record-count").textContent = "Error loading index";
+  }
+  bindEvents();
+}
+
+function populateYearPicker() {
+  const sel = document.getElementById("year-picker");
+  const years = Object.keys(indexData.years).sort().reverse();
+  years.forEach(y => {
+    const opt = document.createElement("option");
+    opt.value = y;
+    opt.textContent = `${y} (${indexData.years[y].count.toLocaleString()})`;
+    sel.appendChild(opt);
+  });
+}
+
+async function loadSelectedYears() {
+  const sel = document.getElementById("year-picker");
+  const years = [...sel.selectedOptions].map(o => o.value);
+  if (!years.length) { alert("Select at least one year first."); return; }
+
+  document.getElementById("record-count").textContent = "Loading…";
+  document.getElementById("incident-tbody").innerHTML = '<tr class="loading-row"><td colspan="11">Loading data…</td></tr>';
+
+  const toLoad = years.filter(y => !allLoaded.some(i => i.date?.startsWith(y)));
+  for (const y of toLoad) {
+    try {
+      const res = await fetch(`../data/by_year/${y}.json`);
+      if (res.ok) {
+        const incs = await res.json();
+        allLoaded = allLoaded.concat(incs);
+      }
+    } catch(e) { console.warn(`Failed to load ${y}:`, e); }
+  }
+
+  // Populate state filter from loaded data
+  const stateEl = document.getElementById("f-state");
+  const curState = stateEl.value;
+  while (stateEl.options.length > 1) stateEl.remove(1);
+  const states = [...new Set(allLoaded.map(i=>i.state).filter(s=>s&&s!=="UNKNOWN"))].sort();
+  states.forEach(s => {
+    const o = document.createElement("option");
+    o.value=s; o.textContent=`${STATE_ABBR[s]||s} (${s})`;
+    stateEl.appendChild(o);
+  });
+  stateEl.value = curState;
+
+  currentPage = 1;
+  render();
+}
+
+function getFiltered() {
+  const search   = document.getElementById("search").value.toLowerCase();
+  const fault    = document.getElementById("f-fault").value;
+  const state    = document.getElementById("f-state").value;
+  const severity = document.getElementById("f-severity").value;
+  const foreign  = document.getElementById("f-foreign").value;
+
+  // Only show years that are currently selected
+  const sel = document.getElementById("year-picker");
+  const selectedYears = new Set([...sel.selectedOptions].map(o => o.value));
+
+  return allLoaded.filter(i => {
+    if (selectedYears.size && !selectedYears.has(i.date?.slice(0,4))) return false;
+    if (fault  && i.fault !== fault) return false;
+    if (state  && i.state !== state) return false;
+    if (severity === "fatal"  && !(i.severity?.fatalities > 0)) return false;
+    if (severity === "injury" && (i.severity?.fatalities > 0 || !(i.severity?.injuries > 0))) return false;
+    if (severity === "pdo"    && !i.severity?.property_damage_only) return false;
+    if (foreign === "foreign_confirmed" && !i.foreign_driver_confirmed) return false;
+    if (foreign === "foreign_probable"  && !i.foreign_driver_probable)  return false;
+    if (foreign === "foreign_possible"  && !i.foreign_driver_possible)  return false;
+    if (foreign === "any_foreign"       && !i.foreign_driver_flag)      return false;
+    if (foreign === "american"          && !i.american_driver_flag)     return false;
+    if (search) {
+      const blob = `${i.description} ${i.at_fault_driver} ${i.carrier_name} ${i.state} ${i.highway}`.toLowerCase();
+      if (!blob.includes(search)) return false;
+    }
+    return true;
+  });
+}
+
+function sortData(data) {
+  return [...data].sort((a,b) => {
+    let av, bv;
+    switch(sortKey) {
+      case "date":       av=a.date||""; bv=b.date||""; break;
+      case "state":      av=a.state||""; bv=b.state||""; break;
+      case "fault":      av=a.fault||""; bv=b.fault||""; break;
+      case "at_fault_driver": av=a.at_fault_driver||""; bv=b.at_fault_driver||""; break;
+      case "carrier_name": av=a.carrier_name||""; bv=b.carrier_name||""; break;
+      case "fatalities": av=a.severity?.fatalities||0; bv=b.severity?.fatalities||0; break;
+      case "injuries":   av=a.severity?.injuries||0; bv=b.severity?.injuries||0; break;
+      case "cost":       av=a.cost?.estimated_usd||0; bv=b.cost?.estimated_usd||0; break;
+      default: av=""; bv="";
+    }
+    if (av<bv) return -1*sortDir;
+    if (av>bv) return  1*sortDir;
+    return 0;
+  });
+}
+
+function render() {
+  filtered = sortData(getFiltered());
+  const total = filtered.length;
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  currentPage = Math.min(currentPage, totalPages);
+  const start = (currentPage-1) * PAGE_SIZE;
+  const page  = filtered.slice(start, start + PAGE_SIZE);
+
+  document.getElementById("record-count").textContent = `${total.toLocaleString()} records`;
+  document.getElementById("page-info").textContent = `Page ${currentPage} of ${totalPages}`;
+  document.getElementById("btn-prev").disabled = currentPage <= 1;
+  document.getElementById("btn-next").disabled = currentPage >= totalPages;
+
+  const noCoords = filtered.filter(i=>!i.lat||!i.lng).length;
+  document.getElementById("coord-note").textContent =
+    noCoords > 0 ? `${noCoords.toLocaleString()} records have no map coordinates (stats still included)` : "";
+
+  const tbody = document.getElementById("incident-tbody");
+  if (!page.length) {
+    tbody.innerHTML = '<tr class="loading-row"><td colspan="11">No incidents match current filters.</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = page.map(i => {
+    const fault = i.fault||"NO_FAULT_STATED";
+    const fatalN  = i.severity?.fatalities||0;
+    const injN    = i.severity?.injuries||0;
+    const estCost = i.cost?.estimated_usd;
+    const badgeClass = fault==="AT_FAULT"?"badge-red":fault==="NOT_AT_FAULT"?"badge-green":"badge-gray";
+
+    // Source link
+    const src = (i.sources||[])[0]||"";
+    let srcHtml = "—";
+    if (src.startsWith("NHTSA FARS")) {
+      srcHtml = `<a href="https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars" target="_blank" class="view-link">FARS ↗</a>`;
+    } else if (src.startsWith("http")) {
+      srcHtml = `<a href="${src}" target="_blank" class="view-link">Source ↗</a>`;
+    }
+
+    return `<tr>
+      <td>${i.date||"—"}</td>
+      <td>${i.state||"—"}</td>
+      <td><span class="badge ${badgeClass}">${FAULT_LABELS[fault]||fault}</span></td>
+      <td style="color:${fault==="AT_FAULT"?"var(--red-light)":"inherit"}">${i.at_fault_driver||"—"}</td>
+      <td>${i.carrier_name||"—"}</td>
+      <td style="color:${fatalN>0?"var(--red)":"inherit"};font-weight:${fatalN>0?700:400}">${fatalN||"—"}</td>
+      <td style="color:${injN>0?"var(--orange)":"inherit"}">${injN||"—"}</td>
+      <td style="color:var(--yellow)">${estCost?"$"+fmtCost(estCost):"—"}</td>
+      <td>${i.foreign_driver_flag?'<span class="badge badge-yellow">⚠</span>':"—"}</td>
+      <td class="td-desc">${(i.description||"").slice(0,100)}${(i.description||"").length>100?"…":""}</td>
+      <td>${srcHtml}</td>
+    </tr>`;
+  }).join("");
+}
+
+function fmtCost(n) {
+  if (n>=1e9) return (n/1e9).toFixed(1)+"B";
+  if (n>=1e6) return (n/1e6).toFixed(1)+"M";
+  if (n>=1e3) return (n/1e3).toFixed(0)+"K";
+  return n.toLocaleString();
+}
+
+function bindEvents() {
+  document.getElementById("load-years-btn").addEventListener("click", loadSelectedYears);
+  ["search","f-fault","f-state","f-severity","f-foreign"].forEach(id => {
+    document.getElementById(id).addEventListener("input", () => { currentPage=1; render(); });
+    document.getElementById(id).addEventListener("change", () => { currentPage=1; render(); });
+  });
+  document.getElementById("btn-prev").addEventListener("click", () => { currentPage--; render(); window.scrollTo(0,0); });
+  document.getElementById("btn-next").addEventListener("click", () => { currentPage++; render(); window.scrollTo(0,0); });
+  document.querySelectorAll("th[data-sort]").forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.sort;
+      if (sortKey===key) sortDir*=-1; else { sortKey=key; sortDir=-1; }
+      currentPage=1; render();
+    });
+  });
+}
+
+init();
+</script>
+</body>
+</html>
