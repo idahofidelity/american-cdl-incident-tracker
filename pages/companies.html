@@ -10,28 +10,34 @@
   <link rel="stylesheet" href="../css/style.css" />
   <style>
     body { overflow: auto; }
-    #map { display: none; }
-    .page-container { min-height: calc(100vh - var(--header-h) - var(--footer-h)); padding: 24px; }
-    .filter-row { display: flex; gap: 12px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; }
+    .page-container { padding: 20px 24px; min-height: calc(100vh - var(--header-h) - var(--footer-h)); }
+    .filter-row { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; flex-wrap: wrap; }
     .search-input {
       background: var(--steel-dark); border: 1px solid var(--border);
       color: var(--text-primary); font-family: var(--font-body); font-size: 13px;
-      padding: 6px 12px; border-radius: 3px; width: 260px; outline: none;
+      padding: 6px 12px; border-radius: 3px; width: 240px; outline: none;
     }
     .search-input:focus { border-color: var(--blue-light); }
     .record-count { font-size: 12px; color: var(--text-muted); margin-left: auto; }
-    .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 4px; }
-    .sort-arrow { color: var(--blue-light); }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 4px; max-height: calc(100vh - 260px); overflow-y: auto; }
     .rate-bar-wrap { display: flex; align-items: center; gap: 8px; }
-    .rate-bar { height: 8px; border-radius: 2px; background: var(--blue); min-width: 2px; }
+    .rate-bar { height: 8px; border-radius: 2px; background: var(--blue); min-width: 2px; max-width: 120px; }
     .rate-bar.high { background: var(--red); }
     .rate-bar.med  { background: var(--orange); }
-    .methodology-note {
-      background: var(--steel-mid); border: 1px solid var(--border); border-radius: 4px;
-      padding: 14px 18px; margin-bottom: 20px; font-size: 12px; color: var(--text-secondary); line-height: 1.6;
+    .pagination { display: flex; align-items: center; gap: 8px; margin-top: 12px; }
+    .page-btn {
+      font-family: var(--font-head); font-weight: 700; font-size: 12px; letter-spacing: .06em;
+      text-transform: uppercase; background: var(--steel-mid); border: 1px solid var(--border);
+      color: var(--text-secondary); padding: 5px 14px; border-radius: 3px; cursor: pointer; transition: all .15s;
     }
-    .methodology-note strong { color: var(--text-primary); }
-    .view-link { font-family: var(--font-head); font-weight: 700; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blue-light); }
+    .page-btn:hover:not(:disabled) { border-color: var(--blue-light); color: var(--text-primary); }
+    .page-btn:disabled { opacity: .35; cursor: default; }
+    .page-info { font-size: 12px; color: var(--text-muted); }
+    .load-notice {
+      background: var(--steel-mid); border: 1px solid var(--border); border-radius: 4px;
+      padding: 12px 16px; font-size: 13px; color: var(--text-secondary); margin-bottom: 14px;
+    }
+    .loading-row td { text-align: center; color: var(--text-muted); padding: 24px; }
   </style>
 </head>
 <body>
@@ -56,23 +62,19 @@
 
 <div class="page-container">
   <div class="page-title">Company Safety Patterns</div>
-  <div class="page-subtitle">Incident rates by carrier. Both raw counts and per-driver rates shown separately for fair comparison.</div>
+  <div class="page-subtitle" style="margin-bottom:12px">Raw counts and per-driver rates shown separately. Only carriers with a USDOT# in incident records appear here.</div>
 
-  <div class="methodology-note">
-    <strong>How per-driver rates are calculated:</strong>
-    Driver counts sourced from FMCSA Motor Carrier Census (self-reported by carriers, updated daily).
-    When CDL driver count is available, it is used. When not, total drivers is used.
-    When neither is available, registered power units serve as a proxy denominator.
-    <strong>Raw counts and rates are displayed separately</strong> — a large carrier with many incidents may have
-    a lower rate than a small carrier. Both views matter.
-    FMCSA safety ratings shown where available. Click USDOT link to view full FMCSA record.
+  <div class="load-notice">
+    ⚠ Company data is built from incidents with identified carriers. Most FARS records list a USDOT# but no company name — run <strong>FMCSA enrichment</strong> to resolve names.
+    Raw incident counts are from this database only — not a complete safety record.
+    See <a href="https://ai.fmcsa.dot.gov/SMS" target="_blank">FMCSA SMS ↗</a> for full carrier safety data.
   </div>
 
   <div class="filter-row">
     <input type="text" id="search" class="search-input" placeholder="Search carrier name or USDOT…" />
     <select id="f-sort" class="control-select">
       <option value="incident_count">Sort: Most Incidents</option>
-      <option value="incidents_per_100_drivers">Sort: Highest Rate (per 100 drivers)</option>
+      <option value="incidents_per_100_drivers">Sort: Highest Rate per 100 Drivers</option>
       <option value="fatal_count">Sort: Most Fatalities</option>
       <option value="at_fault_count">Sort: Most At-Fault</option>
     </select>
@@ -82,6 +84,13 @@
       <option value="Conditional">Conditional</option>
       <option value="Unsatisfactory">Unsatisfactory</option>
       <option value="Not Rated">Not Rated</option>
+    </select>
+    <select id="f-min-incidents" class="control-select">
+      <option value="0">Any incident count</option>
+      <option value="2">2+ incidents</option>
+      <option value="5">5+ incidents</option>
+      <option value="10">10+ incidents</option>
+      <option value="25">25+ incidents</option>
     </select>
     <span class="record-count" id="record-count">Loading…</span>
   </div>
@@ -97,13 +106,20 @@
           <th>Total Incidents</th>
           <th>At-Fault</th>
           <th>Fatalities</th>
-          <th>Rate per 100 Drivers ↓</th>
+          <th>Rate / 100 Drivers</th>
           <th>At-Fault Rate</th>
-          <th>Est. Total Cost</th>
         </tr>
       </thead>
-      <tbody id="company-tbody"></tbody>
+      <tbody id="company-tbody">
+        <tr class="loading-row"><td colspan="9">Loading company data…</td></tr>
+      </tbody>
     </table>
+  </div>
+
+  <div class="pagination">
+    <button class="page-btn" id="btn-prev" disabled>← Prev</button>
+    <span class="page-info" id="page-info">—</span>
+    <button class="page-btn" id="btn-next" disabled>Next →</button>
   </div>
 </div>
 
@@ -111,8 +127,7 @@
   <div class="footer-inner">
     <div class="footer-left">
       American CDL Incident Tracker — <a href="https://idahofidelity.com" target="_blank">Idaho Fidelity</a>.
-      Driver counts: FMCSA Motor Carrier Census. Incidents only include those with identified carriers in this database.
-      This is not a complete safety record — consult <a href="https://ai.fmcsa.dot.gov/SMS" target="_blank">FMCSA SMS</a> for full carrier safety data.
+      Driver counts: FMCSA Motor Carrier Census. This is not a complete safety record.
     </div>
     <div class="footer-right">
       <a href="about.html">Methodology</a> · <a href="https://github.com/idahofidelity/american-cdl-incident-tracker" target="_blank">GitHub</a>
@@ -121,26 +136,32 @@
 </footer>
 
 <script>
+const PAGE_SIZE = 100;
 let allCompanies = [];
+let filtered = [];
+let currentPage = 1;
 
 async function init() {
   try {
     const res = await fetch("../data/companies.json");
     allCompanies = await res.json();
+    render();
   } catch(e) {
-    allCompanies = [];
+    document.getElementById("company-tbody").innerHTML =
+      '<tr class="loading-row"><td colspan="9">Error loading company data.</td></tr>';
   }
-  render();
   bindEvents();
 }
 
 function getFiltered() {
-  const search = document.getElementById("search").value.toLowerCase();
-  const rating = document.getElementById("f-rating").value;
+  const search   = document.getElementById("search").value.toLowerCase();
+  const rating   = document.getElementById("f-rating").value;
+  const minInc   = parseInt(document.getElementById("f-min-incidents").value) || 0;
   return allCompanies.filter(c => {
     if (rating && c.safety_rating !== rating) return false;
+    if ((c.incident_count||0) < minInc) return false;
     if (search) {
-      const blob = `${c.carrier_name} ${c.carrier_usdot}`.toLowerCase();
+      const blob = `${c.carrier_name||""} ${c.carrier_usdot||""}`.toLowerCase();
       if (!blob.includes(search)) return false;
     }
     return true;
@@ -149,62 +170,68 @@ function getFiltered() {
 
 function render() {
   const sortKey = document.getElementById("f-sort").value;
-  const filtered = [...getFiltered()].sort((a, b) => (b[sortKey] || 0) - (a[sortKey] || 0));
-  document.getElementById("record-count").textContent = `${filtered.length} carriers`;
+  filtered = [...getFiltered()].sort((a,b) => (b[sortKey]||0) - (a[sortKey]||0));
 
-  // Find max rate for bar scaling
-  const maxRate = Math.max(...filtered.map(c => c.incidents_per_100_drivers || 0), 1);
-  const maxCount = Math.max(...filtered.map(c => c.incident_count || 0), 1);
+  const total = filtered.length;
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  currentPage = Math.min(currentPage, totalPages);
+  const start = (currentPage-1)*PAGE_SIZE;
+  const page  = filtered.slice(start, start+PAGE_SIZE);
+
+  document.getElementById("record-count").textContent = `${total.toLocaleString()} carriers`;
+  document.getElementById("page-info").textContent = `Page ${currentPage} of ${totalPages}`;
+  document.getElementById("btn-prev").disabled = currentPage <= 1;
+  document.getElementById("btn-next").disabled = currentPage >= totalPages;
+
+  const maxRate = Math.max(...filtered.map(c=>c.incidents_per_100_drivers||0), 0.001);
 
   const tbody = document.getElementById("company-tbody");
-  tbody.innerHTML = filtered.map(c => {
-    const rate     = c.incidents_per_100_drivers || 0;
-    const afRate   = c.at_fault_per_100_drivers || 0;
-    const barPct   = Math.round((rate / maxRate) * 120);
-    const barClass = rate > maxRate * 0.66 ? "high" : rate > maxRate * 0.33 ? "med" : "";
-    const ratingBadge = ratingBadgeHtml(c.safety_rating);
-    const drivers  = c.cdl_drivers || c.total_drivers || c.power_units;
-    const driverNote = c.cdl_drivers ? "CDL" : c.total_drivers ? "total" : "units";
-    const incidents = allIncidents(c);
-    const totalCost = incidents.reduce ? 0 : 0; // placeholder — incidents not loaded here
-
+  tbody.innerHTML = page.map(c => {
+    const rate   = c.incidents_per_100_drivers||0;
+    const afRate = c.at_fault_per_100_drivers||0;
+    const barW   = Math.round((rate/maxRate)*110);
+    const barClass = rate>maxRate*.66?"high":rate>maxRate*.33?"med":"";
+    const drivers = c.cdl_drivers||c.total_drivers||c.power_units;
+    const dNote   = c.cdl_drivers?"CDL":c.total_drivers?"total":"units";
     return `<tr>
-      <td style="color:var(--text-primary);font-weight:600">${c.carrier_name || "Unknown"}</td>
+      <td style="color:var(--text-primary);font-weight:600;max-width:200px;white-space:normal">${
+        c.carrier_name
+          ? c.carrier_name
+          : c.carrier_usdot
+            ? `<span style="color:var(--text-muted)">USDOT ${c.carrier_usdot} (name pending)</span>`
+            : `<span style="color:var(--text-muted)">Unknown</span>`
+      }</td>
       <td>${c.carrier_usdot
-        ? `<a href="https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&query_type=queryCarrierSnapshot&query_param=USDOT&query_string=${c.carrier_usdot}" target="_blank">${c.carrier_usdot}</a>`
-        : "—"}</td>
-      <td>${ratingBadge}</td>
-      <td>${drivers ? `${drivers.toLocaleString()} <span style="color:var(--text-muted);font-size:10px">(${driverNote})</span>` : '<span style="color:var(--text-muted)">Unknown</span>'}</td>
-      <td style="font-weight:700;color:var(--text-primary)">${c.incident_count || 0}</td>
-      <td style="color:var(--red-light)">${c.at_fault_count || 0}</td>
-      <td style="color:var(--red);font-weight:${(c.fatal_count||0)>0?700:400}">${c.fatal_count || 0}</td>
-      <td>
-        <div class="rate-bar-wrap">
-          <div class="rate-bar ${barClass}" style="width:${barPct}px"></div>
-          <span style="font-size:12px;color:var(--text-secondary)">${rate.toFixed(3)}</span>
-        </div>
-      </td>
-      <td style="font-size:12px;color:var(--text-secondary)">${afRate.toFixed(3)}</td>
-      <td style="color:var(--yellow)">—</td>
+        ?`<a href="https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&query_type=queryCarrierSnapshot&query_param=USDOT&query_string=${c.carrier_usdot}" target="_blank" style="color:var(--blue-light)">${c.carrier_usdot} ↗</a>`
+        :"—"}</td>
+      <td>${ratingBadge(c.safety_rating)}</td>
+      <td>${drivers?`${drivers.toLocaleString()} <span style="color:var(--text-muted);font-size:10px">(${dNote})</span>`:'<span style="color:var(--text-muted)">Unknown</span>'}</td>
+      <td style="font-weight:700;color:var(--text-primary)">${(c.incident_count||0).toLocaleString()}</td>
+      <td style="color:var(--red-light)">${c.at_fault_count||0}</td>
+      <td style="color:${(c.fatal_count||0)>0?"var(--red)":"inherit"};font-weight:${(c.fatal_count||0)>0?700:400}">${c.fatal_count||0}</td>
+      <td>${drivers
+        ? `<div class="rate-bar-wrap"><div class="rate-bar ${barClass}" style="width:${barW}px"></div><span style="font-size:12px;color:var(--text-secondary)">${rate.toFixed(3)}</span></div>`
+        : `<span style="color:var(--text-muted);font-size:12px">— (driver count unknown)</span>`}</td>
+      <td style="font-size:12px;color:var(--text-secondary)">${drivers ? afRate.toFixed(3) : "—"}</td>
     </tr>`;
   }).join("");
 }
 
-function allIncidents(c) { return []; } // incidents not loaded on this page
-
-function ratingBadgeHtml(rating) {
-  if (!rating || rating === "Not Rated") return '<span class="badge badge-gray">Not Rated</span>';
-  if (rating === "Satisfactory")   return '<span class="badge badge-green">Satisfactory</span>';
-  if (rating === "Conditional")    return '<span class="badge badge-yellow">Conditional</span>';
-  if (rating === "Unsatisfactory") return '<span class="badge badge-red">Unsatisfactory</span>';
-  return `<span class="badge badge-gray">${rating}</span>`;
+function ratingBadge(r) {
+  if (!r||r==="Not Rated") return '<span class="badge badge-gray">Not Rated</span>';
+  if (r==="Satisfactory")   return '<span class="badge badge-green">Satisfactory</span>';
+  if (r==="Conditional")    return '<span class="badge badge-yellow">Conditional</span>';
+  if (r==="Unsatisfactory") return '<span class="badge badge-red">Unsatisfactory</span>';
+  return `<span class="badge badge-gray">${r}</span>`;
 }
 
 function bindEvents() {
-  ["search","f-sort","f-rating"].forEach(id => {
-    document.getElementById(id).addEventListener("input", render);
-    document.getElementById(id).addEventListener("change", render);
+  ["search","f-sort","f-rating","f-min-incidents"].forEach(id => {
+    document.getElementById(id).addEventListener("input", () => { currentPage=1; render(); });
+    document.getElementById(id).addEventListener("change", () => { currentPage=1; render(); });
   });
+  document.getElementById("btn-prev").addEventListener("click", () => { currentPage--; render(); window.scrollTo(0,0); });
+  document.getElementById("btn-next").addEventListener("click", () => { currentPage++; render(); window.scrollTo(0,0); });
 }
 
 init();

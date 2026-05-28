@@ -58,24 +58,8 @@ def fmcsa_name_from_safer(usdot):
     return None
 
 def fmcsa_census_by_usdot(usdot):
-    """FMCSA open data Socrata API."""
-    try:
-        url = f"https://data.transportation.gov/resource/d9yx-zzpk.json?dot_number={usdot}&$limit=1"
-        r = requests.get(url, timeout=10)
-        if r.status_code == 200:
-            results = r.json()
-            if results:
-                rec = results[0]
-                name = rec.get("legal_name") or rec.get("dba_name") or ""
-                return {
-                    "carrier_name":  name.strip() if name else None,
-                    "total_drivers": int(rec.get("total_drivers", 0) or 0),
-                    "cdl_drivers":   int(rec.get("tot_emp", 0) or 0),
-                    "power_units":   int(rec.get("total_trucks", 0) or 0),
-                    "safety_rating": rec.get("safety_rating", "Not Rated"),
-                }
-    except Exception:
-        pass
+    """FMCSA Socrata API — returns None if unavailable (endpoint frequently down)."""
+    # Endpoint was returning 404 as of May 2026 — SAFER scrape is primary fallback
     return None
 
 # ── Driver Origin Backfill ────────────────────────────────────────────────────
@@ -157,26 +141,15 @@ def fix_companies():
         if not usdot:
             continue
 
-        log.info(f"  Resolving USDOT {usdot} ({i+1}/{len(merged)})...")
+        if i % 50 == 0:
+            log.info(f"  Resolving names... ({i+1}/{len(merged)}, {resolved} resolved so far)")
 
-        # Try Socrata first (faster)
-        fmcsa = fmcsa_census_by_usdot(usdot)
-        if fmcsa and fmcsa.get("carrier_name"):
-            c["carrier_name"]  = fmcsa["carrier_name"]
-            c["total_drivers"] = fmcsa.get("total_drivers", 0) or c.get("total_drivers", 0)
-            c["cdl_drivers"]   = fmcsa.get("cdl_drivers", 0) or c.get("cdl_drivers", 0)
-            c["power_units"]   = fmcsa.get("power_units", 0) or c.get("power_units", 0)
-            c["safety_rating"] = fmcsa.get("safety_rating", "Not Rated")
-            resolved += 1
-            time.sleep(0.3)
-            continue
-
-        # Fallback to SAFER scrape
+        # SAFER scrape — primary source (Socrata endpoint down as of May 2026)
         name = fmcsa_name_from_safer(usdot)
         if name:
             c["carrier_name"] = name
             resolved += 1
-        time.sleep(0.5)
+        time.sleep(0.4)
 
         # Recalculate per-capita
         drivers = c.get("cdl_drivers") or c.get("total_drivers") or c.get("power_units") or 1
