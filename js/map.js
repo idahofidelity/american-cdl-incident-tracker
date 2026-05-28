@@ -212,20 +212,14 @@ function createPieClusterIcon(cluster) {
 function populateFilters() {
   if (!indexData) return;
   const yearSelect = document.getElementById("filter-year");
-  // Clear dynamic options
-  while (yearSelect.options.length > 1) yearSelect.remove(1);
-
+  yearSelect.innerHTML = "";
   Object.keys(indexData.years).sort().reverse().forEach(y => {
     const opt = document.createElement("option");
     opt.value = y;
-    opt.textContent = y;
+    const cnt = indexData.years[y].count.toLocaleString();
+    opt.textContent = `${y} (${cnt})`;
     yearSelect.appendChild(opt);
   });
-
-  const allOpt = document.createElement("option");
-  allOpt.value = "_all";
-  allOpt.textContent = "All Years (load all — ~60s)";
-  yearSelect.appendChild(allOpt);
 }
 
 function populateStateFilter() {
@@ -243,10 +237,12 @@ function populateStateFilter() {
 }
 
 function getFilters() {
+  const yearSel = document.getElementById("filter-year");
+  const selectedYears = new Set([...yearSel.selectedOptions].map(o => o.value));
   return {
     state:    document.getElementById("filter-state").value,
     fault:    document.getElementById("filter-fault").value,
-    year:     document.getElementById("filter-year").value,
+    years:    selectedYears,
     severity: document.getElementById("filter-severity").value,
     foreign:  document.getElementById("filter-foreign").value,
   };
@@ -254,28 +250,37 @@ function getFilters() {
 
 async function applyFilters() {
   const f = getFilters();
-
-  if (f.year === "_all") {
-    await loadAllYears();
-    document.getElementById("filter-year").value = "";
-    return;
+  // Load any selected years not yet loaded
+  for (const y of f.years) {
+    if (!loadedYears.has(y)) {
+      showLoading(`Loading ${y}…`);
+      await loadYear(y);
+    }
   }
-
-  if (f.year && !loadedYears.has(f.year)) {
-    showLoading(`Loading ${f.year}…`);
-    await loadYear(f.year);
-    hideLoading();
-  }
-
+  hideLoading();
   populateStateFilter();
   _doFilter(f);
+}
+
+async function loadSelectedYears() {
+  const yearSel = document.getElementById("filter-year");
+  const years = [...yearSel.selectedOptions].map(o => o.value);
+  if (!years.length) { alert("Hold Ctrl and click one or more years first."); return; }
+  showLoading(`Loading ${years.length} year(s)…`);
+  for (let i = 0; i < years.length; i++) {
+    updateLoading(`Loading ${years[i]}… (${i+1}/${years.length})`, Math.round(i/years.length*100));
+    await loadYear(years[i]);
+  }
+  hideLoading();
+  populateStateFilter();
+  _doFilter(getFilters());
 }
 
 function _doFilter(f) {
   filteredIncidents = allIncidents.filter(inc => {
     if (f.state    && inc.state !== f.state) return false;
     if (f.fault    && inc.fault !== f.fault) return false;
-    if (f.year && f.year !== "_all" && inc.date?.slice(0,4) !== f.year) return false;
+    if (f.years.size > 0 && !f.years.has(inc.date?.slice(0,4))) return false;
     if (f.severity) {
       if (f.severity === "fatal"  && !(inc.severity?.fatalities > 0)) return false;
       if (f.severity === "injury" && (inc.severity?.fatalities > 0 || !(inc.severity?.injuries > 0))) return false;
@@ -298,6 +303,17 @@ function _doFilter(f) {
 function renderMarkers() {
   markerLayer.clearLayers();
   const withCoords = filteredIncidents.filter(i => i.lat && i.lng);
+
+  // Show notice when filter returns records but none have coordinates
+  const notice = document.getElementById("no-coords-notice");
+  if (notice) notice.remove();
+  if (filteredIncidents.length > 0 && withCoords.length === 0) {
+    const div = document.createElement("div");
+    div.id = "no-coords-notice";
+    div.style.cssText = "position:absolute;bottom:calc(var(--footer-h)+60px);left:50%;transform:translateX(-50%);background:var(--steel);border:1px solid var(--border);padding:10px 18px;border-radius:4px;font-size:13px;color:var(--text-secondary);z-index:500;text-align:center";
+    div.innerHTML = `<strong style="color:var(--text-primary)">${filteredIncidents.length.toLocaleString()} records match</strong> — none have map coordinates.<br><small>News-sourced incidents are shown in the Incidents table but cannot be pinned without geocoding.</small>`;
+    document.body.appendChild(div);
+  }
 
   withCoords.forEach(inc => {
     const fatal  = (inc.severity?.fatalities || 0) > 0;
@@ -471,13 +487,16 @@ function updateStats() {
 // ── Events ────────────────────────────────────────────────────────────────────
 
 function bindEvents() {
-  document.getElementById("filter-year").addEventListener("change", applyFilters);
+  document.getElementById("btn-load-years").addEventListener("click", loadSelectedYears);
+  document.getElementById("btn-load-all-years").addEventListener("click", loadAllYears);
   ["filter-state","filter-fault","filter-severity","filter-foreign","map-view"]
     .forEach(id => document.getElementById(id).addEventListener("change", applyFilters));
 
   document.getElementById("btn-reset").addEventListener("click", () => {
-    ["filter-state","filter-fault","filter-year","filter-severity","filter-foreign"]
+    ["filter-state","filter-fault","filter-severity","filter-foreign"]
       .forEach(id => { document.getElementById(id).value = ""; });
+    // Deselect all year options
+    [...document.getElementById("filter-year").options].forEach(o => o.selected = false);
     document.getElementById("map-view").value = "incidents";
     applyFilters();
   });

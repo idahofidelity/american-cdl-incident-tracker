@@ -54,11 +54,12 @@
       </select>
     </div>
 
-    <div class="control-group">
-      <label class="control-label">Year</label>
-      <select id="filter-year" class="control-select">
-        <option value="">All Years</option>
+    <div class="control-group" style="align-items:flex-start">
+      <label class="control-label" style="padding-top:4px">Years</label>
+      <select id="filter-year" class="control-select" multiple size="3" style="height:52px;min-width:80px">
       </select>
+      <button id="btn-load-years" style="font-family:var(--font-head);font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:var(--blue);border:none;color:#fff;padding:5px 10px;border-radius:3px;cursor:pointer;height:52px;white-space:nowrap">Load<br>Selected</button>
+      <button id="btn-load-all-years" style="font-family:var(--font-head);font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:var(--steel-mid);border:1px solid var(--border);color:var(--text-secondary);padding:5px 10px;border-radius:3px;cursor:pointer;height:52px;white-space:nowrap">All<br>Years</button>
     </div>
 
     <div class="control-group">
