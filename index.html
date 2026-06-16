@@ -24,10 +24,12 @@
         <div class="header-sub">National Commercial Vehicle Crash Database · <span id="incident-count">—</span> incidents tracked since 2000</div>
       </div>
     </div>
+    <button class="hamburger" aria-label="Menu">&#9776;</button>
     <nav class="header-nav">
       <a href="index.html" class="nav-link active">Map</a>
       <a href="pages/incidents.html" class="nav-link">Incidents</a>
       <a href="pages/companies.html" class="nav-link">Companies</a>
+      <a href="pages/charts.html" class="nav-link">Charts</a>
       <a href="pages/about.html" class="nav-link">About & Data</a>
     </nav>
   </div>
@@ -172,5 +174,21 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script src="js/map.js"></script>
+
+<div id="mobile-nav" class="mobile-nav">
+  <a href="index.html" class="active">Map</a>
+  <a href="pages/incidents.html" class="">Incidents</a>
+  <a href="pages/companies.html" class="">Companies</a>
+  <a href="pages/charts.html" class="">Charts</a>
+  <a href="pages/about.html" class="">About & Data</a>
+</div>
+<script>
+document.querySelector('.hamburger').addEventListener('click', function() {
+  document.getElementById('mobile-nav').classList.toggle('open');
+});
+document.querySelectorAll('.mobile-nav a').forEach(a => {
+  a.addEventListener('click', () => document.getElementById('mobile-nav').classList.remove('open'));
+});
+</script>
 </body>
 </html>

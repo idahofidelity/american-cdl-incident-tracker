@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charts — American CDL Incident Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    body { overflow: auto; }
+    .page-container { padding: 16px; min-height: calc(100vh - var(--header-h) - var(--footer-h)); }
+
+    .year-bar {
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+      background: var(--steel); border: 1px solid var(--border);
+      border-radius: 4px; padding: 12px 16px; margin-bottom: 20px;
+    }
+    .year-bar label {
+      font-family: var(--font-head); font-weight: 700; font-size: 11px;
+      letter-spacing: .08em; text-transform: uppercase; color: var(--text-muted);
+      white-space: nowrap;
+    }
+    .year-multi {
+      background: var(--steel-dark); border: 1px solid var(--border);
+      color: var(--text-primary); font-family: var(--font-body); font-size: 12px;
+      border-radius: 3px; padding: 3px 6px; height: 72px; min-width: 100px;
+    }
+    .btn-load {
+      font-family: var(--font-head); font-weight: 700; font-size: 12px;
+      letter-spacing: .06em; text-transform: uppercase;
+      background: var(--blue); border: none; color: #fff;
+      padding: 8px 16px; border-radius: 3px; cursor: pointer; white-space: nowrap;
+    }
+    .btn-load:hover { background: var(--blue-light); }
+    .btn-all {
+      background: var(--steel-mid); border: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+    .btn-all:hover { border-color: var(--blue-light); color: var(--text-primary); background: var(--steel-mid); }
+    .year-note { font-size: 11px; color: var(--text-muted); }
+
+    /* Chart grid */
+    .chart-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .chart-card {
+      background: var(--steel);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 16px;
+    }
+    .chart-card.full-width { grid-column: 1 / -1; }
+    .chart-title {
+      font-family: var(--font-head); font-weight: 900; font-size: 14px;
+      letter-spacing: .06em; text-transform: uppercase;
+      color: var(--text-primary); margin-bottom: 4px;
+    }
+    .chart-subtitle { font-size: 11px; color: var(--text-muted); margin-bottom: 14px; }
+    .chart-wrap { position: relative; height: 260px; }
+    .chart-wrap.tall { height: 320px; }
+
+    /* Summary pills row */
+    .summary-row {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;
+    }
+    .summary-pill {
+      background: var(--steel-mid); border: 1px solid var(--border);
+      border-radius: 4px; padding: 10px 16px; flex: 1; min-width: 120px;
+      border-left: 3px solid var(--border);
+    }
+    .summary-pill.red   { border-left-color: var(--red); }
+    .summary-pill.orange{ border-left-color: var(--orange); }
+    .summary-pill.blue  { border-left-color: var(--blue-light); }
+    .summary-pill.green { border-left-color: var(--green); }
+    .summary-pill.yellow{ border-left-color: var(--yellow); }
+    .summary-num {
+      font-family: var(--font-head); font-weight: 900; font-size: 26px;
+      color: var(--text-primary); line-height: 1;
+    }
+    .summary-label { font-size: 10px; letter-spacing: .05em; text-transform: uppercase; color: var(--text-muted); margin-top: 3px; }
+
+    .loading-msg { text-align: center; color: var(--text-muted); padding: 40px; font-size: 14px; }
+
+    @media (max-width: 768px) {
+      .chart-grid { grid-template-columns: 1fr; }
+      .chart-card.full-width { grid-column: 1; }
+      .chart-wrap { height: 220px; }
+      .chart-wrap.tall { height: 260px; }
+      .summary-pill { min-width: 100px; }
+      .summary-num { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <span class="header-flag">🇺🇸</span>
+      <div>
+        <div class="header-title">American CDL Incident Tracker</div>
+        <div class="header-sub">National Commercial Vehicle Crash Database</div>
+      </div>
+    </div>
+    <button class="hamburger" aria-label="Menu">&#9776;</button>
+    <nav class="header-nav">
+      <a href="../index.html" class="nav-link">Map</a>
+      <a href="incidents.html" class="nav-link">Incidents</a>
+      <a href="companies.html" class="nav-link">Companies</a>
+      <a href="charts.html" class="nav-link active">Charts</a>
+      <a href="about.html" class="nav-link">About & Data</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-container">
+  <div class="page-title">Data Charts</div>
+  <div class="page-subtitle" style="margin-bottom:14px">Select years to compare. Index data loads instantly; full year data loads on demand.</div>
+
+  <div class="year-bar">
+    <label>Years (Ctrl+click multi)</label>
+    <select id="year-picker" class="year-multi" multiple size="4"></select>
+    <button class="btn-load" id="btn-load">Load Selected</button>
+    <button class="btn-load btn-all" id="btn-all">All Years</button>
+    <span class="year-note" id="year-note">Loading index…</span>
+  </div>
+
+  <div id="summary-row" class="summary-row" style="display:none">
+    <div class="summary-pill red">
+      <div class="summary-num" id="s-incidents">—</div>
+      <div class="summary-label">Total Incidents</div>
+    </div>
+    <div class="summary-pill red">
+      <div class="summary-num" id="s-fatalities">—</div>
+      <div class="summary-label">Fatalities</div>
+    </div>
+    <div class="summary-pill orange">
+      <div class="summary-num" id="s-injuries">—</div>
+      <div class="summary-label">Injured</div>
+    </div>
+    <div class="summary-pill blue">
+      <div class="summary-num" id="s-at-fault">—</div>
+      <div class="summary-label">Trucker At Fault</div>
+    </div>
+    <div class="summary-pill yellow">
+      <div class="summary-num" id="s-foreign">—</div>
+      <div class="summary-label">Foreign Driver Flagged</div>
+    </div>
+    <div class="summary-pill green">
+      <div class="summary-num" id="s-cost">—</div>
+      <div class="summary-label">Est. Total Cost</div>
+    </div>
+  </div>
+
+  <div id="charts-area">
+    <div class="loading-msg" id="loading-msg">Select years above and click Load Selected.</div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">American CDL Incident Tracker — <a href="https://idahofidelity.com" target="_blank">Idaho Fidelity</a>. Data: FMCSA, NHTSA FARS, NTSB.</div>
+    <div class="footer-right"><a href="about.html">Methodology</a> · <a href="https://github.com/idahofidelity/american-cdl-incident-tracker" target="_blank">GitHub</a></div>
+  </div>
+</footer>
+
+<div id="mobile-nav" class="mobile-nav">
+  <a href="../index.html">Map</a>
+  <a href="incidents.html">Incidents</a>
+  <a href="companies.html">Companies</a>
+  <a href="charts.html" class="active">Charts</a>
+  <a href="about.html">About & Data</a>
+</div>
+
+<script>
+// ── Chart.js defaults ─────────────────────────────────────────────────────
+Chart.defaults.color = "#8fa0b8";
+Chart.defaults.borderColor = "#3a4455";
+Chart.defaults.font.family = "'Barlow', sans-serif";
+
+const COLORS = {
+  red:    "#d63030", redA:  "rgba(214,48,48,0.7)",
+  orange: "#e07020", orangeA: "rgba(224,112,32,0.7)",
+  yellow: "#d4a820", yellowA: "rgba(212,168,32,0.7)",
+  green:  "#2e9e58", greenA: "rgba(46,158,88,0.7)",
+  blue:   "#2970c8", blueA:  "rgba(41,112,200,0.7)",
+  gray:   "#5a6a80", grayA:  "rgba(90,106,128,0.7)",
+};
+
+// ── State ─────────────────────────────────────────────────────────────────
+let indexData = null;
+let loadedYears = {};  // year -> array of incidents
+let charts = {};
+
+const STATE_NAMES = {AL:"Alabama",AK:"Alaska",AZ:"Arizona",AR:"Arkansas",CA:"California",CO:"Colorado",CT:"Connecticut",DE:"Delaware",FL:"Florida",GA:"Georgia",HI:"Hawaii",ID:"Idaho",IL:"Illinois",IN:"Indiana",IA:"Iowa",KS:"Kansas",KY:"Kentucky",LA:"Louisiana",ME:"Maine",MD:"Maryland",MA:"Massachusetts",MI:"Michigan",MN:"Minnesota",MS:"Mississippi",MO:"Missouri",MT:"Montana",NE:"Nebraska",NV:"Nevada",NH:"New Hampshire",NJ:"New Jersey",NM:"New Mexico",NY:"New York",NC:"North Carolina",ND:"North Dakota",OH:"Ohio",OK:"Oklahoma",OR:"Oregon",PA:"Pennsylvania",RI:"Rhode Island",SC:"South Carolina",SD:"South Dakota",TN:"Tennessee",TX:"Texas",UT:"Utah",VT:"Vermont",VA:"Virginia",WA:"Washington",WV:"West Virginia",WI:"Wisconsin",WY:"Wyoming"};
+
+// ── Init ──────────────────────────────────────────────────────────────────
+async function init() {
+  try {
+    const res = await fetch("../data/index.json");
+    indexData = await res.json();
+    populateYearPicker();
+    document.getElementById("year-note").textContent =
+      `${indexData.total_incidents.toLocaleString()} total incidents — select years`;
+  } catch(e) {
+    document.getElementById("year-note").textContent = "Error loading index — run split_data.py";
+  }
+  bindEvents();
+}
+
+function populateYearPicker() {
+  const sel = document.getElementById("year-picker");
+  Object.keys(indexData.years).sort().reverse().forEach(y => {
+    const opt = document.createElement("option");
+    opt.value = y;
+    const d = indexData.years[y];
+    opt.textContent = `${y} (${d.count.toLocaleString()})`;
+    sel.appendChild(opt);
+  });
+}
+
+// ── Data Loading ──────────────────────────────────────────────────────────
+async function loadYear(year) {
+  if (loadedYears[year]) return;
+  const res = await fetch(`../data/by_year/${year}.json`);
+  if (res.ok) loadedYears[year] = await res.json();
+}
+
+function getSelectedYears() {
+  const sel = document.getElementById("year-picker");
+  return [...sel.selectedOptions].map(o => o.value).sort();
+}
+
+function getIncidentsForYears(years) {
+  const inc = [];
+  for (const y of years) {
+    if (loadedYears[y]) inc.push(...loadedYears[y]);
+  }
+  return inc;
+}
+
+// ── Load & Render ─────────────────────────────────────────────────────────
+async function loadAndRender(years) {
+  document.getElementById("loading-msg") && (document.getElementById("loading-msg").textContent = "Loading…");
+  document.getElementById("year-note").textContent = `Loading ${years.length} year(s)…`;
+
+  for (const y of years) await loadYear(y);
+
+  document.getElementById("year-note").textContent =
+    `Showing ${years.join(", ")}`;
+
+  renderAll(years);
+}
+
+async function loadAllAndRender() {
+  const years = Object.keys(indexData.years).sort();
+  document.getElementById("year-note").textContent = "Loading all years…";
+  for (let i = 0; i < years.length; i++) {
+    document.getElementById("year-note").textContent = `Loading ${years[i]}… (${i+1}/${years.length})`;
+    await loadYear(years[i]);
+    if (i % 3 === 2) await new Promise(r => setTimeout(r, 0));
+  }
+  // Select all in picker
+  [...document.getElementById("year-picker").options].forEach(o => o.selected = true);
+  document.getElementById("year-note").textContent = `All years loaded`;
+  renderAll(years);
+}
+
+// ── Render All Charts ─────────────────────────────────────────────────────
+function renderAll(years) {
+  const incidents = getIncidentsForYears(years);
+  if (!incidents.length) return;
+
+  // Destroy old charts
+  Object.values(charts).forEach(c => c.destroy());
+  charts = {};
+
+  updateSummary(incidents, years);
+  buildChartsHTML();
+
+  renderTrendChart(years);
+  renderFaultPie(incidents);
+  renderStateBar(incidents);
+  renderCarrierBar(incidents);
+  renderForeignTrend(years);
+}
+
+function updateSummary(incidents, years) {
+  const row = document.getElementById("summary-row");
+  row.style.display = "flex";
+
+  const total = incidents.length;
+  const fatalities = incidents.reduce((s,i) => s+(i.severity?.fatalities||0), 0);
+  const injuries   = incidents.reduce((s,i) => s+(i.severity?.injuries||0), 0);
+  const atFault    = incidents.filter(i => i.fault === "AT_FAULT").length;
+  const foreign    = incidents.filter(i => i.foreign_driver_flag).length;
+  const cost       = incidents.reduce((s,i) => s+(i.cost?.estimated_usd||0), 0);
+
+  document.getElementById("s-incidents").textContent  = total.toLocaleString();
+  document.getElementById("s-fatalities").textContent = fatalities.toLocaleString();
+  document.getElementById("s-injuries").textContent   = injuries.toLocaleString();
+  document.getElementById("s-at-fault").textContent   = atFault.toLocaleString();
+  document.getElementById("s-foreign").textContent    = foreign.toLocaleString();
+  document.getElementById("s-cost").textContent       = fmtCost(cost);
+}
+
+function buildChartsHTML() {
+  document.getElementById("charts-area").innerHTML = `
+    <div class="chart-grid">
+      <div class="chart-card full-width">
+        <div class="chart-title">Incidents by Year</div>
+        <div class="chart-subtitle">Total incidents, fatalities, and at-fault incidents per year</div>
+        <div class="chart-wrap tall"><canvas id="chart-trend"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Fault Breakdown</div>
+        <div class="chart-subtitle">At-fault vs not-at-fault vs no determination</div>
+        <div class="chart-wrap"><canvas id="chart-fault"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Foreign Driver Flags Over Time</div>
+        <div class="chart-subtitle">Confirmed, probable, and possible foreign driver incidents per year</div>
+        <div class="chart-wrap"><canvas id="chart-foreign"></canvas></div>
+      </div>
+      <div class="chart-card full-width">
+        <div class="chart-title">Top 15 Most Dangerous States</div>
+        <div class="chart-subtitle">By total incident count for selected years</div>
+        <div class="chart-wrap"><canvas id="chart-states"></canvas></div>
+      </div>
+      <div class="chart-card full-width">
+        <div class="chart-title">Top 15 Carriers by Incident Count</div>
+        <div class="chart-subtitle">Carriers with most incidents in selected years (named carriers only)</div>
+        <div class="chart-wrap"><canvas id="chart-carriers"></canvas></div>
+      </div>
+    </div>`;
+}
+
+// ── Chart 1: Trend line ───────────────────────────────────────────────────
+function renderTrendChart(years) {
+  const labels = years;
+  const totals    = years.map(y => indexData.years[y]?.count || 0);
+  const fatals    = years.map(y => indexData.years[y]?.fatalities || 0);
+  const atFault   = years.map(y => indexData.years[y]?.at_fault || 0);
+
+  charts.trend = new Chart(document.getElementById("chart-trend"), {
+    type: "line",
+    data: {
+      labels,
+      datasets: [
+        { label: "Total Incidents", data: totals, borderColor: COLORS.blue, backgroundColor: "rgba(41,112,200,0.1)", tension: 0.3, fill: true, pointRadius: 3 },
+        { label: "Fatalities",      data: fatals, borderColor: COLORS.red,  backgroundColor: "transparent", tension: 0.3, pointRadius: 3 },
+        { label: "At Fault",        data: atFault,borderColor: COLORS.orange,backgroundColor: "transparent", tension: 0.3, pointRadius: 3, borderDash: [5,3] },
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { labels: { color: "#8fa0b8", boxWidth: 12 } } },
+      scales: {
+        x: { grid: { color: "#3a4455" }, ticks: { maxRotation: 45 } },
+        y: { grid: { color: "#3a4455" }, beginAtZero: true },
+      }
+    }
+  });
+}
+
+// ── Chart 2: Fault pie ────────────────────────────────────────────────────
+function renderFaultPie(incidents) {
+  const atFault  = incidents.filter(i => i.fault === "AT_FAULT").length;
+  const notFault = incidents.filter(i => i.fault === "NOT_AT_FAULT").length;
+  const noStated = incidents.filter(i => i.fault === "NO_FAULT_STATED").length;
+
+  charts.fault = new Chart(document.getElementById("chart-fault"), {
+    type: "doughnut",
+    data: {
+      labels: ["Trucker At Fault", "Trucker Not At Fault", "Fault Not Stated"],
+      datasets: [{
+        data: [atFault, notFault, noStated],
+        backgroundColor: [COLORS.redA, COLORS.greenA, COLORS.grayA],
+        borderColor: [COLORS.red, COLORS.green, COLORS.gray],
+        borderWidth: 1,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { position: "bottom", labels: { color: "#8fa0b8", boxWidth: 12, padding: 10 } },
+        tooltip: {
+          callbacks: {
+            label: ctx => {
+              const total = ctx.dataset.data.reduce((a,b) => a+b, 0);
+              const pct = ((ctx.raw / total) * 100).toFixed(1);
+              return ` ${ctx.label}: ${ctx.raw.toLocaleString()} (${pct}%)`;
+            }
+          }
+        }
+      }
+    }
+  });
+}
+
+// ── Chart 3: State bar ────────────────────────────────────────────────────
+function renderStateBar(incidents) {
+  const counts = {};
+  incidents.forEach(i => {
+    const s = i.state;
+    if (s && s !== "UNKNOWN") counts[s] = (counts[s]||0) + 1;
+  });
+  const sorted = Object.entries(counts).sort((a,b) => b[1]-a[1]).slice(0,15);
+  const labels = sorted.map(([s]) => STATE_NAMES[s] || s);
+  const data   = sorted.map(([,n]) => n);
+
+  charts.states = new Chart(document.getElementById("chart-states"), {
+    type: "bar",
+    data: {
+      labels,
+      datasets: [{
+        label: "Incidents",
+        data,
+        backgroundColor: data.map((_, i) => i < 3 ? COLORS.redA : COLORS.blueA),
+        borderColor:     data.map((_, i) => i < 3 ? COLORS.red  : COLORS.blue),
+        borderWidth: 1,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: "#3a4455" }, ticks: { maxRotation: 45, font: { size: 11 } } },
+        y: { grid: { color: "#3a4455" }, beginAtZero: true },
+      }
+    }
+  });
+}
+
+// ── Chart 4: Carrier bar ──────────────────────────────────────────────────
+function renderCarrierBar(incidents) {
+  const counts = {};
+  incidents.forEach(i => {
+    const c = i.carrier_name;
+    if (c) counts[c] = (counts[c]||0) + 1;
+  });
+  const sorted = Object.entries(counts).sort((a,b) => b[1]-a[1]).slice(0,15);
+  const labels = sorted.map(([c]) => c.length > 30 ? c.slice(0,28)+"…" : c);
+  const data   = sorted.map(([,n]) => n);
+
+  if (!data.length) {
+    document.getElementById("chart-carriers").closest(".chart-card").innerHTML +=
+      '<p style="color:var(--text-muted);font-size:12px;margin-top:8px">No named carriers in selected years. Carrier names require FMCSA enrichment — run fix_companies.py.</p>';
+    return;
+  }
+
+  charts.carriers = new Chart(document.getElementById("chart-carriers"), {
+    type: "bar",
+    data: {
+      labels,
+      datasets: [{
+        label: "Incidents",
+        data,
+        backgroundColor: data.map((_, i) => i < 3 ? COLORS.orangeA : COLORS.blueA),
+        borderColor:     data.map((_, i) => i < 3 ? COLORS.orange  : COLORS.blue),
+        borderWidth: 1,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      indexAxis: "y",
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: "#3a4455" }, beginAtZero: true },
+        y: { grid: { color: "#3a4455" }, ticks: { font: { size: 11 } } },
+      }
+    }
+  });
+}
+
+// ── Chart 5: Foreign trend ────────────────────────────────────────────────
+function renderForeignTrend(years) {
+  // Use index.json data for speed (doesn't need full year load)
+  const confirmed = years.map(y => {
+    if (!loadedYears[y]) return indexData.years[y]?.foreign || 0;
+    return loadedYears[y].filter(i => i.foreign_driver_confirmed).length;
+  });
+  const probable = years.map(y => {
+    if (!loadedYears[y]) return 0;
+    return loadedYears[y].filter(i => i.foreign_driver_probable).length;
+  });
+  const possible = years.map(y => {
+    if (!loadedYears[y]) return 0;
+    return loadedYears[y].filter(i => i.foreign_driver_possible).length;
+  });
+
+  charts.foreign = new Chart(document.getElementById("chart-foreign"), {
+    type: "bar",
+    data: {
+      labels: years,
+      datasets: [
+        { label: "Confirmed",  data: confirmed, backgroundColor: COLORS.redA,    borderColor: COLORS.red,    borderWidth: 1, stack: "s" },
+        { label: "Probable",   data: probable,  backgroundColor: COLORS.orangeA, borderColor: COLORS.orange, borderWidth: 1, stack: "s" },
+        { label: "Possible",   data: possible,  backgroundColor: COLORS.yellowA, borderColor: COLORS.yellow, borderWidth: 1, stack: "s" },
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { labels: { color: "#8fa0b8", boxWidth: 12 } } },
+      scales: {
+        x: { stacked: true, grid: { color: "#3a4455" } },
+        y: { stacked: true, grid: { color: "#3a4455" }, beginAtZero: true },
+      }
+    }
+  });
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────
+function fmtCost(n) {
+  if (!n) return "—";
+  if (n >= 1e12) return "$"+(n/1e12).toFixed(1)+"T";
+  if (n >= 1e9)  return "$"+(n/1e9).toFixed(1)+"B";
+  if (n >= 1e6)  return "$"+(n/1e6).toFixed(1)+"M";
+  if (n >= 1e3)  return "$"+(n/1e3).toFixed(0)+"K";
+  return "$"+n.toLocaleString();
+}
+
+// ── Events ────────────────────────────────────────────────────────────────
+function bindEvents() {
+  document.getElementById("btn-load").addEventListener("click", () => {
+    const years = getSelectedYears();
+    if (!years.length) { alert("Hold Ctrl and select at least one year."); return; }
+    loadAndRender(years);
+  });
+  document.getElementById("btn-all").addEventListener("click", loadAllAndRender);
+
+  // Mobile nav
+  document.querySelector(".hamburger").addEventListener("click", () => {
+    document.getElementById("mobile-nav").classList.toggle("open");
+  });
+  document.querySelectorAll(".mobile-nav a").forEach(a =>
+    a.addEventListener("click", () => document.getElementById("mobile-nav").classList.remove("open"))
+  );
+}
+
+init();
+</script>
+</body>
+</html>

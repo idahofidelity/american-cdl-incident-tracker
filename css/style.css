@@ -650,3 +650,130 @@ a:hover { text-decoration: underline; }
 .badge-green  { background: rgba(46,158,88,0.2); color: #4ec97e; border: 1px solid var(--green); }
 .badge-gray   { background: rgba(90,106,128,0.2); color: var(--text-muted); border: 1px solid var(--border); }
 .badge-yellow { background: rgba(212,168,32,0.2); color: var(--yellow); border: 1px solid var(--yellow); }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   MOBILE OVERHAUL — Android Chrome optimized
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Hamburger button ─────────────────────────────────────────────────────── */
+.hamburger {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 6px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* ── Mobile nav drawer ────────────────────────────────────────────────────── */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: var(--header-h);
+  left: 0;
+  right: 0;
+  background: var(--steel-dark);
+  border-bottom: 2px solid var(--red);
+  z-index: 2000;
+  flex-direction: column;
+  padding: 8px 0;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+}
+.mobile-nav a:last-child { border-bottom: none; }
+.mobile-nav a.active, .mobile-nav a:active { color: var(--text-primary); background: var(--steel-mid); }
+
+@media (max-width: 768px) {
+  /* Header */
+  .hamburger { display: flex; align-items: center; justify-content: center; }
+  .header-nav { display: none !important; }
+  .header-title { font-size: 16px; }
+  .header-sub { display: none; }
+  .header-flag { font-size: 22px; }
+
+  /* Controls bar — horizontal scroll on mobile */
+  .controls-bar { height: auto; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .controls-inner {
+    padding: 8px 12px;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: max-content;
+    min-width: 100%;
+  }
+  .control-label { font-size: 10px; }
+  .control-select { font-size: 12px; padding: 4px 6px; }
+
+  /* Year multi-select on map */
+  #filter-year { height: 44px !important; min-width: 70px !important; font-size: 11px; }
+  #btn-load-years, #btn-load-all-years { font-size: 10px !important; padding: 4px 8px !important; height: 44px !important; }
+
+  /* Stats bar — horizontal scroll */
+  .stats-bar {
+    height: auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 6px 8px;
+    gap: 4px;
+  }
+  .stat-pill { padding: 4px 8px; flex-shrink: 0; }
+  .stat-num { font-size: 14px; }
+  .stat-label { font-size: 9px; }
+
+  /* Map — full remaining height */
+  #map {
+    top: calc(var(--header-h) + 60px + 56px); /* header + controls + stats */
+    bottom: 0;
+  }
+
+  /* Incident panel — full screen on mobile */
+  .incident-panel {
+    width: 100%;
+    top: var(--header-h);
+    bottom: 0;
+    z-index: 1500;
+  }
+
+  /* Legend — hidden on mobile */
+  .map-legend { display: none; }
+
+  /* Footer — hidden on mobile to save space */
+  .site-footer { display: none; }
+  #map { bottom: 0; }
+
+  /* Page containers */
+  .page-container { padding: 12px; }
+  .page-title { font-size: 20px; }
+
+  /* Filter rows on incidents/companies — stack vertically */
+  .filter-row { flex-direction: column; align-items: stretch; gap: 8px; }
+  .filter-row .search-input { width: 100%; }
+  .filter-row .control-select { width: 100%; }
+  .record-count { margin-left: 0; text-align: right; }
+
+  /* Table — horizontal scroll */
+  .table-wrap { max-height: calc(100vh - 240px); }
+
+  /* Pagination */
+  .pagination { flex-wrap: wrap; gap: 6px; }
+}
+
+/* ── Touch targets — minimum 44px ────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .page-btn, .load-btn, .btn-reset, .nav-link { min-height: 44px; }
+  .control-select { min-height: 36px; }
+}

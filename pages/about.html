@@ -70,6 +70,7 @@
         <div class="header-sub">National Commercial Vehicle Crash Database</div>
       </div>
     </div>
+    <button class="hamburger" aria-label="Menu">&#9776;</button>
     <nav class="header-nav">
       <a href="../index.html" class="nav-link">Map</a>
       <a href="incidents.html" class="nav-link">Incidents</a>
@@ -216,5 +217,21 @@
   </div>
 </footer>
 
+
+<div id="mobile-nav" class="mobile-nav">
+  <a href="../index.html" class="">Map</a>
+  <a href="../pages/incidents.html" class="">Incidents</a>
+  <a href="../pages/companies.html" class="">Companies</a>
+  <a href="../pages/charts.html" class="">Charts</a>
+  <a href="../pages/about.html" class="active">About & Data</a>
+</div>
+<script>
+document.querySelector('.hamburger').addEventListener('click', function() {
+  document.getElementById('mobile-nav').classList.toggle('open');
+});
+document.querySelectorAll('.mobile-nav a').forEach(a => {
+  a.addEventListener('click', () => document.getElementById('mobile-nav').classList.remove('open'));
+});
+</script>
 </body>
 </html>
