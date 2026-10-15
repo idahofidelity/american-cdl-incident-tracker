@@ -13,15 +13,20 @@ jobs:
       startsWith(github.event.pull_request.head.ref, 'scrape/review-')
 
     runs-on: ubuntu-latest
+    concurrency:
+      group: data-writes
+      cancel-in-progress: false
     permissions:
       contents: write
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+        with:
+          ref: main
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
@@ -32,6 +37,7 @@ jobs:
         run: |
           git config user.name "CDL Tracker Bot"
           git config user.email "bot@idahofidelity.com"
-          git add data/incidents.json data/pending_review.json data/companies.json
+          git add data/by_year data/index.json data/incidents.json data/pending_review.json data/companies.json
           git diff --staged --quiet || git commit -m "✅ Merge approved incidents — $(date +%Y-%m-%d)"
-          git push
+          git pull --rebase origin main
+          git push origin HEAD:main
