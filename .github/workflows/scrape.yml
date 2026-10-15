@@ -99,8 +99,7 @@ jobs:
             --body-file pr_body.md \
             --base main \
             --head $BRANCH \
-            --label "incident-review" \
-            || echo "::warning::PR creation failed; branch $BRANCH was pushed. Open it manually: https://github.com/${{ github.repository }}/compare/main...$BRANCH?expand=1"
+            --label "incident-review"
 
       - name: No new incidents
         if: steps.check.outputs.count == '0'
