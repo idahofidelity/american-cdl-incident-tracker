@@ -19,6 +19,9 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
+from classify import (classify_fault, extract_state, dedupe_keys,
+                      load_by_year)
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
@@ -281,7 +284,7 @@ def make_id(date, state, url):
     h = hashlib.md5(f"{date}{state}{url}".encode()).hexdigest()[:8].upper()
     return f"INC-{date[:4]}-{h}"
 
-def classify_fault(text):
+def _legacy_classify_fault(text):  # superseded by classify.classify_fault
     t = text.lower()
     at   = sum(1 for p in AT_FAULT_PHRASES     if p in t)
     not_ = sum(1 for p in NOT_AT_FAULT_PHRASES if p in t)
@@ -332,7 +335,7 @@ STATE_NAMES = {
     "Virginia":"VA","Washington":"WA","West Virginia":"WV","Wisconsin":"WI","Wyoming":"WY",
 }
 
-def extract_state(text):
+def _legacy_extract_state(text):  # superseded by classify.extract_state
     for name, abbr in STATE_NAMES.items():
         if name in text: return abbr
     m = re.search(r'\b([A-Z]{2})-\d+\b', text)
@@ -387,7 +390,7 @@ def extract_carrier(text):
 def fetch_article(url):
     try:
         r = requests.get(url, timeout=12, headers={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"})
-        if r.status_code == 200:
+        if r.status_code == 200 and "news.google.com" not in r.url and "consent.google" not in r.url:
             soup = BeautifulSoup(r.text, "html.parser")
             for tag in soup(["nav","footer","script","style","aside","header","iframe"]):
                 tag.decompose()
@@ -439,7 +442,7 @@ def fetch_gnews(existing_sources):
                     continue
 
                 # Fetch full article text
-                full_text = fetch_article(link) or title
+                full_text = title + "\n" + (fetch_article(link) or "")
 
                 # Build real source URL from source domain + article title search
                 article_title_clean = title.rsplit(" - ", 1)[0].strip()
@@ -449,7 +452,7 @@ def fetch_gnews(existing_sources):
                     real_url = f"https://www.google.com/search?q={requests.utils.quote(article_title_clean)}"
 
                 # Extract fields
-                state    = extract_state(full_text) or extract_state(title)
+                state    = extract_state(title) or extract_state(full_text)
                 highway  = extract_highway(full_text)
                 fault    = classify_fault(full_text)
                 severity = extract_severity(full_text)
@@ -574,19 +577,28 @@ def enrich_companies(all_incidents):
 
 def main():
     log.info("=== American CDL Incident Tracker Scraper ===")
-    existing        = load_json(INCIDENTS_FILE)
+    existing        = load_by_year()
     existing_ids    = {i["id"] for i in existing}
     existing_sources = {s for i in existing for s in i.get("sources", [])}
 
     log.info(f"Running {len(GNEWS_QUERIES)} Google News queries...")
     raw = fetch_gnews(existing_sources)
 
+    # Keep anything still awaiting review from earlier runs (unmerged PRs),
+    # and dedupe by id, source URL and normalized headline.
+    carried = load_json(PENDING_FILE)
     pending = []
     seen_ids = set(existing_ids)
-    for inc in raw:
-        if inc["id"] not in seen_ids:
-            seen_ids.add(inc["id"])
-            pending.append(inc)
+    seen_keys = set()
+    for inc in existing:
+        seen_keys |= dedupe_keys(inc)
+    for inc in carried + raw:
+        keys = dedupe_keys(inc)
+        if inc["id"] in seen_ids or keys & seen_keys:
+            continue
+        seen_ids.add(inc["id"])
+        seen_keys |= keys
+        pending.append(inc)
 
     log.info(f"Total new pending incidents: {len(pending)}")
 
