@@ -1,5 +1,5 @@
 {
-  "total_incidents": 94071,
+  "total_incidents": 94351,
   "years": {
     "2000": {
       "count": 4172,
@@ -132,24 +132,24 @@
       "est_cost": 44022612000
     },
     "2013": {
-      "count": 3084,
+      "count": 3085,
       "fatalities": 3464,
       "injuries": 5026,
-      "at_fault": 0,
+      "at_fault": 1,
       "not_fault": 0,
       "foreign": 0,
       "american": 0,
-      "est_cost": 44583600000
+      "est_cost": 44583612000
     },
     "2014": {
-      "count": 3029,
+      "count": 3031,
       "fatalities": 3454,
       "injuries": 4959,
       "at_fault": 2,
       "not_fault": 0,
       "foreign": 0,
       "american": 0,
-      "est_cost": 44411448000
+      "est_cost": 44411472000
     },
     "2015": {
       "count": 3276,
@@ -162,14 +162,14 @@
       "est_cost": 47711040000
     },
     "2016": {
-      "count": 3715,
+      "count": 3717,
       "fatalities": 4185,
       "injuries": 6382,
       "at_fault": 2,
       "not_fault": 1,
       "foreign": 0,
       "american": 0,
-      "est_cost": 54013296000
+      "est_cost": 54013320000
     },
     "2017": {
       "count": 3820,
@@ -182,94 +182,94 @@
       "est_cost": 55248096000
     },
     "2018": {
-      "count": 3753,
+      "count": 3755,
       "fatalities": 4229,
       "injuries": 6294,
-      "at_fault": 2,
+      "at_fault": 3,
       "not_fault": 3,
       "foreign": 0,
       "american": 0,
-      "est_cost": 54438780000
+      "est_cost": 54438804000
     },
     "2019": {
-      "count": 3820,
+      "count": 3825,
       "fatalities": 4269,
       "injuries": 6339,
       "at_fault": 3,
-      "not_fault": 1,
+      "not_fault": 2,
       "foreign": 0,
       "american": 0,
-      "est_cost": 54945852000
+      "est_cost": 54945912000
     },
     "2020": {
-      "count": 3719,
+      "count": 3720,
       "fatalities": 4163,
       "injuries": 5859,
-      "at_fault": 630,
+      "at_fault": 631,
       "not_fault": 1636,
       "foreign": 0,
       "american": 0,
-      "est_cost": 53435508000
+      "est_cost": 53435520000
     },
     "2021": {
-      "count": 4372,
+      "count": 4374,
       "fatalities": 4914,
       "injuries": 7330,
       "at_fault": 769,
       "not_fault": 1961,
       "foreign": 0,
       "american": 0,
-      "est_cost": 63291852000
+      "est_cost": 63291876000
     },
     "2022": {
-      "count": 4471,
+      "count": 4478,
       "fatalities": 5013,
       "injuries": 7299,
-      "at_fault": 833,
+      "at_fault": 836,
       "not_fault": 1963,
       "foreign": 0,
       "american": 0,
-      "est_cost": 64340940000
+      "est_cost": 64341024000
     },
     "2023": {
-      "count": 4178,
+      "count": 4184,
       "fatalities": 4652,
       "injuries": 6651,
       "at_fault": 757,
-      "not_fault": 1753,
+      "not_fault": 1755,
       "foreign": 3,
       "american": 0,
-      "est_cost": 59584824000
+      "est_cost": 59584896000
     },
     "2024": {
-      "count": 4101,
+      "count": 4114,
       "fatalities": 4519,
       "injuries": 6427,
       "at_fault": 802,
-      "not_fault": 1728,
+      "not_fault": 1729,
       "foreign": 11,
       "american": 0,
-      "est_cost": 57709836000
+      "est_cost": 57709992000
     },
     "2025": {
-      "count": 806,
+      "count": 893,
       "fatalities": 249,
       "injuries": 97,
-      "at_fault": 114,
-      "not_fault": 16,
+      "at_fault": 125,
+      "not_fault": 17,
       "foreign": 117,
       "american": 0,
-      "est_cost": 9672000
+      "est_cost": 10716000
     },
     "2026": {
-      "count": 1276,
+      "count": 1428,
       "fatalities": 444,
       "injuries": 204,
-      "at_fault": 82,
-      "not_fault": 25,
+      "at_fault": 92,
+      "not_fault": 28,
       "foreign": 72,
       "american": 0,
-      "est_cost": 15312000
+      "est_cost": 17136000
     }
   }
 }
