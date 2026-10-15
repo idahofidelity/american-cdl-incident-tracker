@@ -50774,6 +50774,45 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-53D6D811",
+    "date": "2024-09-11",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Child still in coma week after car crash - WINK News",
+    "sources": [
+      "https://www.winknews.com/search?q=Child%20still%20in%20coma%20week%20after%20car%20crash"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2024-FEC760F4",
     "date": "2024-09-10",
     "state": "AL",
@@ -59041,6 +59080,45 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-DF09650F",
+    "date": "2024-08-24",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed driver arrested on DUI charge after overturning truck - Villages-News.com",
+    "sources": [
+      "https://www.villages-news.com/search?q=Unlicensed%20driver%20arrested%20on%20DUI%20charge%20after%20overturning%20truck"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2024-0D5C4516",
     "date": "2024-08-23",
     "state": "NJ",
@@ -67113,6 +67191,45 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-EDF1F199",
+    "date": "2024-08-07",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semi-Truck Crashes Into Home in NY State After Driver Fell Asleep - 101.5 WPDH",
+    "sources": [
+      "https://wpdh.com/search?q=Semi-Truck%20Crashes%20Into%20Home%20in%20NY%20State%20After%20Driver%20Fell%20Asleep"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2024-79D443BD",
     "date": "2024-08-06",
     "state": "AL",
@@ -67501,6 +67618,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2024-EE21615A",
+    "date": "2024-08-06",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Police: Driver of semi falls asleep, crashes truck into house in Genesee County - WKBW",
+    "sources": [
+      "https://www.wkbw.com/search?q=Police%3A%20Driver%20of%20semi%20falls%20asleep%2C%20crashes%20truck%20into%20house%20in%20Genesee%20County"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2024-0D40410D",
@@ -70152,6 +70308,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2024-63C5CA94",
+    "date": "2024-08-01",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed driver hurtles into family, killing mum and daughter - needtoknow.co.uk",
+    "sources": [
+      "https://needtoknow.co.uk/search?q=Unlicensed%20driver%20hurtles%20into%20family%2C%20killing%20mum%20and%20daughter"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2024-C94D0AA3",
@@ -82747,6 +82942,45 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-D35425F4",
+    "date": "2024-07-06",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semi-trailer truck leaves road due to icy conditions in Lilydale - The Examiner",
+    "sources": [
+      "https://www.examiner.com.au/search?q=Semi-trailer%20truck%20leaves%20road%20due%20to%20icy%20conditions%20in%20Lilydale"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2024-B9F067B7",
     "date": "2024-07-05",
     "state": "CA",
@@ -90075,6 +90309,45 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Colorado USA"
+  },
+  {
+    "id": "INC-2024-4841D9DB",
+    "date": "2024-06-19",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Wife of trucker killed in crash with deported driver calls for \u201cmore accountability on the truckers\u201d - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Wife%20of%20trucker%20killed%20in%20crash%20with%20deported%20driver%20calls%20for%20%E2%80%9Cmore%20accountability%20on%20the%20truckers%E2%80%9D"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2024-04DA0F71",
@@ -100335,6 +100608,45 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-D966D4E9",
+    "date": "2024-05-28",
+    "state": "WA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed driver charged with vehicular homicide after fatal Seattle taxi crash - FOX 13 Seattle",
+    "sources": [
+      "https://www.fox13seattle.com/search?q=Unlicensed%20driver%20charged%20with%20vehicular%20homicide%20after%20fatal%20Seattle%20taxi%20crash"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2024-8881688C",
     "date": "2024-05-27",
     "state": "AL",
@@ -101035,6 +101347,45 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Wyoming USA"
+  },
+  {
+    "id": "INC-2024-121F427E",
+    "date": "2024-05-25",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Canada bus crash: Truck driver behind 2018 accident that killed 16 to be deported to India - WION",
+    "sources": [
+      "https://www.wionews.com/search?q=Canada%20bus%20crash%3A%20Truck%20driver%20behind%202018%20accident%20that%20killed%2016%20to%20be%20deported%20to%20India"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2024-14291C08",
@@ -101971,6 +102322,84 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Alabama USA"
+  },
+  {
+    "id": "INC-2024-CF1CC9A7",
+    "date": "2024-05-24",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Canada To Deport Indian-Origin Truck Driver Behind Crash That Killed 16 - NDTV",
+    "sources": [
+      "https://www.ndtv.com/search?q=Canada%20To%20Deport%20Indian-Origin%20Truck%20Driver%20Behind%20Crash%20That%20Killed%2016"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2024-5ACCB3B0",
+    "date": "2024-05-24",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Refugee board orders deportation for trucker in horrific Humboldt Broncos crash - The Globe and Mail",
+    "sources": [
+      "https://www.theglobeandmail.com/search?q=Refugee%20board%20orders%20deportation%20for%20trucker%20in%20horrific%20Humboldt%20Broncos%20crash"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2024-97D5A3C9",
@@ -122716,6 +123145,45 @@
     ],
     "added": "2026-05-27",
     "reviewed": true
+  },
+  {
+    "id": "INC-2024-09016652",
+    "date": "2024-04-08",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Deportation hearing set for truck driver in deadly Humboldt Broncos bus crash - 980 CJME",
+    "sources": [
+      "https://www.cjme.com/search?q=Deportation%20hearing%20set%20for%20truck%20driver%20in%20deadly%20Humboldt%20Broncos%20bus%20crash"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2024-2919C146",
@@ -153251,6 +153719,45 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Indiana USA"
+  },
+  {
+    "id": "INC-2024-A432FE7E",
+    "date": "2024-01-19",
+    "state": "IN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Lane closures on I-65 due to \"completely frozen\" bridge, several truck crashes in Indiana - CBS News",
+    "sources": [
+      "https://www.cbsnews.com/search?q=Lane%20closures%20on%20I-65%20due%20to%20%22completely%20frozen%22%20bridge%2C%20several%20truck%20crashes%20in%20Indiana"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2024-1270EC5A",
