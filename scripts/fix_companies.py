@@ -19,12 +19,15 @@ from collections import defaultdict
 import requests
 from bs4 import BeautifulSoup
 
+import sys
+sys.path.insert(0, str(Path(__file__).parent))
+from classify import load_by_year, save_by_year  # noqa: E402
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
 DATA_DIR       = Path(__file__).parent.parent / "data"
 COMPANIES_FILE = DATA_DIR / "companies.json"
-INCIDENTS_FILE = DATA_DIR / "incidents.json"
 
 # ── FMCSA Name Lookup ─────────────────────────────────────────────────────────
 
@@ -166,7 +169,7 @@ def fix_companies():
 
 def backfill_driver_flags():
     log.info("Backfilling driver origin flags on incidents...")
-    incidents = json.loads(INCIDENTS_FILE.read_text())
+    incidents = load_by_year()
     updated = 0
 
     for inc in incidents:
@@ -191,7 +194,7 @@ def backfill_driver_flags():
             updated += 1
 
     log.info(f"  Flagged {updated} incidents with driver origin data")
-    INCIDENTS_FILE.write_text(json.dumps(incidents, indent=2))
+    save_by_year(incidents)
     log.info(f"  Saved {len(incidents)} incidents")
 
 def main():

@@ -26,7 +26,6 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 log = logging.getLogger(__name__)
 
 DATA_DIR        = Path(__file__).parent.parent / "data"
-INCIDENTS_FILE  = DATA_DIR / "incidents.json"
 COMPANIES_FILE  = DATA_DIR / "companies.json"
 PENDING_FILE    = DATA_DIR / "pending_review.json"
 

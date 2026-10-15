@@ -1,4 +1,5 @@
-# data/incidents.json and data/pending_review.json are tracked on purpose:
-# the scraper and merge workflows read and commit them.
+# data/pending_review.json is tracked on purpose (scrape/merge workflows commit it).
+# data/incidents.json is a local-only full dump (>100 MB); the site reads data/by_year/ + data/index.json.
+data/incidents.json
 __pycache__/
 *.pyc

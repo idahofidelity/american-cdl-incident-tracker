@@ -161,6 +161,24 @@ def dedupe_keys(inc):
     return keys
 
 
+def save_by_year(incidents):
+    """Write incidents back to by_year/<year>.json (same format as before)."""
+    from collections import defaultdict
+    years = defaultdict(list)
+    for inc in incidents:
+        years[(inc.get("date") or "0000")[:4]].append(inc)
+    for year, incs in years.items():
+        incs.sort(key=lambda x: x.get("date", ""), reverse=True)
+        (BY_YEAR / f"{year}.json").write_text(json.dumps(incs, indent=2))
+
+
+def build_incidents_json(path=None):
+    """Optional local convenience: rebuild data/incidents.json (untracked) from by_year/."""
+    path = path or DATA_DIR / "incidents.json"
+    Path(path).write_text(json.dumps(load_by_year()))
+    return path
+
+
 def load_by_year():
     """All published incidents (by_year/ is the master source the site reads)."""
     out = []
