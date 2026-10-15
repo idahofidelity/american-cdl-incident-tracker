@@ -1,0 +1,194 @@
+# Review notes: consolidated batch 2026-10-15
+
+Kept 2879, rejected 229 (moved to `data/rejected_review.json` with `rejected_reason`).
+
+## Rejected by reason
+- non-crash story (policy/legal/immigration): 94
+- Canadian incident/outlet: 84
+- facebook/scanner-only source: 51
+
+## Borderline (kept in pending_review.json; check these): 176
+- no crash keyword in headline: 113
+- crash mentioned but story is mainly policy/legal/follow-up: 63
+
+### no crash keyword in headline
+
+- `INC-2026-232F6D0A` 2026-10-15 UNKNOWN: Driver hospitalized after striking MSP patrol car on I-96 - WTVG
+- `INC-2026-2A6D4B4F` 2026-10-09 UNKNOWN: Semi carrying chemicals leaks along Lafayette-to-West Lafayette route - WLFI
+- `INC-2026-50253BE8` 2026-09-29 MN: 1 in 7 Minnesotans have DWI on their record - FOX 9 Minneapolis-St. Paul
+- `INC-2026-50B0DC88` 2026-09-24 CA: Hazmat leak temporarily shuts down eastbound 10 Freeway in West Covina - ABC7 Los Angeles
+- `INC-2026-68C2BB34` 2026-09-23 UNKNOWN: I-5 ramps in Clark County reopen after semi carrying chickens rolls over - KPTV
+- `INC-2026-8A734372` 2026-09-22 WI: 'Radical' AG Josh Kaul Is Blocking Federal Access to Data on Illegal Immigrant Truck Drivers - Wisconsin Right Now
+- `INC-2026-E673F18E` 2026-09-19 UNKNOWN: DCSO: Semi driver arrested after driving wrong way on Bypass, registering .245 BAC - The Owensboro Times
+- `INC-2026-855B04FA` 2026-09-11 UNKNOWN: Feds allow NC to resume issuing CDLs to non-citizens, but they may be rare - Raleigh News & Observer
+- `INC-2026-92FB24CB` 2026-09-05 UNKNOWN: Acid leaks onto I-83 after hazmat incident in York County - WGAL
+- `INC-2026-56D4FB4A` 2026-08-31 UNKNOWN: Feds Boot 110 Commercial Driver Training Providers - Newsmax
+- `INC-2026-4F135AD2` 2026-08-26 UNKNOWN: A Republican Attack Ad Used a Family’s Tragedy. Now They’re Furious. - nytimes.com
+- `INC-2026-19E2846D` 2026-08-19 TX: Texas man sentenced for smuggling 4 undocumented migrants in Tucson - KTAR News 92.3 FM
+- `INC-2026-355FC92C` 2026-08-14 UNKNOWN: Semi driver arrested for vehicle homicide after striking pickup on I-80 - KLKN-TV
+- `INC-2026-12F12BF4` 2026-08-13 NY: Truck Driver Arrested For Hitting Mom And Toddler Leaving The Scene - News12 | Long Island
+- `INC-2026-1CBE4362` 2026-08-08 UNKNOWN: Southbound Highway 99 in Selma now fully re-opened - kmph.com
+- `INC-2026-52FBE933` 2026-08-07 UNKNOWN: Truck driver charged with DWI released on bond, affidavit details arrest - KFDM
+- `INC-2026-BAEFB5AD` 2026-07-30 UNKNOWN: No CDL, big problem - Land Line Media
+- `INC-2026-42CFD221` 2026-07-26 UNKNOWN: Bayard community grieving loss of two young adults, third hospitalized - Rural Radio Network
+- `INC-2026-FE3C796D` 2026-07-24 UNKNOWN: Vehicular Homicide Case Against Illegal Truck Driver Delayed - 991wqik.iheart.com
+- `INC-2026-DF68DB92` 2026-07-23 UNKNOWN: Driver arrested after hitting man with pickup truck, fleeing scene, Margate police say - WPLG Local 10
+- `INC-2026-89FECCD3` 2026-07-19 NY: Revoke trucking licenses for illegal immigrants — and punish states that don’t comply - New York Post
+- `INC-2026-FFEF6ABD` 2026-07-17 UNKNOWN: Driver's 4th DWI charge comes after motorcyclist's death on Capital Boulevard - WRAL
+- `INC-2026-685FCDEF` 2026-07-15 UNKNOWN: ‘What a joke’: Americans outraged over ‘illegal’ Indian truck driver’s sentence - The American Bazaar
+- `INC-2026-7176CCEA` 2026-07-11 UNKNOWN: Wrong-way driver arrested on I-93 in Salem - WMUR
+- `INC-2026-6DA97A81` 2026-07-06 UNKNOWN: Semi Driver Hospitalized After Leaving Roadway in Stearns County - KNSI
+- `INC-2026-ABF64A1D` 2026-07-06 MA: Feds say truck driver charged in death of PA trooper was illegally present in US, held Massachusetts CDL - CDLLife
+- `INC-2026-46BA607E` 2026-07-04 UNKNOWN: Illegal immigrant truck driver charged in death of trooper who moved home to care for mom with cancer - Fox News
+- `INC-2026-91D020F5` 2026-07-04 PA: Truck driver charged in Pa. state trooper death is in country illegally, DHS says - The Morning Call
+- `INC-2026-DE595BA3` 2026-07-02 NC: Police: Truck driver charged after falling asleep at wheel, killing woman in Union County - WCCB Charlotte
+- `INC-2026-64E5C268` 2026-07-01 UNKNOWN: Truck Driver Cited After Semi Rolls Over At I-87 Rest Area Spewing Garbage: NYSP - Patch
+- `INC-2026-DB41D739` 2026-06-29 UNKNOWN: Martin County Sheriff's Office increasing enforcement after 5 traffic deaths in 4 days - WPTV
+- `INC-2026-CF2F7CCE` 2026-06-29 KY: Semi driver charged with DUI after hitting Louisville's 'can opener' - WLKY
+- `INC-2026-575BA94F` 2026-06-28 UNKNOWN: Tractor-trailer rolls over on I-81, backs up traffic - local21news.com
+- `INC-2026-E4E1619F` 2026-06-24 UNKNOWN: Large tank falls from semi, closing Highway 76 connector to I-15 - fox5sandiego.com
+- `INC-2026-B6CD7469` 2026-06-22 NC: When Exhaustion Takes the Wheel: Driver Fatigue and Commercial Truck Accidents - Charlotte Observer
+- `INC-2026-B794173C` 2026-06-18 UNKNOWN: Loaded dump truck tips over onto another vehicle in Appleton, killing that driver - WLUK
+- `INC-2026-DA03F61E` 2026-06-17 FL: C.H. Robinson a defendant in post-Montgomery Florida broker liability case - FreightWaves
+- `INC-2026-86D37D10` 2026-06-12 FL: Florida dodged a huge bullet when its suit over immigrant truckers failed - Daytona Beach News-Journal
+- `INC-2026-B136971A` 2026-06-08 AZ: Alleged drunk driver rolls truck into parking lot after leaving a bar, YCSO says - FOX 10 Phoenix
+- `INC-2026-2E02D794` 2026-06-06 UNKNOWN: West Chester roads reopen after truck leaks sulfuric acid - WLWT
+- `INC-2026-220CCA99` 2026-06-05 CT: Texas tractor-trailer driver flown in custody to Connecticut, charged with negligent homicide - fox61.com
+- `INC-2026-E70E1CBF` 2026-06-04 TX: Another 18-wheeler rolls over on San Antonio's notorious Finesilver Curve - WOAI
+- `INC-2026-C9C5BEF2` 2026-06-03 UNKNOWN: Amazon semi-truck driver falls asleep, runs off the roadway in Monroe County, sheriff's office says - 13WMAZ
+- `INC-2026-AE71CFAB` 2026-06-01 WA: American deaths at the hands of non-English-speaking drivers mount - Washington Times
+- `INC-2026-27E53CF6` 2026-05-31 TN: Video shows police chase of wrong-way driver on Memphis interstate - FOX13 Memphis
+- `INC-2026-D275F0E0` 2026-05-30 TN: LIVE UPDATES: Road conditions in the Mid-South - FOX13 Memphis
+- `INC-2026-987921AC` 2026-05-24 UNKNOWN: CHP puts the brakes on unlicensed pickup truck driver hauling ‘unsafe load’ - CDLLife
+- `INC-2026-1A6990D5` 2026-05-21 UNKNOWN: INDOT: State Road 13 in Madison Co. reopened after semi incident - Fox 59
+- `INC-2026-0CE0F705` 2026-05-20 NY: Queens body shop owner uses illegal tow truck scheme to flaunt wealthy 'f---ing life' - Gothamist
+- `INC-2026-653C6CFD` 2026-05-20 UNKNOWN: Tractor trailer driver cited for leaving scene - The Conway Daily Sun
+- `INC-2026-870F0062` 2026-05-11 UNKNOWN: SONAR Launches Carrier Safety Dashboard — Right on Time for International Roadcheck Week - FreightWaves
+- `INC-2026-1E4D6A20` 2026-05-04 NH: Truck driver charged with DUI and more after taking out 200 feet of guardrail, New Hampshire troopers say - CDLLife
+- `INC-2026-C3E9BD2D` 2026-05-02 UNKNOWN: Pickup ran red light before piling into van and Tesla in Orchards - KATU
+- `INC-2026-8962E16A` 2026-05-01 UNKNOWN: How an Executive Order reshaped highway safety - FreightWaves
+- `INC-2026-EB1CA4DF` 2026-04-28 UNKNOWN: ‘Prolific’ driving offender causes $25k damage in head-on with truck - The Courier Mail
+- `INC-2026-5FF7C2DD` 2026-03-30 IN: CDLs held by undocumented immigrants in Indiana to expire April 1 - Fox 59
+- `INC-2026-B6CD29E0` 2026-03-28 UNKNOWN: Hayfield Man Cited for Striking Rochester-Area Overpass With Raised Dump Truck Bed - KROC-AM
+- `INC-2026-2AC7C748` 2026-03-26 UNKNOWN: Tractor trailer driver cited for hitting State Police vehicle and fleeing scene on Thruway - WSTM
+- `INC-2026-41C98EAC` 2026-03-17 UNKNOWN: 200,000 immigrant truck drivers to lose licences in US: What changes now - Business Standard
+- `INC-2026-8E38E99A` 2026-03-16 UNKNOWN: 200,000 Immigrant Truck Drivers Are Officially Losing Their CDLs Which Will Almost Certainly Make Everything Even More Expensive - Jalopnik
+- `INC-2026-6A9C6E30` 2026-03-09 UNKNOWN: U-turn attempt sends truck driver to jail on homicide, possession, DUI charges, troopers say - CDLLife
+- `INC-2026-0B4EDB6F` 2026-03-07 CA: PHOTOS: Separate semi-truck incidents stall San Diego freeways four days in a row - fox5sandiego.com
+- `INC-2026-8A562ACB` 2026-03-06 CA: California DMV cancels licenses for 13,000 immigrant truck drivers under federal mandate - CBS News
+- `INC-2026-C63F8A62` 2026-02-19 IN: Un camionero inmigrante ilegal está acusado de matar a Indiana tras saltarse un semáforo en rojo - Fox News
+- `INC-2026-2737D866` 2026-01-26 TN: Nashville offers rides to warming shelters as sun sets. How to get help - The Tennessean
+- `INC-2026-3F4DB8C8` 2026-01-25 MS: Frozen Mississippi: Trucks Slide Off Icy Roads - The Weather Channel
+- `INC-2026-D6B3D657` 2026-01-23 UNKNOWN: 2 hospitalized after car pinned under semi-truck - MLive.com
+- `INC-2026-B69AC04E` 2026-01-13 KS: Semi driver charged in Kansas with DUI after testing 7 times legal limit - TheTrucker.com
+- `INC-2026-680AF8FF` 2026-01-09 NC: North Carolina’s 54% CDL Failure Rate Exposes Licensing Rot - FreightWaves
+- `INC-2026-7F19D284` 2026-01-08 UNKNOWN: Central Hudson Truck Skids Off Ulster County Road - hudsonvalleycountry.com
+- `INC-2026-AB3EA1EC` 2026-01-07 UNKNOWN: Asylum seeker truck driver gets 55 days in jail, counselling after killing young woman - Juno News
+- `INC-2026-BC7E505B` 2026-01-07 UNKNOWN: USPS Announces Major Change for Migrant Drivers - Newsweek
+- `INC-2025-96FEB573` 2025-12-26 UNKNOWN: Southbound 101 in San Jose reopens after tanker truck cleared - NBC Bay Area
+- `INC-2025-D151CD5F` 2025-12-05 UNKNOWN: I-81 Northbound shut down at Weyers Cave - Rocktown Now
+- `INC-2025-DC688F37` 2025-12-03 IN: Indiana State Police Are Hunting for Phony CDLs With 'No Name Given' Printed Right on Them - MotorBiscuit
+- `INC-2025-8124771E` 2025-10-28 UNKNOWN: Whistleblower warns illegal immigrants are sending 'shockwave' through crucial industry - Fox News
+- `INC-2025-3456A795` 2025-10-23 CA: CONFIRMED: California issued CDL to truck driver charged with DUI - CDLLife
+- `INC-2025-C2F91A82` 2025-10-22 MD: Septic truck driver not cited in Baltimore County bridge collapse - Baltimore Sun
+- `INC-2025-FA7EFDAB` 2025-10-22 UNKNOWN: Homeland Security explains how 'illegal aliens' get CDLs in the U.S. - overdriveonline.com
+- `INC-2025-EF0DD756` 2025-10-16 FL: Florida targets states over immigrant truck drivers - Sun Sentinel
+- `INC-2025-ECF2E52D` 2025-10-15 OK: It Took Oklahoma Three Days to Prove Just How Dangerous CDLs for Illegal Aliens Are - Federation for American Immigration Reform
+- `INC-2025-EAB8FB21` 2025-10-14 NY: DHS says New York falsely stated immigrant's CDL was legal - Times Union
+- `INC-2025-4A0B6BDA` 2025-10-12 NY: DHS Reveals New York Gave Indian Illegal Alien ‘No Name Given’ Commercial Driver’s License - breitbart.com
+- `INC-2025-1C34A342` 2025-10-07 OK: Western Oklahoma port of entry used to check truck drivers - Southwest Ledger
+- `INC-2025-16072A6A` 2025-10-01 NY: New York issued driver’s license to migrant — but didn’t require first name - AOL.com
+- `INC-2025-57DA8228` 2025-10-01 WA: Harjinder Singh's a full term CDL from Washington explained - overdriveonline.com
+- `INC-2025-85060208` 2025-09-30 NY: Exclusive | New York issued driver’s license to migrant — but didn’t require first name - New York Post
+- `INC-2025-8F1BE46A` 2025-08-28 UNKNOWN: Harjinder Singh's tragedy isn't Democrats' or Republicans' problem. It's America's - WLRN
+- `INC-2025-6F98CB7D` 2025-08-22 UNKNOWN: How Did a Migrant Who Can't Speak English Get a License to Drive a Big Rig?, by Debra J. Saunders - Creators Syndicate
+- `INC-2025-E2571014` 2025-08-21 UNKNOWN: DeSantis questions how immigrant trucker tied to homicides got CDL - Straight Arrow News - SAN - Unbiased. Straight Facts.
+- `INC-2025-67A35FAB` 2025-08-21 FL: DeSantis, Uthmeier request extra U.S. House seat - FOX 35 Orlando
+- `INC-2025-780D178D` 2025-08-17 NY: Shocking footage shows illegal-migrant driver make outrageous rogue U-turn, killing 3: officials - New York Post
+- `INC-2025-0683F907` 2025-07-03 UNKNOWN: DMV Employees Busted Selling Driver’s Licenses to Illegal Aliens - AMAC - The Association of Mature American Citizens
+- `INC-2025-F8E35ADA` 2025-06-17 CA: California explains granting CDL to "No Name Given" - overdriveonline.com
+- `INC-2025-82423D28` 2025-06-03 VA: Driver facing charges after falling asleep behind the wheel in Virginia - CDLLife
+- `INC-2025-D1C95E11` 2025-05-09 NY: Speeding BMW driver accused of killing beloved Bronx coach was ‘extremely reckless’: DA - New York Daily News
+- `INC-2025-544AC53C` 2025-04-29 UNKNOWN: Truck Drivers Who Can’t Speak Or Read English Will Be Pulled From The Roads - Carscoops
+- `INC-2025-B4251057` 2025-04-29 TX: Analysis: To Protect Truckers, Will House Protect Sex Traffickers? - Texas Scorecard
+- `INC-2025-6335D9B6` 2025-03-26 UNKNOWN: Havoc on Hwy. 401, 402, 403 amid icy conditions - London Free Press
+- `INC-2025-97BA2B09` 2025-02-18 OK: WATCH: Semi-trailer blocks eastbound I-40 in southwest Oklahoma City - KOCO
+- `INC-2025-C9F6091A` 2025-02-07 VA: Winter Storm Freezes Virginia, West Virginia, DC, NYC, Boston - The Weather Channel
+- `INC-2025-BDD68CBC` 2025-01-22 GA: 'Horrible experience' | Drivers stranded on major highway in Georgia due to icy roads - 13WMAZ
+- `INC-2025-410F9EB5` 2025-01-03 UNKNOWN: Snow squall blankets Lycoming County tonight, creates dangerous driving conditions - Williamsport Sun-Gazette
+- `INC-2024-627FAFA6` 2024-10-17 UNKNOWN: Map Reveals Most Dangerous US States for Truck Accidents - Newsweek
+- `INC-2024-7C8BC579` 2024-01-18 AL: Some Alabama roads still icy because of winter storm, freezing weather - wvtm
+- `INC-2022-8F7C9161` 2022-12-20 UNKNOWN: I-84 eastbound from Troutdale to Hood River reopens - KPTV
+- `INC-2022-4DBF72B8` 2022-10-12 UNKNOWN: (PHOTOS) Trooper: truck driver probably fell asleep before hitting 2 trucks on 59 - County 17
+- `INC-2021-9273B927` 2021-05-24 CA: 1 hospitalized after driver runs red light in Visalia, police say - ABC30 Fresno
+- `INC-2021-D884D846` 2021-02-11 UNKNOWN: How to Drive a Semi-Truck Safely During Winter - Arnold & Itkin LLP
+- `INC-2021-25ECC628` 2021-02-11 KY: Slick, icy roads reported in Middle Tennessee, Southern Kentucky - WZTV
+- `INC-2020-484F8B9F` 2020-12-30 UNKNOWN: Several jack-knifed semi trucks on I-10 near Van Horn due to snow - KFOX
+- `INC-2017-D414970A` 2017-01-16 KS: Dashcam video shows semi truck wipe out on Kansas highway - ABC7 Chicago
+- `INC-2015-E4610A8B` 2015-01-18 NY: Multi-car pileups claim 3 lives on icy Pennsylvania highways - WABC-TV New York
+
+### crash mentioned but story is mainly policy/legal/follow-up
+
+- `INC-2026-2F4E0125` 2026-10-05 UNKNOWN: Driver was allegedly over 3x legal limit in deadly I-95 crash, faces deportation - WPEC
+- `INC-2026-DE8F5A47` 2026-09-24 UNKNOWN: Months after I-71 crash killed family, grieving relatives staying away from trial - WSYX
+- `INC-2026-A2BCAB4B` 2026-09-22 OH: Trial begins for truck driver charged in I-71 crash that killed Ohio family of 3 - WSYX
+- `INC-2026-8F25146D` 2026-09-22 UNKNOWN: Trial begins for semi-truck driver accused in I-71 crash that killed family of three - 10TV
+- `INC-2026-F02381A2` 2026-09-21 TN: Driver who slammed semi truck into an East Nashville Aldi to appear in court Monday - WSMV
+- `INC-2026-79A6FF47` 2026-09-09 UNKNOWN: ICE targets CDL fraud with new tip line after fatal crashes linked to illegal immigrants - WSMH
+- `INC-2026-566459CE` 2026-09-08 UNKNOWN: Judge sentences semi-truck driver to prison for I-96 crash that killed pregnant woman - WZZM13.com
+- `INC-2026-3CF83431` 2026-09-06 UNKNOWN: How was Marcus Coleman’s daughter injured? All you need to know after emotional Capitol hearing | Hindustan Times - hindustantimes.com
+- `INC-2026-9AF8DEE4` 2026-09-01 WA: New task force created to improve road safety after fatal crashes involving illegal immigrants - Washington Examiner
+- `INC-2026-EE57D673` 2026-08-20 UNKNOWN: ‘We’re going to keep fighting:’ Driver faces deportation after charges dropped from Alamo expressway crash - KRGV
+- `INC-2026-B041623B` 2026-08-14 UNKNOWN: Trump’s Transportation Secretary Slams Radical State AGs' Lawsuit to Obstruct Data Sharing, Shield Illegal Immigrant Truck Drivers from the Law | US Department of Transportation - Department of Transportation (.gov)
+- `INC-2026-5F87AA3D` 2026-08-07 MI: Michigan truck driver charged in deadly 3-car, 3-semi crash on I-69 facing lawsuit - WPTA | 21Alive | Fort Wayne, IN
+- `INC-2026-21E40966` 2026-07-23 UNKNOWN: Truck driver in deadly Turnpike crash absent from court; hearing reset for October - WPEC
+- `INC-2026-11069306` 2026-07-20 UNKNOWN: Tow truck driver charged in deadly Raleigh crash due in court, records show - CBS 17
+- `INC-2026-C9C53BD9` 2026-07-17 CA: Fact Check: Did Judge Shannon Faherty sentence the immigrant truck driver in fatal California crash? | Hindustan Times - Hindustan Times
+- `INC-2026-F5795757` 2026-07-16 UNKNOWN: Video | Trump's Trucking Crackdown | Veterans to Replace Undocumented Drivers After Deadly Crash? - NDTV
+- `INC-2026-85BBA7A5` 2026-07-15 UNKNOWN: Family Hurt In Semi Crash That Killed 2 West Of Casper Sues Trucker, Company - Cowboy State Daily
+- `INC-2026-1FC41962` 2026-07-15 PA: OOIDA urges House to vote on Dalilah’s Law after deadly Pennsylvania crash - FreightWaves
+- `INC-2026-85FA3509` 2026-07-06 UNKNOWN: Following the accident that killed a state police officer, ICE is seeking to deport the accused Haitian truck driver - voz.us
+- `INC-2026-5F65B5EC` 2026-07-02 OR: Truck driver charged in deadly Central Oregon crash ordered deported, may never face trial - KGW
+- `INC-2026-C7C3939E` 2026-07-02 OR: Truck Driver in Fatal Oregon Highway Crash Will Be Deported Before Facing Trial - AOL.com
+- `INC-2026-45590DA0` 2026-07-02 UNKNOWN: Couple killed after honeymoon: Family seeks answers as truck driver faces deportation - KGW
+- `INC-2026-4795D46B` 2026-07-01 UNKNOWN: Truck Driver Involved in Deadly Crash to be Deported to India, Avoid Trial - KTVZ
+- `INC-2026-4AC2A8BB` 2026-07-01 OR: Report: Trucker charged in crash that killed couple near Bend to be deported, likely avoiding trial - Central Oregon Daily
+- `INC-2026-764E9893` 2026-06-30 FL: C.H. Robinson dropped from lawsuit over triple-fatal Florida turnpike crash - overdriveonline.com
+- `INC-2026-1498F0BE` 2026-06-29 UNKNOWN: Barbados fatal crash court ruling 'extraordinary' - coroner - BBC
+- `INC-2026-4B9D28B3` 2026-06-26 NJ: Dash cam shows N.J. trucker asleep for 7 seconds before fatal I-78 crash, lawsuit says - NJ.com
+- `INC-2026-CD4A1B2C` 2026-06-26 TX: Cuban driver who killed 5 in Texas sentenced to 20 years, deportation - overdriveonline.com
+- `INC-2026-B36A81F6` 2026-06-25 UNKNOWN: ‘We Just Want Justice’: Parents of Newlyweds Killed in Highway 20 Crash Oppose Deportation of Truck Driver Before Trial - KTVZ
+- `INC-2026-36B74919` 2026-06-15 UNKNOWN: C.H. Robinson named in lawsuit over triple-fatal Harjinder Singh crash - overdriveonline.com
+- `INC-2026-B842D274` 2026-06-12 UNKNOWN: Law enforcement responding to fatal crash involving semi-truck south of Lincoln - KETV
+- `INC-2026-D7783D9A` 2026-06-11 UNKNOWN: Wrongful death lawsuit filed in St. Lucie County in fatal Turnpike crash involving semi-truck driver - WPTV
+- `INC-2026-7911F4EF` 2026-06-11 CA: Immigrant truck driver to stand trial in California freeway crash that killed 2 - AOL.com
+- `INC-2026-F8888ED2` 2026-06-01 UNKNOWN: Coleman family advocates for states to pass 'Dalilah's Law' after tragic accident - National Desk
+- `INC-2026-767DE36F` 2026-04-14 UNKNOWN: Wrongful death lawsuit filed after Amazon, small carrier deny responsibility for driver’s part in fatal crash - CDLLife
+- `INC-2026-8BAF9733` 2026-03-27 UNKNOWN: Senate's Dalilah’s Law Act would create 'death penalty aggravating factor' for fatal crashes involving CDL drivers present in U.S. illegally - CDLLife
+- `INC-2026-F413D056` 2026-03-17 FL: 200,000 immigrant truck drivers, many Indian, face licence cancellations after fatal Florida crash crackdown - The Australia Today
+- `INC-2026-C4B55664` 2026-03-14 UNKNOWN: Immigrant Trucker Behind the 2018 Crash that Killed 16 People Fights Deportation, Citing Family and Mental Health - Yahoo
+- `INC-2026-649A4DC4` 2026-02-26 CA: Bakersfield girl injured in crash inspires law proposed during State of the Union - KBAK
+- `INC-2026-BA3EF0ED` 2026-02-24 CA: Trump highlights Bakersfield girl hurt in Mojave crash, backs 'Dalilah Law’ CDL ban - kmph.com
+- `INC-2026-6A07F187` 2026-02-20 UNKNOWN: Survivor of Jay County crash withdraws lawsuit against semi driver, associated trucking companies - WANE 15
+- `INC-2026-82E14D08` 2026-02-05 IN: Trump administration blames Biden immigration policy for fatal Indiana semi crash - IndyStar
+- `INC-2026-AF06626B` 2026-01-13 OR: Immigrant truck driver postpones plea in Deschutes County Court after fatal crash - NPR for Oregonians
+- `INC-2026-676776B6` 2026-01-04 NV: Judge sets $150K bail for woman accused of DUI crash that killed trike driver in northeast Las Vegas - ktnv.com
+- `INC-2025-66FC438D` 2025-11-26 UNKNOWN: Trucker involved in wrong-way crash with deputy deported amid court hearings, attorney says - Arkadelphian.com
+- `INC-2025-349145C3` 2025-11-14 FL: Trucker involved in fatal Florida crash makes court appearance - Land Line Media
+- `INC-2025-FD040E16` 2025-10-26 FL: Indian-origin trucker crash: Florida moves Supreme Court over immigrant CDLs; crackdown looms - The Times of India
+- `INC-2025-7F9C4770` 2025-10-24 UNKNOWN: Truck driver accused of deadly crash appears in court - NBC News
+- `INC-2025-1AB73126` 2025-10-17 CA: Florida AG sues California, Washington for issuing commercial licenses to undocumented truck drivers following deadly Turnpike crash - CBS News
+- `INC-2025-000297DA` 2025-10-15 FL: WA grappling with regulatory fixes to CDLs in aftermath of deadly Florida crash - The Center Square
+- `INC-2025-B9386AF5` 2025-10-11 UNKNOWN: Trucker deported while facing misdemeanor charge in Pleasanton fatal crash - The Mercury News
+- `INC-2025-85F656D0` 2025-09-25 FL: Florida bill targets undocumented truck drivers after fatal U-turn Turnpike crash - CBS News
+- `INC-2025-880436A7` 2025-09-25 UNKNOWN: Semi Driver Could Go To Trial for Fatal Grand Chute Crash - Seehafer News
+- `INC-2025-9D86C272` 2025-08-22 FL: 'Thug' Indian Truck Driver Crash In Florida Sparks US Visa Freeze, Triggers Illegal Immigration Row - The Times of India
+- `INC-2025-976448AF` 2025-08-20 FL: Semitruck driver in deadly illegal U-turn crash on Florida Turnpike appears in court - WKMG
+- `INC-2025-92BB1C76` 2025-07-25 UNKNOWN: 18-wheeler crash on I-20 prompts regulation questions - fox4news.com
+- `INC-2025-887BF11D` 2025-04-18 UNKNOWN: Tollway settlement of deadly ice storm pileup lawsuit sets stage for FedEx trial - TheTrucker.com
+- `INC-2024-65F85A67` 2024-06-19 UNKNOWN: Unlicensed Semi Truck Driver in Fatal Crash Deported 16 Times - Shore News Network
+- `INC-2024-FA9DF985` 2024-02-01 UNKNOWN: Trucker in ‘Jarheads’ crash who faces deportation wants license back - Marine Corps Times
+- `INC-2023-6DB7DF30` 2023-10-05 UNKNOWN: Three injured as unlicensed 21yo fronts court for fiery truck crash - The Courier Mail
+- `INC-2023-3BF37D2D` 2023-02-10 NH: Ukrainian driver acquitted in NH crash ordered to be deported - New Hampshire Public Radio
+- `INC-2019-14094860` 2019-05-23 UNKNOWN: Woman headed to trial in crash that killed 2, injured her 3 children - MLive.com
+- `INC-2019-39D5A056` 2019-04-05 UNKNOWN: Woman found competent for trial in crash that killed tow truck driver, friend - MLive.com
