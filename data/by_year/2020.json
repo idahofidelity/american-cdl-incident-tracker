@@ -507,6 +507,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2020-484F8B9F",
+    "date": "2020-12-30",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Several jack-knifed semi trucks on I-10 near Van Horn due to snow - KFOX",
+    "sources": [
+      "https://kfoxtv.com/search?q=Several%20jack-knifed%20semi%20trucks%20on%20I-10%20near%20Van%20Horn%20due%20to%20snow"
+    ],
+    "added": "2026-08-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2020-3A2E16A6",
     "date": "2020-12-29",
     "state": "FL",
@@ -3975,6 +4013,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2020-8B74ED0C",
+    "date": "2020-12-19",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Cops: Unlicensed driver arrested after pickup truck crashes into Rt. 58 storefront - RiverheadLOCAL",
+    "sources": [
+      "https://riverheadlocal.com/search?q=Cops%3A%20Unlicensed%20driver%20arrested%20after%20pickup%20truck%20crashes%20into%20Rt.%2058%20storefront"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
   },
   {
     "id": "INC-2020-84F0025F",
@@ -98438,6 +98514,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2020-3D405B8F",
+    "date": "2020-05-20",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "How to DataQ a crash in new FMCSA preventability program - overdriveonline.com",
+    "sources": [
+      "https://www.overdriveonline.com/search?q=How%20to%20DataQ%20a%20crash%20in%20new%20FMCSA%20preventability%20program"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2020-972F6AA2",
     "date": "2020-05-19",
     "state": "CA",
@@ -123400,6 +123514,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2020-9FEFDCD2",
+    "date": "2020-02-29",
+    "state": "NY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Woman busted for driving without a license after crashing into truck in Queens - New York Daily News",
+    "sources": [
+      "https://www.nydailynews.com/search?q=Woman%20busted%20for%20driving%20without%20a%20license%20after%20crashing%20into%20truck%20in%20Queens"
+    ],
+    "added": "2026-09-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2020-5AC3EFA4",
     "date": "2020-02-28",
     "state": "CA",
@@ -126049,6 +126201,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2020-9DF6D67C",
+    "date": "2020-02-22",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "\u2018I\u2019m me, not meat\u2019: PETA to place billboard in honor of cows killed in Sumter County crash - WFTV",
+    "sources": [
+      "https://www.wftv.com/search?q=%E2%80%98I%E2%80%99m%20me%2C%20not%20meat%E2%80%99%3A%20PETA%20to%20place%20billboard%20in%20honor%20of%20cows%20killed%20in%20Sumter%20County%20crash"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
   },
   {
     "id": "INC-2020-C4BD11F8",
@@ -129598,6 +129788,82 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2020-05B2ACBD",
+    "date": "2020-02-13",
+    "state": "FL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Troopers: Driver towing dozens of cows fell asleep at wheel causing crash that killed 19 animals - FOX 13 Tampa Bay",
+    "sources": [
+      "https://www.fox13news.com/search?q=Troopers%3A%20Driver%20towing%20dozens%20of%20cows%20fell%20asleep%20at%20wheel%20causing%20crash%20that%20killed%2019%20animals"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2020-5568E593",
+    "date": "2020-02-13",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "FHP: Cows on the lam after semi-truck driver fell asleep at the wheel, crashed truck carrying cattle - WFTV",
+    "sources": [
+      "https://www.wftv.com/search?q=FHP%3A%20Cows%20on%20the%20lam%20after%20semi-truck%20driver%20fell%20asleep%20at%20the%20wheel%2C%20crashed%20truck%20carrying%20cattle"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
   },
   {
     "id": "INC-2020-4AA9DFFC",

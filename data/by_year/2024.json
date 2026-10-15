@@ -2028,6 +2028,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-048CDBED",
+    "date": "2024-12-24",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Driver falls asleep behind wheel, injures 4 in crash south of Kennewick - Nonstop Local News",
+    "sources": [
+      "https://www.nbcrightnow.com/search?q=Driver%20falls%20asleep%20behind%20wheel%2C%20injures%204%20in%20crash%20south%20of%20Kennewick"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2024-2F8216EB",
     "date": "2024-12-23",
     "state": "CA",
@@ -4056,6 +4094,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2024-67E14A2F",
+    "date": "2024-12-19",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Serious crash involving tractor-trailer, multiple cars closes Kennebunk road - wmtw.com",
+    "sources": [
+      "https://www.wmtw.com/search?q=Serious%20crash%20involving%20tractor-trailer%2C%20multiple%20cars%20closes%20Kennebunk%20road"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
   },
   {
     "id": "INC-2024-07CF506F",
@@ -11853,6 +11929,82 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "California USA"
+  },
+  {
+    "id": "INC-2024-EA3BB4FD",
+    "date": "2024-12-03",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Why was this snow system so severe on roads causing hundreds of crashes? - wxii12.com",
+    "sources": [
+      "https://www.wxii12.com/search?q=Why%20was%20this%20snow%20system%20so%20severe%20on%20roads%20causing%20hundreds%20of%20crashes%3F"
+    ],
+    "added": "2026-08-01",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2024-D516A359",
+    "date": "2024-12-03",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Greensboro police respond to 21 car crashes on I-85, I-73, I-40 - WXII",
+    "sources": [
+      "https://www.wxii12.com/search?q=Greensboro%20police%20respond%20to%2021%20car%20crashes%20on%20I-85%2C%20I-73%2C%20I-40"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
   },
   {
     "id": "INC-2024-CF939594",
@@ -33222,6 +33374,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-627FAFA6",
+    "date": "2024-10-17",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Map Reveals Most Dangerous US States for Truck Accidents - Newsweek",
+    "sources": [
+      "https://www.newsweek.com/search?q=Map%20Reveals%20Most%20Dangerous%20US%20States%20for%20Truck%20Accidents"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2024-24938AD7",
     "date": "2024-10-16",
     "state": "AL",
@@ -48551,6 +48741,44 @@
     "_geocode_query": "Illinois USA"
   },
   {
+    "id": "INC-2024-4D644F73",
+    "date": "2024-09-15",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "In Busan, a truck driven by an unlicensed drunk driver crashed into cars in an apartment complex, fl.. - \ub9e4\uc77c\uacbd\uc81c",
+    "sources": [
+      "https://www.mk.co.kr/search?q=In%20Busan%2C%20a%20truck%20driven%20by%20an%20unlicensed%20drunk%20driver%20crashed%20into%20cars%20in%20an%20apartment%20complex%2C%20fl.."
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2024-6EB7A588",
     "date": "2024-09-14",
     "state": "AZ",
@@ -50813,6 +51041,82 @@
     "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
+    "id": "INC-2024-42ACE496",
+    "date": "2024-09-11",
+    "state": "FL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Child still in coma week after car crash - WINK News - Southwest Florida",
+    "sources": [
+      "https://www.winknews.com/search?q=Child%20still%20in%20coma%20week%20after%20car%20crash%20-%20WINK%20News"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2024-254A4324",
+    "date": "2024-09-11",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Collier County explores ways to improve traffic safety after fatal crash off Immokalee Road - Naples Daily News",
+    "sources": [
+      "https://www.naplesnews.com/search?q=Collier%20County%20explores%20ways%20to%20improve%20traffic%20safety%20after%20fatal%20crash%20off%20Immokalee%20Road"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2024-FEC760F4",
     "date": "2024-09-10",
     "state": "AL",
@@ -52763,6 +53067,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-E4DFC019",
+    "date": "2024-09-06",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Push for change after deadly crash on Immokalee Rd. - WINK News",
+    "sources": [
+      "https://www.winknews.com/search?q=Push%20for%20change%20after%20deadly%20crash%20on%20Immokalee%20Rd."
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2024-64562C4E",
     "date": "2024-09-05",
     "state": "FL",
@@ -54672,6 +55014,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2024-4A3EA26F",
+    "date": "2024-09-03",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "KSP: Semi-truck crash caused after driver fell asleep at wheel - WBKO",
+    "sources": [
+      "https://www.wbko.com/search?q=KSP%3A%20Semi-truck%20crash%20caused%20after%20driver%20fell%20asleep%20at%20wheel"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
   },
   {
     "id": "INC-2024-11A0C27E",
@@ -59509,6 +59889,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-DDF9C509",
+    "date": "2024-08-23",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "One dead in crash after semi-truck driver allegedly asleep at wheel - TheTrucker.com",
+    "sources": [
+      "https://www.thetrucker.com/search?q=One%20dead%20in%20crash%20after%20semi-truck%20driver%20allegedly%20asleep%20at%20wheel"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2024-E9B56D7D",
     "date": "2024-08-22",
     "state": "AR",
@@ -59976,6 +60394,44 @@
     "driver_origin_note": "",
     "_geocoded": true,
     "_geocode_query": "California USA"
+  },
+  {
+    "id": "INC-2024-DD64E5E0",
+    "date": "2024-08-22",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Driver burned after falling asleep and crashing into second trucker - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Driver%20burned%20after%20falling%20asleep%20and%20crashing%20into%20second%20trucker"
+    ],
+    "added": "2026-09-15",
+    "reviewed": true
   },
   {
     "id": "INC-2024-7DE3C581",
@@ -90350,6 +90806,44 @@
     "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
+    "id": "INC-2024-65F85A67",
+    "date": "2024-06-19",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed Semi Truck Driver in Fatal Crash Deported 16 Times - Shore News Network",
+    "sources": [
+      "https://www.shorenewsnetwork.com/search?q=Unlicensed%20Semi%20Truck%20Driver%20in%20Fatal%20Crash%20Deported%2016%20Times"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2024-04DA0F71",
     "date": "2024-06-18",
     "state": "AZ",
@@ -93311,6 +93805,44 @@
       "https://www.thespec.com/search?q=Opinion%20%7C%20Why%20we%20shouldn%E2%80%99t%20deport%20the%20truck%20driver%20involved%20in%20Humboldt%20Broncos%20crash"
     ],
     "added": "2026-05-27",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2024-BA22EEC9",
+    "date": "2024-06-14",
+    "state": "CO",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Driver arrested for multi-vehicle big rig crash that killed one on Colorado highway - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Driver%20arrested%20for%20multi-vehicle%20big%20rig%20crash%20that%20killed%20one%20on%20Colorado%20highway"
+    ],
+    "added": "2026-09-01",
     "reviewed": true
   },
   {
@@ -97992,6 +98524,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2024-F25B992E",
+    "date": "2024-06-04",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Hazmat spilled after semi crash near Casselton - KFYR-TV",
+    "sources": [
+      "https://www.kfyrtv.com/search?q=Hazmat%20spilled%20after%20semi%20crash%20near%20Casselton"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
   },
   {
     "id": "INC-2024-BF6CD652",
@@ -104896,6 +105466,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2024-EA68A534",
+    "date": "2024-05-20",
+    "state": "NC",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "North Carolina tractor-trailer driver cited in multi-vehicle crash on Highway 52 in Winston-Salem - wxii12.com",
+    "sources": [
+      "https://www.wxii12.com/search?q=North%20Carolina%20tractor-trailer%20driver%20cited%20in%20multi-vehicle%20crash%20on%20Highway%2052%20in%20Winston-Salem"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
   },
   {
     "id": "INC-2024-BB8EA82E",
@@ -111919,6 +112527,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-268F4C6E",
+    "date": "2024-05-03",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "A traffic accident involving a Walmart semi-truck and two passenger vehicles occurred after one of the sedans ran a stop sign, officials reported. It happened on Thursday, May 2, 2024, at around 6:56 PM at the intersection of Dale Evans Parkway and Quarry R - Instagram",
+    "sources": [
+      "https://www.instagram.com/search?q=A%20traffic%20accident%20involving%20a%20Walmart%20semi-truck%20and%20two%20passenger%20vehicles%20occurred%20after%20one%20of%20the%20sedans%20ran%20a%20stop%20sign%2C%20officials%20reported.%20It%20happened%20on%20Thursday%2C%20May%202%2C%202024%2C%20at%20around%206%3A56%20PM%20at%20the%20intersection%20of%20Dale%20Evans%20Parkway%20and%20Quarry%20R"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2024-9CF796CA",
     "date": "2024-05-02",
     "state": "AL",
@@ -117652,6 +118298,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-902B86A0",
+    "date": "2024-04-19",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Police: Driver in Hwy. 10 semi crash fell asleep behind the wheel - Wausau Pilot & Review",
+    "sources": [
+      "https://wausaupilotandreview.com/search?q=Police%3A%20Driver%20in%20Hwy.%2010%20semi%20crash%20fell%20asleep%20behind%20the%20wheel"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2024-48351814",
     "date": "2024-04-18",
     "state": "CA",
@@ -120966,6 +121650,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-71ACC821",
+    "date": "2024-04-12",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "UPDATE: One cited in Hwy. 10 East crash after falling asleep behind the wheel - Point/Plover Metro Wire",
+    "sources": [
+      "https://spmetrowire.com/search?q=UPDATE%3A%20One%20cited%20in%20Hwy.%2010%20East%20crash%20after%20falling%20asleep%20behind%20the%20wheel"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2024-47B63927",
     "date": "2024-04-11",
     "state": "GA",
@@ -121588,6 +122310,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2024-8A2496EF",
+    "date": "2024-04-11",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "TROOPERS: Man severely injured in Pitt County accident after running red light - WITN",
+    "sources": [
+      "https://www.witn.com/search?q=TROOPERS%3A%20Man%20severely%20injured%20in%20Pitt%20County%20accident%20after%20running%20red%20light"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
   },
   {
     "id": "INC-2024-98944DC2",
@@ -134842,6 +135602,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-450C206C",
+    "date": "2024-03-07",
+    "state": "CO",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "3 people hurt in Colorado crash, hazmat team cleans up Interstate 25 spill - CBS News",
+    "sources": [
+      "https://www.cbsnews.com/search?q=3%20people%20hurt%20in%20Colorado%20crash%2C%20hazmat%20team%20cleans%20up%20Interstate%2025%20spill"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2024-8F576BFC",
     "date": "2024-03-06",
     "state": "CO",
@@ -137534,6 +138332,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-036A8ED9",
+    "date": "2024-02-28",
+    "state": "VT",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Black ice leads to three crashes involving tractor trailers on Vermont roadway - WPTZ",
+    "sources": [
+      "https://www.mynbc5.com/search?q=Black%20ice%20leads%20to%20three%20crashes%20involving%20tractor%20trailers%20on%20Vermont%20roadway"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2024-0397C8D4",
     "date": "2024-02-27",
     "state": "CA",
@@ -138507,6 +139343,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2024-2A1759DB",
+    "date": "2024-02-26",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Hazardous materials spill on I-15 offramp in Weber County blocks traffic - KSL News",
+    "sources": [
+      "https://www.ksl.com/search?q=Hazardous%20materials%20spill%20on%20I-15%20offramp%20in%20Weber%20County%20blocks%20traffic"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
   },
   {
     "id": "INC-2024-0E0992BF",
@@ -141822,6 +142696,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2024-764E5E84",
+    "date": "2024-02-16",
+    "state": "IL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Stevenson Expressway reopens hours after truck spills hazardous chemical - Chicago Sun-Times",
+    "sources": [
+      "https://chicago.suntimes.com/search?q=Stevenson%20Expressway%20reopens%20hours%20after%20truck%20spills%20hazardous%20chemical"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
   },
   {
     "id": "INC-2024-95DDAB7A",
@@ -147988,6 +148900,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-FA9DF985",
+    "date": "2024-02-01",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Trucker in \u2018Jarheads\u2019 crash who faces deportation wants license back - Marine Corps Times",
+    "sources": [
+      "https://www.marinecorpstimes.com/search?q=Trucker%20in%20%E2%80%98Jarheads%E2%80%99%20crash%20who%20faces%20deportation%20wants%20license%20back"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2024-235A4406",
     "date": "2024-01-31",
     "state": "CA",
@@ -152629,6 +153579,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2024-5B37389A",
+    "date": "2024-01-22",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Icy Conditions Cause Big Rig Crash in Ste. Genevieve County - My Mo Info",
+    "sources": [
+      "https://www.mymoinfo.com/search?q=Icy%20Conditions%20Cause%20Big%20Rig%20Crash%20in%20Ste.%20Genevieve%20County"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2024-CD4DE5FB",
     "date": "2024-01-21",
     "state": "CA",
@@ -154421,6 +155409,82 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Tennessee USA"
+  },
+  {
+    "id": "INC-2024-7C8BC579",
+    "date": "2024-01-18",
+    "state": "AL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Some Alabama roads still icy because of winter storm, freezing weather - wvtm",
+    "sources": [
+      "https://www.wvtm13.com/search?q=Some%20Alabama%20roads%20still%20icy%20because%20of%20winter%20storm%2C%20freezing%20weather"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2024-70BB104F",
+    "date": "2024-01-18",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "I-75 North and South reopen in Campbell County after crash involving multiple tractor-trailers, 'severe icy conditions' - WBIR",
+    "sources": [
+      "https://www.wbir.com/search?q=I-75%20North%20and%20South%20reopen%20in%20Campbell%20County%20after%20crash%20involving%20multiple%20tractor-trailers%2C%20%27severe%20icy%20conditions%27"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
   },
   {
     "id": "INC-2024-9B7CB495",
@@ -159959,6 +161023,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2024-94631BA5",
+    "date": "2024-01-03",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Dump truck driver killed, 2 others injured in chain-reaction crash, police say - NJ.com",
+    "sources": [
+      "https://www.nj.com/search?q=Dump%20truck%20driver%20killed%2C%202%20others%20injured%20in%20chain-reaction%20crash%2C%20police%20say"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
   },
   {
     "id": "INC-2024-06A16596",

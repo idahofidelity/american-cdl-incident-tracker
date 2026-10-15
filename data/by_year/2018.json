@@ -2496,6 +2496,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2018-77127A05",
+    "date": "2018-12-22",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semi driver was drunk when he caused a Kennewick crash, says WSP - Tri-City Herald",
+    "sources": [
+      "https://www.tri-cityherald.com/search?q=Semi%20driver%20was%20drunk%20when%20he%20caused%20a%20Kennewick%20crash%2C%20says%20WSP"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2018-89422D4D",
     "date": "2018-12-21",
     "state": "AZ",
@@ -4056,6 +4094,158 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "I-90 Montana"
+  },
+  {
+    "id": "INC-2018-864682AD",
+    "date": "2018-12-19",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Police search for unlicensed driver after fatal Durham crash - Raleigh News & Observer",
+    "sources": [
+      "https://www.newsobserver.com/search?q=Police%20search%20for%20unlicensed%20driver%20after%20fatal%20Durham%20crash"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2018-A22A0DCF",
+    "date": "2018-12-19",
+    "state": "MT",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "2 killed, multiple injured in crash blocking I-90 in both directions near Superior - NBC Montana",
+    "sources": [
+      "https://nbcmontana.com/search?q=2%20killed%2C%20multiple%20injured%20in%20crash%20blocking%20I-90%20in%20both%20directions%20near%20Superior"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2018-2930B919",
+    "date": "2018-12-19",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "2 dead, 2 hurt after five semi trucks crash near Superior - KTVH",
+    "sources": [
+      "https://www.ktvh.com/search?q=2%20dead%2C%202%20hurt%20after%20five%20semi%20trucks%20crash%20near%20Superior"
+    ],
+    "added": "2026-09-15",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2018-6ACF5175",
+    "date": "2018-12-19",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Five semis involved in fatal pileup due to extreme black ice and heavy fog - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Five%20semis%20involved%20in%20fatal%20pileup%20due%20to%20extreme%20black%20ice%20and%20heavy%20fog"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
   },
   {
     "id": "INC-2018-D1DCEF62",
@@ -17551,6 +17741,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2018-4EA29823",
+    "date": "2018-11-15",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Crashes plague Interstate 81 amid messy winter weather - WHSV",
+    "sources": [
+      "https://www.whsv.com/search?q=Crashes%20plague%20Interstate%2081%20amid%20messy%20winter%20weather"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2018-505E92B9",
     "date": "2018-11-14",
     "state": "CA",
@@ -22231,6 +22459,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2018-A104EE47",
+    "date": "2018-11-04",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Scary crash on Hwy 22 puts two in hospital - rdnewsnow.com",
+    "sources": [
+      "https://rdnewsnow.com/search?q=Scary%20crash%20on%20Hwy%2022%20puts%20two%20in%20hospital"
+    ],
+    "added": "2026-09-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2018-CE0B5CC9",
     "date": "2018-11-03",
     "state": "CA",
@@ -23360,6 +23626,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2018-828DD7BA",
+    "date": "2018-11-01",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "UPDATE: Truck Crashes Cause Big Delays On I-75, I-71 - Eagle Country 99.3",
+    "sources": [
+      "https://www.eaglecountryonline.com/search?q=UPDATE%3A%20Truck%20Crashes%20Cause%20Big%20Delays%20On%20I-75%2C%20I-71"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
   },
   {
     "id": "INC-2018-CAC18541",
@@ -39818,6 +40122,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2018-A19E68DC",
+    "date": "2018-09-25",
+    "state": "AZ",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Driver killed in crash after running red light in Phoenix, police say - 12News",
+    "sources": [
+      "https://www.12news.com/search?q=Driver%20killed%20in%20crash%20after%20running%20red%20light%20in%20Phoenix%2C%20police%20say"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2018-B8CE6A30",
     "date": "2018-09-24",
     "state": "AL",
@@ -40440,6 +40782,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2018-0878FB50",
+    "date": "2018-09-24",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed driver who drove illegally rented car and caused fatal accident gets reformative training - Stomp",
+    "sources": [
+      "https://www.stomp.sg/search?q=Unlicensed%20driver%20who%20drove%20illegally%20rented%20car%20and%20caused%20fatal%20accident%20gets%20reformative%20training"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
   },
   {
     "id": "INC-2018-C8114D1F",
@@ -43794,6 +44174,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2018-C4B3D501",
+    "date": "2018-09-16",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Truck driver falls asleep at wheel, crashes on I-75 - WKRC",
+    "sources": [
+      "https://local12.com/search?q=Truck%20driver%20falls%20asleep%20at%20wheel%2C%20crashes%20on%20I-75"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
   },
   {
     "id": "INC-2018-3C08C6EA",
@@ -53351,6 +53769,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2018-789A1FEF",
+    "date": "2018-08-23",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "POLICE: Truck driver ran red light, causing eight vehicle chain reaction crash - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=POLICE%3A%20Truck%20driver%20ran%20red%20light%2C%20causing%20eight%20vehicle%20chain%20reaction%20crash"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2018-40CBCBF2",
     "date": "2018-08-22",
     "state": "AZ",
@@ -57563,6 +58019,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2018-B0B1F4ED",
+    "date": "2018-08-14",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "SUV Driver Identified In Eagan Crash Involving Semi - CBS News",
+    "sources": [
+      "https://www.cbsnews.com/search?q=SUV%20Driver%20Identified%20In%20Eagan%20Crash%20Involving%20Semi"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2018-C16772FE",
     "date": "2018-08-13",
     "state": "CA",
@@ -57873,6 +58367,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2018-2D32BEB8",
+    "date": "2018-08-13",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Young mother critical after police say semi driver ran red light, struck SUV in Eagan - Pioneer Press",
+    "sources": [
+      "https://www.twincities.com/search?q=Young%20mother%20critical%20after%20police%20say%20semi%20driver%20ran%20red%20light%2C%20struck%20SUV%20in%20Eagan"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
   },
   {
     "id": "INC-2018-03ACD405",
@@ -68677,6 +69209,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2018-8452D8E2",
+    "date": "2018-07-19",
+    "state": "ID",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Update: Video released from crash that killed 2 Boise men after truck driver fell asleep at wheel - Idaho Statesman",
+    "sources": [
+      "https://www.idahostatesman.com/search?q=Update%3A%20Video%20released%20from%20crash%20that%20killed%202%20Boise%20men%20after%20truck%20driver%20fell%20asleep%20at%20wheel"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2018-41EF7429",
     "date": "2018-07-18",
     "state": "CA",
@@ -73434,6 +74004,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2018-EDFB46A6",
+    "date": "2018-07-09",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Truck driver expected to be OK after falling asleep, crashing into barrier, police say - WSB-TV",
+    "sources": [
+      "https://www.wsbtv.com/search?q=Truck%20driver%20expected%20to%20be%20OK%20after%20falling%20asleep%2C%20crashing%20into%20barrier%2C%20police%20say"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2018-6B1D91ED",
     "date": "2018-07-08",
     "state": "IN",
@@ -73666,6 +74274,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2018-AAECD285",
+    "date": "2018-07-08",
+    "state": "NE",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "I-29 shut down for hazmat spill Sunday - KMTV 3 News Now Omaha",
+    "sources": [
+      "https://www.3newsnow.com/search?q=I-29%20shut%20down%20for%20hazmat%20spill%20Sunday"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
   },
   {
     "id": "INC-2018-1C76AAAB",
@@ -84939,6 +85585,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2018-B485F87D",
+    "date": "2018-06-11",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Teen driving truck in China Hat Road accident was not licensed - bendbulletin.com",
+    "sources": [
+      "https://bendbulletin.com/search?q=Teen%20driving%20truck%20in%20China%20Hat%20Road%20accident%20was%20not%20licensed"
+    ],
+    "added": "2026-08-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2018-A6CE3961",
     "date": "2018-06-10",
     "state": "AZ",
@@ -89423,6 +90107,44 @@
     "driver_origin_note": "",
     "_geocoded": true,
     "_geocode_query": "Washington USA"
+  },
+  {
+    "id": "INC-2018-7E178E14",
+    "date": "2018-05-31",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "State Patrol: Semi-truck driver falls asleep, crashes rig off I-5 in Lakewood - KOMO",
+    "sources": [
+      "https://komonews.com/search?q=State%20Patrol%3A%20Semi-truck%20driver%20falls%20asleep%2C%20crashes%20rig%20off%20I-5%20in%20Lakewood"
+    ],
+    "added": "2026-09-15",
+    "reviewed": true
   },
   {
     "id": "INC-2018-93CA3D34",
@@ -109351,6 +110073,44 @@
     "reviewed": true
   },
   {
+    "id": "INC-2018-C5DA26F2",
+    "date": "2018-04-10",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Police: Semi driver fell asleep at the wheel before crash on State Road 37/I-69 in Bloomington - Fox 59",
+    "sources": [
+      "https://fox59.com/search?q=Police%3A%20Semi%20driver%20fell%20asleep%20at%20the%20wheel%20before%20crash%20on%20State%20Road%2037/I-69%20in%20Bloomington"
+    ],
+    "added": "2026-09-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2018-908CF3B6",
     "date": "2018-04-09",
     "state": "AL",
@@ -118088,6 +118848,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2018-A0A7FC15",
+    "date": "2018-03-16",
+    "state": "UT",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Utah County driver dies after hitting a patch of black ice, vaulting over a cable divider and colliding with a semi - The Salt Lake Tribune",
+    "sources": [
+      "https://www.sltrib.com/search?q=Utah%20County%20driver%20dies%20after%20hitting%20a%20patch%20of%20black%20ice%2C%20vaulting%20over%20a%20cable%20divider%20and%20colliding%20with%20a%20semi"
+    ],
+    "added": "2026-09-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2018-B5A48074",
     "date": "2018-03-15",
     "state": "AR",
@@ -124134,6 +124932,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2018-5F4299A0",
+    "date": "2018-03-01",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Truck driver falls asleep causing crash on 695 - WMAR 2 News",
+    "sources": [
+      "https://www.wmar2news.com/search?q=Truck%20driver%20falls%20asleep%20causing%20crash%20on%20695"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2018-1AB8C465",
     "date": "2018-02-28",
     "state": "AL",
@@ -125029,6 +125865,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2018-FBEA7214",
+    "date": "2018-02-27",
+    "state": "WI",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Wisconsin man killed in Lake Elmo when car rear-ended by semi at red light - Pioneer Press",
+    "sources": [
+      "https://www.twincities.com/search?q=Wisconsin%20man%20killed%20in%20Lake%20Elmo%20when%20car%20rear-ended%20by%20semi%20at%20red%20light"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
   },
   {
     "id": "INC-2018-1E824CCE",
@@ -129904,6 +130778,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2018-B9C49A37",
+    "date": "2018-02-14",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Should she have stayed in car? Highway Patrol weighs in on crash video - Springfield News-Leader",
+    "sources": [
+      "https://www.news-leader.com/search?q=Should%20she%20have%20stayed%20in%20car%3F%20Highway%20Patrol%20weighs%20in%20on%20crash%20video"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
   },
   {
     "id": "INC-2018-48453184",

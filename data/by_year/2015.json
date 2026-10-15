@@ -17121,6 +17121,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2015-C663D64B",
+    "date": "2015-11-15",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semi Truck Driver Falls Asleep While Driving, Causes Accident On I-15 - Gephardt Daily",
+    "sources": [
+      "https://gephardtdaily.com/search?q=Semi%20Truck%20Driver%20Falls%20Asleep%20While%20Driving%2C%20Causes%20Accident%20On%20I-15"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2015-48575873",
     "date": "2015-11-14",
     "state": "IN",
@@ -17782,6 +17820,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2015-4236DA23",
+    "date": "2015-11-13",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "ISP: Semi crashed on IL Rte. 13 after driver fell asleep at wheel - KFVS12",
+    "sources": [
+      "https://www.kfvs12.com/search?q=ISP%3A%20Semi%20crashed%20on%20IL%20Rte.%2013%20after%20driver%20fell%20asleep%20at%20wheel"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
   },
   {
     "id": "INC-2015-ED5C78CF",
@@ -76599,6 +76675,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2015-53961090",
+    "date": "2015-06-09",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Update: Semi Truck Driver Fell Asleep at the Wheel Before Crashing into Springdale Home - KNWA FOX24",
+    "sources": [
+      "https://www.nwahomepage.com/search?q=Update%3A%20Semi%20Truck%20Driver%20Fell%20Asleep%20at%20the%20Wheel%20Before%20Crashing%20into%20Springdale%20Home"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2015-FAD0DB3D",
     "date": "2015-06-08",
     "state": "AZ",
@@ -110997,6 +111111,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2015-225BF266",
+    "date": "2015-02-26",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Spring Lake collision kills one, snarls traffic for hours - The Fayetteville Observer",
+    "sources": [
+      "https://www.fayobserver.com/search?q=Spring%20Lake%20collision%20kills%20one%2C%20snarls%20traffic%20for%20hours"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2015-CCE39862",
     "date": "2015-02-25",
     "state": "AZ",
@@ -112048,6 +112200,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2015-4E5858E9",
+    "date": "2015-02-23",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Truck Driver Hits Ice And Crashes Into Pizza Shop - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Truck%20Driver%20Hits%20Ice%20And%20Crashes%20Into%20Pizza%20Shop"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
   },
   {
     "id": "INC-2015-53DE2D72",
@@ -119228,6 +119418,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2015-E3CB5EE4",
+    "date": "2015-01-28",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Trucking groups on FMCSA\u2019s crash accountability study: Incomplete data in CSA still inexcusable - overdriveonline.com",
+    "sources": [
+      "https://www.overdriveonline.com/search?q=Trucking%20groups%20on%20FMCSA%E2%80%99s%20crash%20accountability%20study%3A%20Incomplete%20data%20in%20CSA%20still%20inexcusable"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2015-6C7A0524",
     "date": "2015-01-27",
     "state": "AZ",
@@ -122073,6 +122301,44 @@
     "_geocode_query": "Pennsylvania USA"
   },
   {
+    "id": "INC-2015-95677AEE",
+    "date": "2015-01-19",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Motorist captures near miss with semi-trailer after truck hits black ice - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+    "sources": [
+      "https://www.abc.net.au/search?q=Motorist%20captures%20near%20miss%20with%20semi-trailer%20after%20truck%20hits%20black%20ice"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2015-EEC0C41D",
     "date": "2015-01-18",
     "state": "KS",
@@ -122504,6 +122770,82 @@
     "_geocode_query": "Pennsylvania USA"
   },
   {
+    "id": "INC-2015-E4610A8B",
+    "date": "2015-01-18",
+    "state": "NY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Multi-car pileups claim 3 lives on icy Pennsylvania highways - WABC-TV New York",
+    "sources": [
+      "https://abc7ny.com/search?q=Multi-car%20pileups%20claim%203%20lives%20on%20icy%20Pennsylvania%20highways"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2015-54813AD6",
+    "date": "2015-01-18",
+    "state": "PA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "3 dead, over 31 injured in icy pileups on Pennsylvania highways - ABC11 News",
+    "sources": [
+      "https://abc11.com/search?q=3%20dead%2C%20over%2031%20injured%20in%20icy%20pileups%20on%20Pennsylvania%20highways"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2015-5F0F4E1F",
     "date": "2015-01-17",
     "state": "AR",
@@ -122776,6 +123118,44 @@
     "driver_origin_note": "",
     "_geocoded": true,
     "_geocode_query": "Oregon USA"
+  },
+  {
+    "id": "INC-2015-2D08DDB8",
+    "date": "2015-01-17",
+    "state": "OR",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Interstate 84 closed east of Baker City after more than a dozen semi-trucks involved in crash - OregonLive.com",
+    "sources": [
+      "https://www.oregonlive.com/search?q=Interstate%2084%20closed%20east%20of%20Baker%20City%20after%20more%20than%20a%20dozen%20semi-trucks%20involved%20in%20crash"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
   },
   {
     "id": "INC-2015-10E90C3A",

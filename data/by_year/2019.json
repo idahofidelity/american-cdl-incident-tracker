@@ -12323,6 +12323,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2019-BA67D2CC",
+    "date": "2019-11-29",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Black ice blamed for woman\u2019s death in Apple Valley crash Friday morning - VVNG",
+    "sources": [
+      "https://www.vvng.com/search?q=Black%20ice%20blamed%20for%20woman%E2%80%99s%20death%20in%20Apple%20Valley%20crash%20Friday%20morning"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2019-FD6200CE",
     "date": "2019-11-28",
     "state": "AR",
@@ -17428,6 +17466,44 @@
     "added": "2026-06-01",
     "reviewed": true,
     "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2019-D5703F09",
+    "date": "2019-11-17",
+    "state": "VA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Virginia crash involving charter bus, tractor-trailer that injured dozens blamed on fog, icy conditions - Fox News",
+    "sources": [
+      "https://www.foxnews.com/search?q=Virginia%20crash%20involving%20charter%20bus%2C%20tractor-trailer%20that%20injured%20dozens%20blamed%20on%20fog%2C%20icy%20conditions"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
   },
   {
     "id": "INC-2019-44A532C4",
@@ -30805,6 +30881,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2019-1DBD9F91",
+    "date": "2019-10-16",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Talcum powder spill closes part of I-90 near St. Regis - KPAX News",
+    "sources": [
+      "https://www.kpax.com/search?q=Talcum%20powder%20spill%20closes%20part%20of%20I-90%20near%20St.%20Regis"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
   },
   {
     "id": "INC-2019-F725AA85",
@@ -65361,6 +65475,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2019-55D719D8",
+    "date": "2019-08-03",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Woman dead after semi runs red light - WZZM13.com",
+    "sources": [
+      "https://www.wzzm13.com/search?q=Woman%20dead%20after%20semi%20runs%20red%20light"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2019-607237F0",
     "date": "2019-08-02",
     "state": "CA",
@@ -72847,6 +72999,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2019-C8D04C86",
+    "date": "2019-07-17",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed teen driver crashes truck into garage door of Escondido home, injures man sleeping inside - 10news.com",
+    "sources": [
+      "https://www.10news.com/search?q=Unlicensed%20teen%20driver%20crashes%20truck%20into%20garage%20door%20of%20Escondido%20home%2C%20injures%20man%20sleeping%20inside"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
   },
   {
     "id": "INC-2019-96AFEE6B",
@@ -94963,6 +95153,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2019-14094860",
+    "date": "2019-05-23",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Woman headed to trial in crash that killed 2, injured her 3 children - MLive.com",
+    "sources": [
+      "https://www.mlive.com/search?q=Woman%20headed%20to%20trial%20in%20crash%20that%20killed%202%2C%20injured%20her%203%20children"
+    ],
+    "added": "2026-08-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2019-5C5BC12B",
     "date": "2019-05-22",
     "state": "AL",
@@ -112823,6 +113051,82 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2019-D942C05C",
+    "date": "2019-04-08",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Tractor-trailer crash closes I-91 in Hartford, driver taken away in ambulance - Valley News",
+    "sources": [
+      "https://vnews.com/search?q=Tractor-trailer%20crash%20closes%20I-91%20in%20Hartford%2C%20driver%20taken%20away%20in%20ambulance"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2019-62C3CBBC",
+    "date": "2019-04-08",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Icy road conditions lead to multiple big rig crashes - WCAX",
+    "sources": [
+      "https://www.wcax.com/search?q=Icy%20road%20conditions%20lead%20to%20multiple%20big%20rig%20crashes"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2019-9F177665",
     "date": "2019-04-07",
     "state": "AZ",
@@ -113835,6 +114139,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2019-39D5A056",
+    "date": "2019-04-05",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Woman found competent for trial in crash that killed tow truck driver, friend - MLive.com",
+    "sources": [
+      "https://www.mlive.com/search?q=Woman%20found%20competent%20for%20trial%20in%20crash%20that%20killed%20tow%20truck%20driver%2C%20friend"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
   },
   {
     "id": "INC-2019-FE040732",
@@ -119142,6 +119484,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2019-607983FD",
+    "date": "2019-03-22",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Truck Driver in Hockey Team Bus Crash Sentenced to 8 Years in Prison - Heavy Duty Trucking",
+    "sources": [
+      "https://www.truckinginfo.com/search?q=Truck%20Driver%20in%20Hockey%20Team%20Bus%20Crash%20Sentenced%20to%208%20Years%20in%20Prison"
+    ],
+    "added": "2026-08-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2019-AA528DA7",
     "date": "2019-03-21",
     "state": "AL",
@@ -121012,6 +121392,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2019-38E2D422",
+    "date": "2019-03-16",
+    "state": "WY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Salt Lake man dies after semitruck slams into car in Wyoming pileup - KSL News",
+    "sources": [
+      "https://www.ksl.com/search?q=Salt%20Lake%20man%20dies%20after%20semitruck%20slams%20into%20car%20in%20Wyoming%20pileup"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
   },
   {
     "id": "INC-2019-255C5E89",
@@ -132984,6 +133402,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2019-EA88D7EA",
+    "date": "2019-02-12",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "5 hurt when semi trucks collide in latest round of Mid-Columbia pileups - Tri-City Herald",
+    "sources": [
+      "https://www.tri-cityherald.com/search?q=5%20hurt%20when%20semi%20trucks%20collide%20in%20latest%20round%20of%20Mid-Columbia%20pileups"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2019-D717AFCA",
     "date": "2019-02-11",
     "state": "AL",
@@ -135596,6 +136052,44 @@
     "added": "2026-06-01",
     "reviewed": true,
     "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2019-B1BCA9EB",
+    "date": "2019-02-05",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Berlin man hit, killed by tractor trailer in Randolph - UnionLeader.com",
+    "sources": [
+      "https://www.unionleader.com/search?q=Berlin%20man%20hit%2C%20killed%20by%20tractor%20trailer%20in%20Randolph"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
   },
   {
     "id": "INC-2019-C6BD43C2",
@@ -138638,6 +139132,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2019-A277DA15",
+    "date": "2019-01-26",
+    "state": "IL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "'Serious' crash involving 2 semis, passenger vehicle closes all lanes on eastbound I-80 - ABC7 Chicago",
+    "sources": [
+      "https://abc7chicago.com/search?q=%27Serious%27%20crash%20involving%202%20semis%2C%20passenger%20vehicle%20closes%20all%20lanes%20on%20eastbound%20I-80"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
   },
   {
     "id": "INC-2019-8FF800DB",

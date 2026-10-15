@@ -2535,6 +2535,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2017-3F82DF5D",
+    "date": "2017-12-23",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Survivor of fatal I-93 crash in Windham still in hospital - unionleader.com",
+    "sources": [
+      "https://www.unionleader.com/search?q=Survivor%20of%20fatal%20I-93%20crash%20in%20Windham%20still%20in%20hospital"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2017-3F281E2F",
     "date": "2017-12-22",
     "state": "AR",
@@ -30889,6 +30927,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2017-9AD58DE8",
+    "date": "2017-10-19",
+    "state": "CA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Covington man wanted in crash that killed 13 in California taken into custody - 11Alive.com",
+    "sources": [
+      "https://www.11alive.com/search?q=Covington%20man%20wanted%20in%20crash%20that%20killed%2013%20in%20California%20taken%20into%20custody"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
   },
   {
     "id": "INC-2017-98217B89",
@@ -67667,6 +67743,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2017-E58D71FF",
+    "date": "2017-07-28",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Icy Conditions Cause Red River Bridge Accident, Killing Three - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Icy%20Conditions%20Cause%20Red%20River%20Bridge%20Accident%2C%20Killing%20Three"
+    ],
+    "added": "2026-08-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2017-A0782BD2",
     "date": "2017-07-27",
     "state": "AR",
@@ -81901,6 +82015,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2017-7EB100A3",
+    "date": "2017-06-26",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed Driver Blames Hair, Fake Eyelash For Fatal Crash That Kills Young Mother - JoCo Report",
+    "sources": [
+      "https://jocoreport.com/search?q=Unlicensed%20Driver%20Blames%20Hair%2C%20Fake%20Eyelash%20For%20Fatal%20Crash%20That%20Kills%20Young%20Mother"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2017-1AEAC95E",
     "date": "2017-06-25",
     "state": "TX",
@@ -90361,6 +90513,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2017-BA3C1825",
+    "date": "2017-06-08",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Two crashes in icy conditions on SH8 - Otago Daily Times",
+    "sources": [
+      "https://www.odt.co.nz/search?q=Two%20crashes%20in%20icy%20conditions%20on%20SH8"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
   },
   {
     "id": "INC-2017-A2A8409C",
@@ -134824,6 +135014,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2017-7104EC18",
+    "date": "2017-02-09",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Icy conditions causing crashes on I-74 - WANDTV.com",
+    "sources": [
+      "https://www.wandtv.com/search?q=Icy%20conditions%20causing%20crashes%20on%20I-74"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2017-141D1C55",
     "date": "2017-02-08",
     "state": "CA",
@@ -143674,6 +143902,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2017-D414970A",
+    "date": "2017-01-16",
+    "state": "KS",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Dashcam video shows semi truck wipe out on Kansas highway - ABC7 Chicago",
+    "sources": [
+      "https://abc7chicago.com/search?q=Dashcam%20video%20shows%20semi%20truck%20wipe%20out%20on%20Kansas%20highway"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
   },
   {
     "id": "INC-2017-1A537068",

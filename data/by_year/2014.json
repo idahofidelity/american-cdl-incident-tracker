@@ -6047,6 +6047,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2014-585DF41A",
+    "date": "2014-12-11",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed driver accused of running light, causing crash in Greeley - Greeley Tribune",
+    "sources": [
+      "https://www.greeleytribune.com/search?q=Unlicensed%20driver%20accused%20of%20running%20light%2C%20causing%20crash%20in%20Greeley"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2014-6821C0AF",
     "date": "2014-12-10",
     "state": "GA",
@@ -115206,6 +115244,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2014-C670D190",
+    "date": "2014-01-10",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Car caught under tractor-trailer in Dover; pickup burns on I-95 bridge - Foster's Daily Democrat",
+    "sources": [
+      "https://www.fosters.com/search?q=Car%20caught%20under%20tractor-trailer%20in%20Dover%3B%20pickup%20burns%20on%20I-95%20bridge"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
   },
   {
     "id": "INC-2014-A28FAE4C",

@@ -5225,6 +5225,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2022-8F7C9161",
+    "date": "2022-12-20",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "I-84 eastbound from Troutdale to Hood River reopens - KPTV",
+    "sources": [
+      "https://www.kptv.com/search?q=I-84%20eastbound%20from%20Troutdale%20to%20Hood%20River%20reopens"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2022-0884B519",
     "date": "2022-12-19",
     "state": "AL",
@@ -7565,6 +7603,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2022-B7A18F38",
+    "date": "2022-12-15",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed truck driver sentenced to prison after fatal hit and run - TheTrucker.com",
+    "sources": [
+      "https://www.thetrucker.com/search?q=Unlicensed%20truck%20driver%20sentenced%20to%20prison%20after%20fatal%20hit%20and%20run"
+    ],
+    "added": "2026-09-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2022-17CE9CAA",
     "date": "2022-12-14",
     "state": "AZ",
@@ -9824,6 +9900,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2022-77DA6068",
+    "date": "2022-12-10",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "1 driver killed near Kennewick as icy roads send cars, trucks spinning. Some highways closed - Tri-City Herald",
+    "sources": [
+      "https://www.tri-cityherald.com/search?q=1%20driver%20killed%20near%20Kennewick%20as%20icy%20roads%20send%20cars%2C%20trucks%20spinning.%20Some%20highways%20closed"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
   },
   {
     "id": "INC-2022-54AA43D6",
@@ -16528,6 +16642,82 @@
       "https://dailybulldog.com/search?q=Multiple%20vehicle%20crashes%20in%20New%20Sharon%20due%20to%20icy%20road%20conditions"
     ],
     "added": "2026-05-27",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2022-69A0D901",
+    "date": "2022-11-25",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Black ice causes multi-car accident in New Sharon - WGME",
+    "sources": [
+      "https://wgme.com/search?q=Black%20ice%20causes%20multi-car%20accident%20in%20New%20Sharon"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2022-ABC57017",
+    "date": "2022-11-25",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Multiple crashes reported in New Sharon due to icy conditions - Bangor Daily News",
+    "sources": [
+      "https://www.bangordailynews.com/search?q=Multiple%20crashes%20reported%20in%20New%20Sharon%20due%20to%20icy%20conditions"
+    ],
+    "added": "2026-10-15",
     "reviewed": true
   },
   {
@@ -28385,6 +28575,82 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2022-D7849E4C",
+    "date": "2022-11-02",
+    "state": "NV",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Injuries reported after icy crash involving 6 semis on I-80 in Nevada - upi.com",
+    "sources": [
+      "https://www.upi.com/search?q=Injuries%20reported%20after%20icy%20crash%20involving%206%20semis%20on%20I-80%20in%20Nevada"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2022-3208ACC3",
+    "date": "2022-11-02",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Snowy, Slippery Roads Near Tahoe Led to Six-Truck Pile-Up Wednesday Morning - SFist",
+    "sources": [
+      "https://sfist.com/search?q=Snowy%2C%20Slippery%20Roads%20Near%20Tahoe%20Led%20to%20Six-Truck%20Pile-Up%20Wednesday%20Morning"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2022-ACBA4E4D",
     "date": "2022-11-01",
     "state": "AL",
@@ -32166,6 +32432,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2022-1949DAFA",
+    "date": "2022-10-26",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Icy conditions, crash between Mountain Home and Fairfield - KTVB",
+    "sources": [
+      "https://www.ktvb.com/search?q=Icy%20conditions%2C%20crash%20between%20Mountain%20Home%20and%20Fairfield"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
   },
   {
     "id": "INC-2022-BD6DC197",
@@ -39498,6 +39802,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2022-4DBF72B8",
+    "date": "2022-10-12",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "(PHOTOS) Trooper: truck driver probably fell asleep before hitting 2 trucks on 59 - County 17",
+    "sources": [
+      "https://county17.com/search?q=%28PHOTOS%29%20Trooper%3A%20truck%20driver%20probably%20fell%20asleep%20before%20hitting%202%20trucks%20on%2059"
+    ],
+    "added": "2026-09-15",
+    "reviewed": true
   },
   {
     "id": "INC-2022-B6464027",
@@ -50963,6 +51305,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2022-3A8178A0",
+    "date": "2022-09-21",
+    "state": "NY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed driver nabbed for hit-run that killed 5-year-old Queens boy - New York Daily News",
+    "sources": [
+      "https://www.nydailynews.com/search?q=Unlicensed%20driver%20nabbed%20for%20hit-run%20that%20killed%205-year-old%20Queens%20boy"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
   },
   {
     "id": "INC-2022-03FC8903",
@@ -63170,6 +63550,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2022-AC504CBE",
+    "date": "2022-08-30",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "ISP: Marion woman dies after semi runs red light, slams into moped - Fox 59",
+    "sources": [
+      "https://fox59.com/search?q=ISP%3A%20Marion%20woman%20dies%20after%20semi%20runs%20red%20light%2C%20slams%20into%20moped"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
   },
   {
     "id": "INC-2022-C27458CA",
@@ -83766,6 +84184,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2022-96BCDDD6",
+    "date": "2022-07-20",
+    "state": "GA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Kankakee couple Justin, Sara Loring killed, 3 kids injured in Catoosa County, Georgia crash on way to visit grandparents - ABC7 Chicago",
+    "sources": [
+      "https://abc7chicago.com/search?q=Kankakee%20couple%20Justin%2C%20Sara%20Loring%20killed%2C%203%20kids%20injured%20in%20Catoosa%20County%2C%20Georgia%20crash%20on%20way%20to%20visit%20grandparents"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2022-48238468",
     "date": "2022-07-19",
     "state": "FL",
@@ -102487,6 +102943,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2022-EEE36988",
+    "date": "2022-06-08",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "State patrol identifies woman killed in Blaine crash - 5 EYEWITNESS NEWS",
+    "sources": [
+      "https://kstp.com/search?q=State%20patrol%20identifies%20woman%20killed%20in%20Blaine%20crash"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2022-4EDAB12D",
     "date": "2022-06-07",
     "state": "CA",
@@ -104044,6 +104538,44 @@
     "driver_origin_note": "",
     "_geocoded": true,
     "_geocode_query": "Montana USA"
+  },
+  {
+    "id": "INC-2022-F7128BF1",
+    "date": "2022-06-06",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Police: Semi driver ran red light, killed woman on Hwy. 65 - Bring Me The News",
+    "sources": [
+      "https://bringmethenews.com/search?q=Police%3A%20Semi%20driver%20ran%20red%20light%2C%20killed%20woman%20on%20Hwy.%2065"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
   },
   {
     "id": "INC-2022-D2879125",
@@ -105877,6 +106409,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2022-F7808037",
+    "date": "2022-06-02",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed truck driver blamed for I-40 crash - mydailyrecord.com",
+    "sources": [
+      "https://www.mydailyrecord.com/search?q=Unlicensed%20truck%20driver%20blamed%20for%20I-40%20crash"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
   },
   {
     "id": "INC-2022-E99E203C",
@@ -125922,6 +126492,82 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2022-35378306",
+    "date": "2022-04-20",
+    "state": "IL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Cows on I-80: Virginia man charged with DUI after cattle spill onto roadway in Joliet crash, Illinois State Police say - ABC7 Bay Area",
+    "sources": [
+      "https://abc7news.com/search?q=Cows%20on%20I-80%3A%20Virginia%20man%20charged%20with%20DUI%20after%20cattle%20spill%20onto%20roadway%20in%20Joliet%20crash%2C%20Illinois%20State%20Police%20say"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2022-58D06CFE",
+    "date": "2022-04-20",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "I-80 reopens after hazmat spill - TownLift, Park City News",
+    "sources": [
+      "https://townlift.com/search?q=I-80%20reopens%20after%20hazmat%20spill"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2022-FC8E99E5",
     "date": "2022-04-19",
     "state": "CA",
@@ -136217,6 +136863,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2022-A2DC64CB",
+    "date": "2022-03-25",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Witness said car driver made 'rolling stop' before crash with truck that killed 6 teen girls: NTSB - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Witness%20said%20car%20driver%20made%20%27rolling%20stop%27%20before%20crash%20with%20truck%20that%20killed%206%20teen%20girls%3A%20NTSB"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2022-C3337BAC",
     "date": "2022-03-24",
     "state": "AZ",
@@ -137812,6 +138496,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2022-BC69D9C5",
+    "date": "2022-03-21",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed Truck Driver Kills Pedestrian In Wheelchair Trying To Cross The Street - Latin Times",
+    "sources": [
+      "https://www.latintimes.com/search?q=Unlicensed%20Truck%20Driver%20Kills%20Pedestrian%20In%20Wheelchair%20Trying%20To%20Cross%20The%20Street"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
   },
   {
     "id": "INC-2022-3311CB74",
@@ -159186,6 +159908,44 @@
     "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
+    "id": "INC-2022-8E0AFECF",
+    "date": "2022-02-04",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "MA Traffic: 200+ Crashes, 1 Dead During Ice Storm - Patch",
+    "sources": [
+      "https://patch.com/search?q=MA%20Traffic%3A%20200%2B%20Crashes%2C%201%20Dead%20During%20Ice%20Storm"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2022-0ADE0606",
     "date": "2022-02-03",
     "state": "AZ",
@@ -163280,6 +164040,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2022-8BB34AF1",
+    "date": "2022-01-27",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Truck driver killed in crash involving sand hauler - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Truck%20driver%20killed%20in%20crash%20involving%20sand%20hauler"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2022-0FD0DEA7",
     "date": "2022-01-26",
     "state": "CA",
@@ -163864,6 +164662,44 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Indiana USA"
+  },
+  {
+    "id": "INC-2022-B96F861A",
+    "date": "2022-01-26",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Police: Man dies following crash with tractor-trailer on Route 13 in Cape Charles - 13newsnow.com",
+    "sources": [
+      "https://www.13newsnow.com/search?q=Police%3A%20Man%20dies%20following%20crash%20with%20tractor-trailer%20on%20Route%2013%20in%20Cape%20Charles"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
   },
   {
     "id": "INC-2022-638DDF5A",
@@ -173028,6 +173864,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2022-567A3EE1",
+    "date": "2022-01-05",
+    "state": "CT",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "DOT Asked Drivers to Stay Off Roads as Freezing Rain Caused Crashes Across Conn. - NBC Connecticut",
+    "sources": [
+      "https://www.nbcconnecticut.com/search?q=DOT%20Asked%20Drivers%20to%20Stay%20Off%20Roads%20as%20Freezing%20Rain%20Caused%20Crashes%20Across%20Conn."
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
   },
   {
     "id": "INC-2022-51CBEAA5",

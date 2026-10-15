@@ -3315,6 +3315,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2013-624C0FDB",
+    "date": "2013-12-21",
+    "state": "NY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Queens family mourns 8-year-old killed by unlicensed truck driver in Woodside - New York Daily News",
+    "sources": [
+      "https://www.nydailynews.com/search?q=Queens%20family%20mourns%208-year-old%20killed%20by%20unlicensed%20truck%20driver%20in%20Woodside"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2013-33A1242B",
     "date": "2013-12-20",
     "state": "AZ",
@@ -41104,6 +41142,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2013-F9853CFA",
+    "date": "2013-09-10",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "FMCSA says it\u2019s researching crash weighting in CSA scores - overdriveonline.com",
+    "sources": [
+      "https://www.overdriveonline.com/search?q=FMCSA%20says%20it%E2%80%99s%20researching%20crash%20weighting%20in%20CSA%20scores"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
   },
   {
     "id": "INC-2013-80344486",
@@ -86697,6 +86773,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2013-ACC6B195",
+    "date": "2013-04-26",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Trucker Fell Asleep In Crash That Killed Trooper: Report - CBS News",
+    "sources": [
+      "https://www.cbsnews.com/search?q=Trucker%20Fell%20Asleep%20In%20Crash%20That%20Killed%20Trooper%3A%20Report"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2013-DE5B5687",
     "date": "2013-04-25",
     "state": "CA",
@@ -99058,6 +99172,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2013-CE250009",
+    "date": "2013-03-13",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Icy conditions cause multiple Interstate crashes - WTHR",
+    "sources": [
+      "https://www.wthr.com/search?q=Icy%20conditions%20cause%20multiple%20Interstate%20crashes"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
   },
   {
     "id": "INC-2013-33A9D819",

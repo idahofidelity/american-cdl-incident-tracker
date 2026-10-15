@@ -6357,6 +6357,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2023-67E8E6DA",
+    "date": "2023-12-13",
+    "state": "MI",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "NB Lodge Freeway reopens at 7 Mile after fuel spill closed road for hours - FOX 2 Detroit",
+    "sources": [
+      "https://www.fox2detroit.com/search?q=NB%20Lodge%20Freeway%20reopens%20at%207%20Mile%20after%20fuel%20spill%20closed%20road%20for%20hours"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2023-648D4638",
     "date": "2023-12-12",
     "state": "CA",
@@ -15363,6 +15401,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2023-4537B0B2",
+    "date": "2023-11-24",
+    "state": "WY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Icy road conditions, fog from winter storm closes I-80 West, causes a 19-car pileup - WyomingNews.com",
+    "sources": [
+      "https://www.wyomingnews.com/search?q=Icy%20road%20conditions%2C%20fog%20from%20winter%20storm%20closes%20I-80%20West%2C%20causes%20a%2019-car%20pileup"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
   },
   {
     "id": "INC-2023-FF0EB9B5",
@@ -39896,6 +39972,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2023-6DB7DF30",
+    "date": "2023-10-05",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Three injured as unlicensed 21yo fronts court for fiery truck crash - The Courier Mail",
+    "sources": [
+      "https://www.couriermail.com.au/search?q=Three%20injured%20as%20unlicensed%2021yo%20fronts%20court%20for%20fiery%20truck%20crash"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2023-06C0D5C0",
     "date": "2023-10-04",
     "state": "AL",
@@ -46916,6 +47030,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2023-76070CDD",
+    "date": "2023-09-21",
+    "state": "GA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "3 dead after car that ran red light collides with semi-truck, Ga. deputies say - WSB-TV",
+    "sources": [
+      "https://www.wsbtv.com/search?q=3%20dead%20after%20car%20that%20ran%20red%20light%20collides%20with%20semi-truck%2C%20Ga.%20deputies%20say"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2023-D9686938",
     "date": "2023-09-20",
     "state": "AL",
@@ -47733,6 +47885,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2023-D842AE62",
+    "date": "2023-09-20",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Watch: Truck Driver Killed In N3 Two Truck Crash Near Wardens - satrucker.co.za",
+    "sources": [
+      "https://satrucker.co.za/search?q=Watch%3A%20Truck%20Driver%20Killed%20In%20N3%20Two%20Truck%20Crash%20Near%20Wardens"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
   },
   {
     "id": "INC-2023-78315805",
@@ -51361,6 +51551,44 @@
     "added": "2026-06-01",
     "reviewed": true,
     "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2023-2DE74C82",
+    "date": "2023-09-12",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semitruck driver in 2020 crash that killed Dora resident sentenced to 10 years in prison - West Plains Daily Quill",
+    "sources": [
+      "https://www.westplainsdailyquill.net/search?q=Semitruck%20driver%20in%202020%20crash%20that%20killed%20Dora%20resident%20sentenced%20to%2010%20years%20in%20prison"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
   },
   {
     "id": "INC-2023-650C4061",
@@ -60643,6 +60871,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2023-F4B59145",
+    "date": "2023-08-25",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Tractor-trailer driver cited after crash causes delays on I-95 South in West Haven - New Haven Register",
+    "sources": [
+      "https://www.nhregister.com/search?q=Tractor-trailer%20driver%20cited%20after%20crash%20causes%20delays%20on%20I-95%20South%20in%20West%20Haven"
+    ],
+    "added": "2026-08-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2023-798D20EB",
     "date": "2023-08-24",
     "state": "AK",
@@ -64775,6 +65041,82 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2023-04D2663D",
+    "date": "2023-08-17",
+    "state": "UT",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Police: Unlicensed driver carrying fentanyl blames major Utah crash on water bottle - KUTV",
+    "sources": [
+      "https://kutv.com/search?q=Police%3A%20Unlicensed%20driver%20carrying%20fentanyl%20blames%20major%20Utah%20crash%20on%20water%20bottle"
+    ],
+    "added": "2026-08-01",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2023-EDAEBDD6",
+    "date": "2023-08-17",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Police: Unlicensed driver carrying fentanyl blames major Cottonwood Heights crash on water bottle - KUTV",
+    "sources": [
+      "https://kutv.com/search?q=Police%3A%20Unlicensed%20driver%20carrying%20fentanyl%20blames%20major%20Cottonwood%20Heights%20crash%20on%20water%20bottle"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2023-EF431728",
     "date": "2023-08-16",
     "state": "CA",
@@ -68711,6 +69053,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2023-CA138150",
+    "date": "2023-08-09",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "I-90 eastbound open following hazardous materials spill that forced evacuations in Tyler - NonStop Local KHQ",
+    "sources": [
+      "https://www.khq.com/search?q=I-90%20eastbound%20open%20following%20hazardous%20materials%20spill%20that%20forced%20evacuations%20in%20Tyler"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
   },
   {
     "id": "INC-2023-1DC2B97D",
@@ -81113,6 +81493,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2023-DC5FC9E4",
+    "date": "2023-07-13",
+    "state": "CA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Hazardous material spill on Highway 92 prompts shelter-in-place advisory - San Francisco Chronicle",
+    "sources": [
+      "https://www.sfchronicle.com/search?q=Hazardous%20material%20spill%20on%20Highway%2092%20prompts%20shelter-in-place%20advisory"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2023-E04CDE76",
     "date": "2023-07-12",
     "state": "MN",
@@ -87352,6 +87770,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2023-137BDBB1",
+    "date": "2023-06-29",
+    "state": "WA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Fleeing teen robbery suspects crash into semi-truck, killing driver along I-5 in Lakewood - FOX 13 Seattle",
+    "sources": [
+      "https://www.fox13seattle.com/search?q=Fleeing%20teen%20robbery%20suspects%20crash%20into%20semi-truck%2C%20killing%20driver%20along%20I-5%20in%20Lakewood"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2023-FD399A0A",
     "date": "2023-06-28",
     "state": "GA",
@@ -92928,6 +93384,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2023-7DC275B9",
+    "date": "2023-06-16",
+    "state": "IL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Joliet traffic: Eastbound I-80 in Joliet reopens between Center and Briggs streets after sodium phosphate hazmat spill - ABC7 Chicago",
+    "sources": [
+      "https://abc7chicago.com/search?q=Joliet%20traffic%3A%20Eastbound%20I-80%20in%20Joliet%20reopens%20between%20Center%20and%20Briggs%20streets%20after%20sodium%20phosphate%20hazmat%20spill"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2023-60B6D185",
     "date": "2023-06-15",
     "state": "AZ",
@@ -93277,6 +93771,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2023-0C51F054",
+    "date": "2023-06-15",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semi rollover, ethanol spill close K-14 south of Kingman - KSN.com",
+    "sources": [
+      "https://www.ksn.com/search?q=Semi%20rollover%2C%20ethanol%20spill%20close%20K-14%20south%20of%20Kingman"
+    ],
+    "added": "2026-08-01",
+    "reviewed": true
   },
   {
     "id": "INC-2023-0F728CEC",
@@ -104670,6 +105202,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2023-804DE8A5",
+    "date": "2023-05-19",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semitruck driver in I-5 crash that killed 7 charged for DUI, manslaughter - statesmanjournal.com",
+    "sources": [
+      "https://www.statesmanjournal.com/search?q=Semitruck%20driver%20in%20I-5%20crash%20that%20killed%207%20charged%20for%20DUI%2C%20manslaughter"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2023-81E68498",
     "date": "2023-05-18",
     "state": "AL",
@@ -109659,6 +110229,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2023-0236B2FF",
+    "date": "2023-05-09",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed driver from Mexico arrested after fleeing crash injuring two children - Leesburg-News.com",
+    "sources": [
+      "https://www.leesburg-news.com/search?q=Unlicensed%20driver%20from%20Mexico%20arrested%20after%20fleeing%20crash%20injuring%20two%20children"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
   },
   {
     "id": "INC-2023-1DB89A0E",
@@ -114807,6 +115415,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2023-48092BDA",
+    "date": "2023-04-28",
+    "state": "AZ",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Car driver killed following fiery crash: PD - FOX 10 Phoenix",
+    "sources": [
+      "https://www.fox10phoenix.com/search?q=Car%20driver%20killed%20following%20fiery%20crash%3A%20PD"
+    ],
+    "added": "2026-08-01",
+    "reviewed": true
   },
   {
     "id": "INC-2023-260AFA33",
@@ -143980,6 +144626,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2023-1906D50B",
+    "date": "2023-02-16",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Nitric acid spill evacuation order rescinded, I-10 reopens - KGUN 9",
+    "sources": [
+      "https://www.kgun9.com/search?q=Nitric%20acid%20spill%20evacuation%20order%20rescinded%2C%20I-10%20reopens"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2023-72950662",
     "date": "2023-02-15",
     "state": "AL",
@@ -144369,6 +145053,82 @@
     "driver_origin_note": "",
     "_geocoded": true,
     "_geocode_query": "Tucson Arizona"
+  },
+  {
+    "id": "INC-2023-A469BE9D",
+    "date": "2023-02-15",
+    "state": "AZ",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Nitric acid spill on Arizona freeway prompts evacuation order - The Washington Post",
+    "sources": [
+      "https://www.washingtonpost.com/search?q=Nitric%20acid%20spill%20on%20Arizona%20freeway%20prompts%20evacuation%20order"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2023-5672E804",
+    "date": "2023-02-15",
+    "state": "WA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "High-profile chemical spills on rails, roads prompt transport concerns - The Washington Post",
+    "sources": [
+      "https://www.washingtonpost.com/search?q=High-profile%20chemical%20spills%20on%20rails%2C%20roads%20prompt%20transport%20concerns"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
   },
   {
     "id": "INC-2023-74D0F037",
@@ -144954,6 +145714,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2023-A65605E6",
+    "date": "2023-02-14",
+    "state": "NY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Driver dead after hazmat spill on Tucson freeway forces evacuation, shelter-in-place order - New York Post",
+    "sources": [
+      "https://nypost.com/search?q=Driver%20dead%20after%20hazmat%20spill%20on%20Tucson%20freeway%20forces%20evacuation%2C%20shelter-in-place%20order"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
   },
   {
     "id": "INC-2023-7E831C24",
@@ -146358,6 +147156,44 @@
     "added": "2026-06-01",
     "reviewed": true,
     "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2023-3BF37D2D",
+    "date": "2023-02-10",
+    "state": "NH",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Ukrainian driver acquitted in NH crash ordered to be deported - New Hampshire Public Radio",
+    "sources": [
+      "https://www.nhpr.org/search?q=Ukrainian%20driver%20acquitted%20in%20NH%20crash%20ordered%20to%20be%20deported"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
   },
   {
     "id": "INC-2023-ECFA523D",
@@ -148114,6 +148950,44 @@
     "driver_origin_note": "",
     "_geocoded": true,
     "_geocode_query": "Fort Bend County Texas"
+  },
+  {
+    "id": "INC-2023-9B806DEC",
+    "date": "2023-02-07",
+    "state": "NY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Trucker involved in fatal Cross Bronx Expressway crash hit with charges - New York Daily News",
+    "sources": [
+      "https://www.nydailynews.com/search?q=Trucker%20involved%20in%20fatal%20Cross%20Bronx%20Expressway%20crash%20hit%20with%20charges"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
   },
   {
     "id": "INC-2023-08E1EAEA",

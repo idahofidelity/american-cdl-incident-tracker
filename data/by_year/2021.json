@@ -3469,6 +3469,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2021-D90C49CA",
+    "date": "2021-12-23",
+    "state": "WI",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Icy roads in Wisconsin lead to crashes involving 100 vehicles on I-94, report says - FOX Weather",
+    "sources": [
+      "https://www.foxweather.com/search?q=Icy%20roads%20in%20Wisconsin%20lead%20to%20crashes%20involving%20100%20vehicles%20on%20I-94%2C%20report%20says"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2021-836381E0",
     "date": "2021-12-22",
     "state": "AR",
@@ -8420,6 +8458,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2021-CA3A4415",
+    "date": "2021-12-14",
+    "state": "MT",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "I-90 open after semi crash blocks all lanes - NBC Montana",
+    "sources": [
+      "https://nbcmontana.com/search?q=I-90%20open%20after%20semi%20crash%20blocks%20all%20lanes"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
   },
   {
     "id": "INC-2021-5CF0DC23",
@@ -14896,6 +14972,82 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2021-4F492BA1",
+    "date": "2021-12-02",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "UPDATE: Semi driver fell asleep behind wheel before I-10 crash - WCTV",
+    "sources": [
+      "https://www.wctv.tv/search?q=UPDATE%3A%20Semi%20driver%20fell%20asleep%20behind%20wheel%20before%20I-10%20crash"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2021-6208887D",
+    "date": "2021-12-02",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "FHP: Semi driver seriously injured after falling asleep, hitting parked semi on I-10 - WTXL ABC 27 Tallahassee News",
+    "sources": [
+      "https://www.wtxl.com/search?q=FHP%3A%20Semi%20driver%20seriously%20injured%20after%20falling%20asleep%2C%20hitting%20parked%20semi%20on%20I-10"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2021-8F774923",
     "date": "2021-12-01",
     "state": "AL",
@@ -15401,6 +15553,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2021-1AB51893",
+    "date": "2021-12-01",
+    "state": "NJ",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "One Dead, Cops Say 18-Year-Old Unlicensed Driver Caused Crash in Hammonton, NJ - Cat Country 107.3",
+    "sources": [
+      "https://catcountry1073.com/search?q=One%20Dead%2C%20Cops%20Say%2018-Year-Old%20Unlicensed%20Driver%20Caused%20Crash%20in%20Hammonton%2C%20NJ"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
   },
   {
     "id": "INC-2021-3027053C",
@@ -28036,6 +28226,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2021-A6CD2ABA",
+    "date": "2021-11-04",
+    "state": "NY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Cyclist Killed By Unlicensed Truck Driver in Queens: Cops - Streetsblog New York City",
+    "sources": [
+      "https://nyc.streetsblog.org/search?q=Cyclist%20Killed%20By%20Unlicensed%20Truck%20Driver%20in%20Queens%3A%20Cops"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
   },
   {
     "id": "INC-2021-9A05B4FF",
@@ -47811,6 +48039,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2021-AAC2DEBF",
+    "date": "2021-09-28",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Northbound I-5 in Tacoma reopens after fatal semi-truck crash - KING5.com",
+    "sources": [
+      "https://www.king5.com/search?q=Northbound%20I-5%20in%20Tacoma%20reopens%20after%20fatal%20semi-truck%20crash"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2021-E2E8B669",
     "date": "2021-09-27",
     "state": "CA",
@@ -66256,6 +66522,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2021-FBE78F33",
+    "date": "2021-08-25",
+    "state": "CA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Hwy 198 closed in western Fresno County after semi-truck carrying hazardous materials overturns - ABC30 Fresno",
+    "sources": [
+      "https://abc30.com/search?q=Hwy%20198%20closed%20in%20western%20Fresno%20County%20after%20semi-truck%20carrying%20hazardous%20materials%20overturns"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2021-5E5D28AC",
     "date": "2021-08-24",
     "state": "CA",
@@ -71989,6 +72293,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2021-64265DC6",
+    "date": "2021-08-14",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "1 killed as semi runs red light, hits pickup truck in Tacoma - KOMO",
+    "sources": [
+      "https://komonews.com/search?q=1%20killed%20as%20semi%20runs%20red%20light%2C%20hits%20pickup%20truck%20in%20Tacoma"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2021-66B985C3",
     "date": "2021-08-13",
     "state": "CA",
@@ -73937,6 +74279,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2021-0223FA3B",
+    "date": "2021-08-10",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "NZTA facing criticism after truck's crash on icy State Highway 4 - 1News",
+    "sources": [
+      "https://www.1news.co.nz/search?q=NZTA%20facing%20criticism%20after%20truck%27s%20crash%20on%20icy%20State%20Highway%204"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
   },
   {
     "id": "INC-2021-4FE0F015",
@@ -81740,6 +82120,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2021-79D0F556",
+    "date": "2021-07-28",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semitruck driver dies of injuries sustained in 4-vehicle Magna crash that injured two others - KSL.com",
+    "sources": [
+      "https://www.ksl.com/search?q=Semitruck%20driver%20dies%20of%20injuries%20sustained%20in%204-vehicle%20Magna%20crash%20that%20injured%20two%20others"
+    ],
+    "added": "2026-08-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2021-A5B9CA8F",
     "date": "2021-07-27",
     "state": "FL",
@@ -82713,6 +83131,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2021-4C6C5BED",
+    "date": "2021-07-26",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Three People Hospitalized, Road Closed After Fiery Magna Crash - KSL TV 5",
+    "sources": [
+      "https://ksltv.com/search?q=Three%20People%20Hospitalized%2C%20Road%20Closed%20After%20Fiery%20Magna%20Crash"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
   },
   {
     "id": "INC-2021-39C66397",
@@ -84585,6 +85041,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2021-0AE47E4E",
+    "date": "2021-07-22",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Overturned truck hazmat spill closes Whiteland Road at I-65 - WTHR",
+    "sources": [
+      "https://www.wthr.com/search?q=Overturned%20truck%20hazmat%20spill%20closes%20Whiteland%20Road%20at%20I-65"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
   },
   {
     "id": "INC-2021-8F64A39E",
@@ -113016,6 +113510,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2021-9273B927",
+    "date": "2021-05-24",
+    "state": "CA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "1 hospitalized after driver runs red light in Visalia, police say - ABC30 Fresno",
+    "sources": [
+      "https://abc30.com/search?q=1%20hospitalized%20after%20driver%20runs%20red%20light%20in%20Visalia%2C%20police%20say"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2021-EEB80AD6",
     "date": "2021-05-23",
     "state": "FL",
@@ -114846,6 +115378,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2021-65D768C5",
+    "date": "2021-05-20",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semi driver charged in deadly Ada County collision - KTVB",
+    "sources": [
+      "https://www.ktvb.com/search?q=Semi%20driver%20charged%20in%20deadly%20Ada%20County%20collision"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
   },
   {
     "id": "INC-2021-672A6A5B",
@@ -137387,6 +137957,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2021-C063A625",
+    "date": "2021-04-02",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "One lane reopens after wreck caused by icy conditions shut down interstate - WSAZ",
+    "sources": [
+      "https://www.wsaz.com/search?q=One%20lane%20reopens%20after%20wreck%20caused%20by%20icy%20conditions%20shut%20down%20interstate"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2021-FDA3D0AB",
     "date": "2021-04-01",
     "state": "AL",
@@ -145300,6 +145908,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2021-710AF446",
+    "date": "2021-03-11",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Video: FHP: Cows on the lam after semi-truck driver fell asleep at the wheel, crashed truck carrying cattle - WFTV",
+    "sources": [
+      "https://www.wftv.com/search?q=Video%3A%20FHP%3A%20Cows%20on%20the%20lam%20after%20semi-truck%20driver%20fell%20asleep%20at%20the%20wheel%2C%20crashed%20truck%20carrying%20cattle"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
   },
   {
     "id": "INC-2021-400D45D1",
@@ -154076,6 +154722,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2021-BCDB6CFB",
+    "date": "2021-02-15",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "TDOT salt truck involved in rollover crash after hitting patch of black ice on SR 269 - WKRN News 2",
+    "sources": [
+      "https://www.wkrn.com/search?q=TDOT%20salt%20truck%20involved%20in%20rollover%20crash%20after%20hitting%20patch%20of%20black%20ice%20on%20SR%20269"
+    ],
+    "added": "2026-08-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2021-BBA9646A",
     "date": "2021-02-14",
     "state": "MS",
@@ -154467,6 +155151,44 @@
     "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
+    "id": "INC-2021-6903B22A",
+    "date": "2021-02-13",
+    "state": "TX",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "One of Our Own: Cook Children\u2019s Nurse Caught in Tragic Fort Worth Pileup, Shares Unbelievable Story of Survival - checkupnewsroom.com",
+    "sources": [
+      "https://www.checkupnewsroom.com/search?q=One%20of%20Our%20Own%3A%20Cook%20Children%E2%80%99s%20Nurse%20Caught%20in%20Tragic%20Fort%20Worth%20Pileup%2C%20Shares%20Unbelievable%20Story%20of%20Survival"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2021-F463DCE9",
     "date": "2021-02-12",
     "state": "CA",
@@ -154738,6 +155460,82 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2021-1885AE82",
+    "date": "2021-02-12",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Several crashes take place on I-64 in York County due to icy conditions - 13newsnow.com",
+    "sources": [
+      "https://www.13newsnow.com/search?q=Several%20crashes%20take%20place%20on%20I-64%20in%20York%20County%20due%20to%20icy%20conditions"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2021-5BBD7EAD",
+    "date": "2021-02-12",
+    "state": "TX",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "\u2018Rescue Mode': Off-Duty Medic Injured in I-35W Crash Helps Other Victims - NBC 5 Dallas-Fort Worth",
+    "sources": [
+      "https://www.nbcdfw.com/search?q=%E2%80%98Rescue%20Mode%27%3A%20Off-Duty%20Medic%20Injured%20in%20I-35W%20Crash%20Helps%20Other%20Victims"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
   },
   {
     "id": "INC-2021-9BD15375",
@@ -155520,6 +156318,120 @@
     "reviewed": true
   },
   {
+    "id": "INC-2021-D884D846",
+    "date": "2021-02-11",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "How to Drive a Semi-Truck Safely During Winter - Arnold & Itkin LLP",
+    "sources": [
+      "https://www.arnolditkin.com/search?q=How%20to%20Drive%20a%20Semi-Truck%20Safely%20During%20Winter"
+    ],
+    "added": "2026-07-01",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2021-25ECC628",
+    "date": "2021-02-11",
+    "state": "KY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Slick, icy roads reported in Middle Tennessee, Southern Kentucky - WZTV",
+    "sources": [
+      "https://fox17.com/search?q=Slick%2C%20icy%20roads%20reported%20in%20Middle%20Tennessee%2C%20Southern%20Kentucky"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
+    "id": "INC-2021-92553E8F",
+    "date": "2021-02-11",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Man, dog, killed in chain-reaction crash as semi stops on highway east of Vancouver - paNOW",
+    "sources": [
+      "https://panow.com/search?q=Man%2C%20dog%2C%20killed%20in%20chain-reaction%20crash%20as%20semi%20stops%20on%20highway%20east%20of%20Vancouver"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2021-19703685",
     "date": "2021-02-10",
     "state": "AL",
@@ -156259,6 +157171,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2021-E3F6DB6D",
+    "date": "2021-02-09",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "\u2018She didn\u2019t deserve this\u2019 \u2013 Newkirk woman killed in early morning 6-vehicle collision due to black ice - KFOR",
+    "sources": [
+      "https://kfor.com/search?q=%E2%80%98She%20didn%E2%80%99t%20deserve%20this%E2%80%99%20%E2%80%93%20Newkirk%20woman%20killed%20in%20early%20morning%206-vehicle%20collision%20due%20to%20black%20ice"
+    ],
+    "added": "2026-08-15",
+    "reviewed": true
   },
   {
     "id": "INC-2021-B293A980",

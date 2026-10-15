@@ -58929,6 +58929,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2006-077ED2F6",
+    "date": "2006-08-20",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Brothers killed after their truck spins out of control and hits a semi - KATU",
+    "sources": [
+      "https://katu.com/search?q=Brothers%20killed%20after%20their%20truck%20spins%20out%20of%20control%20and%20hits%20a%20semi"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2006-6566E058",
     "date": "2006-08-19",
     "state": "AR",

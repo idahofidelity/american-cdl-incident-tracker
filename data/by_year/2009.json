@@ -81198,6 +81198,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2009-34284050",
+    "date": "2009-03-24",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Driver In Biden Crash Wanted Name Cleared - CBS News",
+    "sources": [
+      "https://www.cbsnews.com/search?q=Driver%20In%20Biden%20Crash%20Wanted%20Name%20Cleared"
+    ],
+    "added": "2026-06-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2009-935F03FD",
     "date": "2009-03-23",
     "state": "AL",

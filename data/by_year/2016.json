@@ -5695,6 +5695,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2016-95CFEF2F",
+    "date": "2016-12-17",
+    "state": "MD",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Three killed as winter storm wreaks havoc across region; I-95 tanker crash part of 67-vehicle pileup in city - Baltimore Sun",
+    "sources": [
+      "https://www.baltimoresun.com/search?q=Three%20killed%20as%20winter%20storm%20wreaks%20havoc%20across%20region%3B%20I-95%20tanker%20crash%20part%20of%2067-vehicle%20pileup%20in%20city"
+    ],
+    "added": "2026-07-15",
+    "reviewed": true
+  },
+  {
     "id": "INC-2016-6B1AFB2A",
     "date": "2016-12-16",
     "state": "AL",
@@ -54288,6 +54326,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2016-CAF7B99F",
+    "date": "2016-08-29",
+    "state": "LA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Bus full of Louisiana flood volunteers with unlicensed illegal immigrant driver crash - Daily Mail",
+    "sources": [
+      "https://www.dailymail.com/search?q=Bus%20full%20of%20Louisiana%20flood%20volunteers%20with%20unlicensed%20illegal%20immigrant%20driver%20crash"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2016-9B082C9D",
     "date": "2016-08-28",
     "state": "IN",
@@ -54442,6 +54518,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2016-8F5867EA",
+    "date": "2016-08-28",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed Bus Driver in Crash That Killed 2 in U.S. Illegally, Cops Say - ABC News - Breaking News, Latest News and Videos",
+    "sources": [
+      "https://abcnews.com/search?q=Unlicensed%20Bus%20Driver%20in%20Crash%20That%20Killed%202%20in%20U.S.%20Illegally%2C%20Cops%20Say%20-%20ABC%20News"
+    ],
+    "added": "2026-09-01",
+    "reviewed": true
   },
   {
     "id": "INC-2016-C268D44D",
@@ -75308,6 +75422,44 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2016-7CCF577E",
+    "date": "2016-07-12",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "FMCSA wants to hear from owner-ops about CSA crash dispute plan - overdriveonline.com",
+    "sources": [
+      "https://www.overdriveonline.com/search?q=FMCSA%20wants%20to%20hear%20from%20owner-ops%20about%20CSA%20crash%20dispute%20plan"
+    ],
+    "added": "2026-10-01",
+    "reviewed": true
+  },
+  {
     "id": "INC-2016-A0806CA9",
     "date": "2016-07-11",
     "state": "CA",
@@ -77645,6 +77797,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2016-5C4F9945",
+    "date": "2016-07-07",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "FMCSA announces plan to allow owner-operators to contest non-preventable crashes used against them in CSA scores - www.overdriveonline.com",
+    "sources": [
+      "https://www.overdriveonline.com/search?q=FMCSA%20announces%20plan%20to%20allow%20owner-operators%20to%20contest%20non-preventable%20crashes%20used%20against%20them%20in%20CSA%20scores"
+    ],
+    "added": "2026-10-15",
+    "reviewed": true
   },
   {
     "id": "INC-2016-33009EC4",
