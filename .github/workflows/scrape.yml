@@ -17,10 +17,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
@@ -73,7 +73,8 @@ jobs:
             "**Review each incident below. Merge to approve all, or edit `data/pending_review.json` to remove individual entries before merging.**\n",
             "---\n",
           ]
-          for i, inc in enumerate(pending, 1):
+          MAX_LISTED = 50
+          for i, inc in enumerate(pending[:MAX_LISTED], 1):
             fault_emoji = {"AT_FAULT": "🔴", "NOT_AT_FAULT": "🟢", "NO_FAULT_STATED": "⚪"}.get(inc["fault"], "⚪")
             foreign = "🚨 Foreign driver flag" if inc.get("foreign_driver_flag") else ""
             lines.append(
@@ -84,8 +85,13 @@ jobs:
               f"**Estimated cost:** ${inc['cost']['estimated_usd']:,} | **Stated cost:** {'$' + str(inc['cost']['stated_usd']) if inc['cost']['stated_usd'] else 'Not reported'}\n"
               f"**Sources:** {', '.join(inc.get('sources', [])[:2])}\n\n---\n"
             )
+          if len(pending) > MAX_LISTED:
+            lines.append(f"**{len(pending) - MAX_LISTED} more incidents not shown; full list in `data/pending_review.json` on this branch.**\n")
+          body = "\n".join(lines)
+          if len(body) > 60000:
+            body = body[:60000] + "\n\n_(PR body truncated; see data/pending_review.json on this branch.)_\n"
           with open("pr_body.md", "w") as f:
-            f.write("\n".join(lines))
+            f.write(body)
           PYEOF
 
           gh pr create \
@@ -93,7 +99,8 @@ jobs:
             --body-file pr_body.md \
             --base main \
             --head $BRANCH \
-            --label "incident-review"
+            --label "incident-review" \
+            || echo "::warning::PR creation failed; branch $BRANCH was pushed. Open it manually: https://github.com/${{ github.repository }}/compare/main...$BRANCH?expand=1"
 
       - name: No new incidents
         if: steps.check.outputs.count == '0'
