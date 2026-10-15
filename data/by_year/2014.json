@@ -67471,6 +67471,45 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2014-F49D1ED2",
+    "date": "2014-06-13",
+    "state": "SD",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Beer truck overturns on South Dakota highway - WUSA9",
+    "sources": [
+      "https://www.wusa9.com/search?q=Beer%20truck%20overturns%20on%20South%20Dakota%20highway"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2014-D05B1C59",
     "date": "2014-06-12",
     "state": "AZ",
@@ -94574,6 +94613,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2014-AA25C6EE",
+    "date": "2014-03-20",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Jail term for banned driver who killed man - Australian Broadcasting Corporation",
+    "sources": [
+      "https://www.abc.net.au/search?q=Jail%20term%20for%20banned%20driver%20who%20killed%20man"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2014-E74989BB",

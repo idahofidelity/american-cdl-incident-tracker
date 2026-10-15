@@ -1794,6 +1794,45 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2018-23AD11DE",
+    "date": "2018-12-26",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "LMPD officer dies in crash on I-64; MSD employee charged with murder, DUI - WLKY",
+    "sources": [
+      "https://www.wlky.com/search?q=LMPD%20officer%20dies%20in%20crash%20on%20I-64%3B%20MSD%20employee%20charged%20with%20murder%2C%20DUI"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2018-717F2906",
     "date": "2018-12-25",
     "state": "GA",
@@ -63723,6 +63762,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2018-805BBEA2",
+    "date": "2018-07-31",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Horrific moment truck driver 'who fell asleep at wheel' ploughs into vehicles on highway killing two men - The Mirror",
+    "sources": [
+      "https://www.mirror.co.uk/search?q=Horrific%20moment%20truck%20driver%20%27who%20fell%20asleep%20at%20wheel%27%20ploughs%20into%20vehicles%20on%20highway%20killing%20two%20men"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2018-E2180B93",

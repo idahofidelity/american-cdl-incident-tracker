@@ -65,7 +65,7 @@ american-cdl-incident-tracker/
 ├── css/style.css               # Stylesheet
 ├── js/map.js                   # Map logic, filters, panel
 ├── data/
-│   ├── incidents.json          # Live incident database
+│   ├── by_year/<year>.json     # Live incident database (+ index.json)
 │   ├── companies.json          # Carrier records with per-capita rates
 │   └── pending_review.json     # Scraper output awaiting review
 ├── scripts/
@@ -73,7 +73,7 @@ american-cdl-incident-tracker/
 │   └── merge_pending.py        # Merges approved incidents to live DB
 └── .github/workflows/
     ├── scrape.yml              # Runs 1st & 15th, opens PR for review
-    ├── merge.yml               # Auto-merges to incidents.json on PR merge
+    ├── merge.yml               # Publishes approved incidents to by_year/ on PR merge
     └── deploy.yml              # Deploys to GitHub Pages on push to main
 ```
 
@@ -83,7 +83,7 @@ american-cdl-incident-tracker/
 2. New incidents written to `data/pending_review.json`
 3. A Pull Request is opened with a summary of each new incident (fault, severity, cost, source)
 4. Editor reviews PR — merge to approve all, or edit `pending_review.json` to remove specific entries before merging
-5. On PR merge, `merge.yml` runs `merge_pending.py` — moves approved incidents to `incidents.json`
+5. On PR merge, `merge.yml` runs `merge_pending.py` — moves approved incidents into `data/by_year/` and rebuilds `data/index.json`
 6. `deploy.yml` redeploys GitHub Pages
 
 **No incident is ever published without human review.**

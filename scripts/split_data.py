@@ -2,7 +2,7 @@
 """
 split_data.py — Rebuilds index.json from existing by_year/ files.
 NEVER reads from incidents.json — by_year/ files are the master source.
-incidents.json is a local-only working file and should stay in .gitignore.
+incidents.json is an untracked local working file (see .gitignore).
 
 Run after any data change:
   py scripts/split_data.py

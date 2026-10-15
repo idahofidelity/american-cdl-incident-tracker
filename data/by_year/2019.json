@@ -1794,6 +1794,45 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2019-7F45916D",
+    "date": "2019-12-27",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Black ice sends semi barreling into oncoming traffic - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Black%20ice%20sends%20semi%20barreling%20into%20oncoming%20traffic"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2019-05BB778C",
     "date": "2019-12-26",
     "state": "AL",
@@ -6042,6 +6081,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2019-EDACE998",
+    "date": "2019-12-16",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "2 injured after semi-truck crashes into car, rolls over in Volo - Lake and McHenry County Scanner",
+    "sources": [
+      "https://www.lakemchenryscanner.com/search?q=2%20injured%20after%20semi-truck%20crashes%20into%20car%2C%20rolls%20over%20in%20Volo"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2019-52E82D32",
@@ -17311,6 +17389,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2019-1E7383A8",
+    "date": "2019-11-17",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Tractor-trailer and tour bus collision caused complete shut down of I-64 near Afton Mountain - WVIR",
+    "sources": [
+      "https://www.29news.com/search?q=Tractor-trailer%20and%20tour%20bus%20collision%20caused%20complete%20shut%20down%20of%20I-64%20near%20Afton%20Mountain"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2019-44A532C4",
@@ -47419,6 +47536,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2019-0037AA20",
+    "date": "2019-09-13",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Mangled trucks pulled from building - WGAL",
+    "sources": [
+      "https://www.wgal.com/search?q=Mangled%20trucks%20pulled%20from%20building"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2019-C037FBE6",
@@ -135401,6 +135557,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2019-8657BE60",
+    "date": "2019-02-05",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Man killed in crash on icy Route 2 in Randolph - WMUR",
+    "sources": [
+      "https://www.wmur.com/search?q=Man%20killed%20in%20crash%20on%20icy%20Route%202%20in%20Randolph"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2019-C6BD43C2",
