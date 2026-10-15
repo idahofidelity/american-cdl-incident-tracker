@@ -62477,6 +62477,45 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2016-0EA2B60B",
+    "date": "2016-08-10",
+    "state": "AR",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semi-truck crash disables traffic light - Northwest Arkansas Democrat-Gazette",
+    "sources": [
+      "https://hl.nwaonline.com/search?q=Semi-truck%20crash%20disables%20traffic%20light"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2016-2E27CF8D",
     "date": "2016-08-09",
     "state": "AL",
@@ -120079,6 +120118,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2016-F5DB3A97",
+    "date": "2016-03-18",
+    "state": "WA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "WSP: Truck driver falls asleep and crashes, spilling giant rolls of paper - FOX 13 Seattle",
+    "sources": [
+      "https://www.fox13seattle.com/search?q=WSP%3A%20Truck%20driver%20falls%20asleep%20and%20crashes%2C%20spilling%20giant%20rolls%20of%20paper"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2016-2F329A8A",

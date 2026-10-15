@@ -390,6 +390,84 @@
     "_geocode_query": "Virginia USA"
   },
   {
+    "id": "INC-2025-4DF5322E",
+    "date": "2025-12-30",
+    "state": "OH",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Ohio Trooper nearly hit on icy roads while responding to a crash, truck loses control on video - WTRF",
+    "sources": [
+      "https://www.wtrf.com/search?q=Ohio%20Trooper%20nearly%20hit%20on%20icy%20roads%20while%20responding%20to%20a%20crash%2C%20truck%20loses%20control%20on%20video"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-B5CE24AC",
+    "date": "2025-12-30",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NOT_AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Icy conditions to blame for salt truck crash in Rib Mountain - WSAW",
+    "sources": [
+      "https://www.wsaw.com/search?q=Icy%20conditions%20to%20blame%20for%20salt%20truck%20crash%20in%20Rib%20Mountain"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-0E65C8D4",
     "date": "2025-12-29",
     "state": "MI",
@@ -466,6 +544,45 @@
     ],
     "added": "2026-05-27",
     "reviewed": true
+  },
+  {
+    "id": "INC-2025-72EDF7F1",
+    "date": "2025-12-29",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Truck drivers describe dangerous conditions with strong winds, icy roads and low visibility - WXYZ Channel 7",
+    "sources": [
+      "https://www.wxyz.com/search?q=Truck%20drivers%20describe%20dangerous%20conditions%20with%20strong%20winds%2C%20icy%20roads%20and%20low%20visibility"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-618C29CA",
@@ -738,6 +855,45 @@
     "driver_origin_note": "",
     "_geocoded": true,
     "_geocode_query": "Ventura County California"
+  },
+  {
+    "id": "INC-2025-D355E9EF",
+    "date": "2025-12-26",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Driver arrested for intoxication assault after fiery I-10 crash knocks down sign - KFOX",
+    "sources": [
+      "https://kfoxtv.com/search?q=Driver%20arrested%20for%20intoxication%20assault%20after%20fiery%20I-10%20crash%20knocks%20down%20sign"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-E2C28D07",
@@ -1904,6 +2060,45 @@
     "_geocode_query": "Mississippi USA"
   },
   {
+    "id": "INC-2025-305BA963",
+    "date": "2025-12-18",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Wrong-way I-89 crash in Bolton kills a 21-year-old Northfield woman; Jericho driver to be charged - Waterbury Roundabout",
+    "sources": [
+      "https://www.waterburyroundabout.org/search?q=Wrong-way%20I-89%20crash%20in%20Bolton%20kills%20a%2021-year-old%20Northfield%20woman%3B%20Jericho%20driver%20to%20be%20charged"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-3BCA870B",
     "date": "2025-12-17",
     "state": "UNKNOWN",
@@ -2098,6 +2293,45 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "New York USA"
+  },
+  {
+    "id": "INC-2025-2BF5CB09",
+    "date": "2025-12-17",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "1 injured in 2-vehicle crash involving tractor-trailer near Surfside Beach - WBTW",
+    "sources": [
+      "https://www.wbtw.com/search?q=1%20injured%20in%202-vehicle%20crash%20involving%20tractor-trailer%20near%20Surfside%20Beach"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-947271FD",
@@ -2564,6 +2798,45 @@
     ],
     "added": "2026-05-27",
     "reviewed": true
+  },
+  {
+    "id": "INC-2025-1EC33C69",
+    "date": "2025-12-15",
+    "state": "WA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Driver in country illegally released on $100k bond after fatal wreck in Washington - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Driver%20in%20country%20illegally%20released%20on%20%24100k%20bond%20after%20fatal%20wreck%20in%20Washington"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-1E01315C",
@@ -3266,6 +3539,45 @@
     "_geocode_query": "Indiana USA"
   },
   {
+    "id": "INC-2025-7840A279",
+    "date": "2025-12-11",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "WSP arrests semi-truck driver for homicide after fatal crash on SR-167 in Auburn - KOMO",
+    "sources": [
+      "https://komonews.com/search?q=WSP%20arrests%20semi-truck%20driver%20for%20homicide%20after%20fatal%20crash%20on%20SR-167%20in%20Auburn"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-D8BAA7AC",
     "date": "2025-12-10",
     "state": "GA",
@@ -3772,6 +4084,45 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Vermont USA"
+  },
+  {
+    "id": "INC-2025-6D2ACC07",
+    "date": "2025-12-08",
+    "state": "DE",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "State Police Investigating Fatal Crash in Bear - Delaware State Police (.gov)",
+    "sources": [
+      "https://dsp.delaware.gov/search?q=State%20Police%20Investigating%20Fatal%20Crash%20in%20Bear"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-1E8A0834",
@@ -4432,6 +4783,45 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "California USA"
+  },
+  {
+    "id": "INC-2025-6BA11700",
+    "date": "2025-12-05",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "VIDEO: Unlicensed truck driver arrested after crash - kiro7.com",
+    "sources": [
+      "https://www.kiro7.com/search?q=VIDEO%3A%20Unlicensed%20truck%20driver%20arrested%20after%20crash"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-7DA4AF4D",
@@ -5562,6 +5952,84 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Oregon USA"
+  },
+  {
+    "id": "INC-2025-29558F2F",
+    "date": "2025-12-02",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Crews respond to crashes in the Heartland Tuesday morning - KFVS12",
+    "sources": [
+      "https://www.kfvs12.com/search?q=Crews%20respond%20to%20crashes%20in%20the%20Heartland%20Tuesday%20morning"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-FD2B2A83",
+    "date": "2025-12-02",
+    "state": "CT",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Season\u2019s first major winter storm creates dangerous driving conditions across northern Connecticut - WFSB",
+    "sources": [
+      "https://www.wfsb.com/search?q=Season%E2%80%99s%20first%20major%20winter%20storm%20creates%20dangerous%20driving%20conditions%20across%20northern%20Connecticut"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-2AF1835E",
@@ -7076,6 +7544,45 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2025-97B65CB9",
+    "date": "2025-11-21",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "One person hospitalized after 395 crash between semi-truck and farming equipment - KEPR",
+    "sources": [
+      "https://keprtv.com/search?q=One%20person%20hospitalized%20after%20395%20crash%20between%20semi-truck%20and%20farming%20equipment"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-D3DAE045",
     "date": "2025-11-20",
     "state": "UNKNOWN",
@@ -7384,6 +7891,45 @@
     ],
     "added": "2026-05-27",
     "reviewed": true
+  },
+  {
+    "id": "INC-2025-25540792",
+    "date": "2025-11-19",
+    "state": "CA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Illegal immigrant caught driving commercial truck with valid New York CDL at California checkpoint - Fox News",
+    "sources": [
+      "https://www.foxnews.com/search?q=Illegal%20immigrant%20caught%20driving%20commercial%20truck%20with%20valid%20New%20York%20CDL%20at%20California%20checkpoint"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-865A040E",
@@ -8468,6 +9014,84 @@
     "_geocode_query": "California USA"
   },
   {
+    "id": "INC-2025-064E4033",
+    "date": "2025-11-13",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "'Took three innocent lives': Wrongful death suit filed in deadly 18-wheeler crash that killed mother and her two boys - kens5.com",
+    "sources": [
+      "https://www.kens5.com/search?q=%27Took%20three%20innocent%20lives%27%3A%20Wrongful%20death%20suit%20filed%20in%20deadly%2018-wheeler%20crash%20that%20killed%20mother%20and%20her%20two%20boys"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-8CCD2B80",
+    "date": "2025-11-13",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Truck driver accused in deadly Turnpike crash appears virtually; defense makes new demands - KFOX",
+    "sources": [
+      "https://kfoxtv.com/search?q=Truck%20driver%20accused%20in%20deadly%20Turnpike%20crash%20appears%20virtually%3B%20defense%20makes%20new%20demands"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-AFDEC9C5",
     "date": "2025-11-12",
     "state": "UNKNOWN",
@@ -8504,6 +9128,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2025-96C226B0",
+    "date": "2025-11-12",
+    "state": "TX",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "4 friends killed in crash caused by speeding 18-wheeler in Texas Panhandle, DPS says - KHOU",
+    "sources": [
+      "https://www.khou.com/search?q=4%20friends%20killed%20in%20crash%20caused%20by%20speeding%2018-wheeler%20in%20Texas%20Panhandle%2C%20DPS%20says"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-9E42C02C",
@@ -9786,6 +10449,45 @@
     "_geocode_query": "California USA"
   },
   {
+    "id": "INC-2025-4EBA8008",
+    "date": "2025-11-04",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Major I-5 closure in Anderson after diesel spill from semi-truck crash - Action News Now",
+    "sources": [
+      "https://www.actionnewsnow.com/search?q=Major%20I-5%20closure%20in%20Anderson%20after%20diesel%20spill%20from%20semi-truck%20crash"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-18FE254D",
     "date": "2025-11-03",
     "state": "CA",
@@ -10018,6 +10720,45 @@
     ],
     "added": "2026-05-27",
     "reviewed": true
+  },
+  {
+    "id": "INC-2025-9F97874A",
+    "date": "2025-11-03",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Officials: 1 dead, 2 injured after crash involving semi trailer on Ronald Reagan Highway - WLWT",
+    "sources": [
+      "https://www.wlwt.com/search?q=Officials%3A%201%20dead%2C%202%20injured%20after%20crash%20involving%20semi%20trailer%20on%20Ronald%20Reagan%20Highway"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-159FC029",
@@ -10372,6 +11113,84 @@
     "_geocode_query": "Indiana USA"
   },
   {
+    "id": "INC-2025-55DAC68B",
+    "date": "2025-10-30",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Three hospitalized after multi-vehicle crash closes I-70 in Downtown Columbus - NBC4 WCMH-TV",
+    "sources": [
+      "https://www.nbc4i.com/search?q=Three%20hospitalized%20after%20multi-vehicle%20crash%20closes%20I-70%20in%20Downtown%20Columbus"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-563C218C",
+    "date": "2025-10-30",
+    "state": "NY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Noem warns trucks are becoming \u2018weapons\u2019 as Newsom, sanctuary states license illegal immigrants - New York Post",
+    "sources": [
+      "https://nypost.com/search?q=Noem%20warns%20trucks%20are%20becoming%20%E2%80%98weapons%E2%80%99%20as%20Newsom%2C%20sanctuary%20states%20license%20illegal%20immigrants"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-79DF08D6",
     "date": "2025-10-29",
     "state": "UNKNOWN",
@@ -10560,6 +11379,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": "Source documents: non-domiciled cdl"
+  },
+  {
+    "id": "INC-2025-A20CE5E2",
+    "date": "2025-10-28",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Drivers speaking up are mostly against FMCSA\u2019s emergency rule restricting non-domiciled CDLs, public comments show - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Drivers%20speaking%20up%20are%20mostly%20against%20FMCSA%E2%80%99s%20emergency%20rule%20restricting%20non-domiciled%20CDLs%2C%20public%20comments%20show"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-AB6181D7",
@@ -10760,6 +11618,84 @@
     "_geocode_query": "Methuen Massachusetts"
   },
   {
+    "id": "INC-2025-BE8CC4A5",
+    "date": "2025-10-26",
+    "state": "MA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "One killed, another injured in crash involving wrong-way driver in Methuen - Boston 25 News",
+    "sources": [
+      "https://www.boston25news.com/search?q=One%20killed%2C%20another%20injured%20in%20crash%20involving%20wrong-way%20driver%20in%20Methuen"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-2F367369",
+    "date": "2025-10-26",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "High school coach, wife ID\u2019d as victims killed in crash tied to illegal alien trucker released by Biden admin - Fox News",
+    "sources": [
+      "https://www.foxnews.com/search?q=High%20school%20coach%2C%20wife%20ID%E2%80%99d%20as%20victims%20killed%20in%20crash%20tied%20to%20illegal%20alien%20trucker%20released%20by%20Biden%20admin"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-F847C936",
     "date": "2025-10-25",
     "state": "UNKNOWN",
@@ -10956,6 +11892,45 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Florida USA"
+  },
+  {
+    "id": "INC-2025-4517AF06",
+    "date": "2025-10-25",
+    "state": "ID",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semi driver hauling spuds charged with DUI; passenger hospitalized; cat uninjured - East Idaho News",
+    "sources": [
+      "https://www.eastidahonews.com/search?q=Semi%20driver%20hauling%20spuds%20charged%20with%20DUI%3B%20passenger%20hospitalized%3B%20cat%20uninjured"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-89B01F3D",
@@ -11700,6 +12675,84 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Florida USA"
+  },
+  {
+    "id": "INC-2025-6B7977C0",
+    "date": "2025-10-24",
+    "state": "CA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Migrant truck driver in deadly California crash pleads not guilty - NewsNation",
+    "sources": [
+      "https://www.newsnationnow.com/search?q=Migrant%20truck%20driver%20in%20deadly%20California%20crash%20pleads%20not%20guilty"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-9C9B93FB",
+    "date": "2025-10-24",
+    "state": "NY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Damning DOT report blames Newsom for illegal immigrant trucker\u2019s deadly Calif. crash: \u2018There will be consequences\u2019 - New York Post",
+    "sources": [
+      "https://nypost.com/search?q=Damning%20DOT%20report%20blames%20Newsom%20for%20illegal%20immigrant%20trucker%E2%80%99s%20deadly%20Calif.%20crash%3A%20%E2%80%98There%20will%20be%20consequences%E2%80%99"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-5480D2DD",
@@ -12686,6 +13739,123 @@
     "_geocode_query": "California USA"
   },
   {
+    "id": "INC-2025-26A0D823",
+    "date": "2025-10-23",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "DHS announces arrests in pair of fatal truck crashes - Land Line Media",
+    "sources": [
+      "https://landline.media/search?q=DHS%20announces%20arrests%20in%20pair%20of%20fatal%20truck%20crashes"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-917230E5",
+    "date": "2025-10-23",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Deadly semi\u00adtrailer crash in Cal\u00adi\u00adfornia renews federal criticism of immigrant truck drivers - Spectrum News",
+    "sources": [
+      "https://spectrumlocalnews.com/search?q=Deadly%20semi%C2%ADtrailer%20crash%20in%20Cal%C2%ADi%C2%ADfornia%20renews%20federal%20criticism%20of%20immigrant%20truck%20drivers"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-B165DC21",
+    "date": "2025-10-23",
+    "state": "CA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semi driver in deadly Southern California crash an illegal immigrant, DHS says - KTLA",
+    "sources": [
+      "https://ktla.com/search?q=Semi%20driver%20in%20deadly%20Southern%20California%20crash%20an%20illegal%20immigrant%2C%20DHS%20says"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-7065F30B",
     "date": "2025-10-22",
     "state": "UNKNOWN",
@@ -13036,6 +14206,45 @@
     "_geocode_query": "California USA"
   },
   {
+    "id": "INC-2025-39343A15",
+    "date": "2025-10-22",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "21-year-old truck driver arrested for possible DUI after fatal crash involving multiple semi trucks - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=21-year-old%20truck%20driver%20arrested%20for%20possible%20DUI%20after%20fatal%20crash%20involving%20multiple%20semi%20trucks"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-F0BA5704",
     "date": "2025-10-21",
     "state": "CA",
@@ -13382,6 +14591,84 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Florida USA"
+  },
+  {
+    "id": "INC-2025-AEC53D92",
+    "date": "2025-10-21",
+    "state": "CA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Former lawyer convicted in fiery DUI crash that killed truck driver on California freeway - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Former%20lawyer%20convicted%20in%20fiery%20DUI%20crash%20that%20killed%20truck%20driver%20on%20California%20freeway"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-1A0C8F2F",
+    "date": "2025-10-21",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Driver cited for crashing into vehicles and wall at PeoplesBank in South Hadley - WWLP",
+    "sources": [
+      "https://www.wwlp.com/search?q=Driver%20cited%20for%20crashing%20into%20vehicles%20and%20wall%20at%20PeoplesBank%20in%20South%20Hadley"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-9B13F0FD",
@@ -14278,6 +15565,123 @@
     "_geocode_query": "New York USA"
   },
   {
+    "id": "INC-2025-A3FB9819",
+    "date": "2025-10-15",
+    "state": "GA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semi-truck driver charged in deadly Georgia highway crash that killed 3 adults, 5 kids - CBS News",
+    "sources": [
+      "https://www.cbsnews.com/search?q=Semi-truck%20driver%20charged%20in%20deadly%20Georgia%20highway%20crash%20that%20killed%203%20adults%2C%205%20kids"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-6D0166EA",
+    "date": "2025-10-15",
+    "state": "GA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Truck driver arrested in Georgia crash that killed 5 kids, 3 adults taking cats to shelter - AL.com",
+    "sources": [
+      "https://www.al.com/search?q=Truck%20driver%20arrested%20in%20Georgia%20crash%20that%20killed%205%20kids%2C%203%20adults%20taking%20cats%20to%20shelter"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-98B42AED",
+    "date": "2025-10-15",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Unlicensed teen driver 'huffing nangs' moments before crash that killed 5 - NZ Herald",
+    "sources": [
+      "https://www.nzherald.co.nz/search?q=Unlicensed%20teen%20driver%20%27huffing%20nangs%27%20moments%20before%20crash%20that%20killed%205"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-B3060D4C",
     "date": "2025-10-14",
     "state": "UNKNOWN",
@@ -14434,6 +15838,84 @@
     "_geocode_query": "New York USA"
   },
   {
+    "id": "INC-2025-77F5C539",
+    "date": "2025-10-14",
+    "state": "GA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Truck driver charged in fiery crash along I-85 in Jackson County; 8 killed - FOX 5 Atlanta",
+    "sources": [
+      "https://www.fox5atlanta.com/search?q=Truck%20driver%20charged%20in%20fiery%20crash%20along%20I-85%20in%20Jackson%20County%3B%208%20killed"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-53BFEAF6",
+    "date": "2025-10-14",
+    "state": "NY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Truck driver with New York driver\u2019s license issued to \u2018No Name Given\u2019 arrested by ICE - PIX11",
+    "sources": [
+      "https://pix11.com/search?q=Truck%20driver%20with%20New%20York%20driver%E2%80%99s%20license%20issued%20to%20%E2%80%98No%20Name%20Given%E2%80%99%20arrested%20by%20ICE"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-E6F91801",
     "date": "2025-10-13",
     "state": "UNKNOWN",
@@ -14586,6 +16068,45 @@
     ],
     "added": "2026-05-27",
     "reviewed": true
+  },
+  {
+    "id": "INC-2025-876B7794",
+    "date": "2025-10-13",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semi-Truck Driver Arrested Carrying Valid NY License With \u2018No Name Given\u2019 Printed Right On It - MotorBiscuit",
+    "sources": [
+      "https://www.motorbiscuit.com/search?q=Semi-Truck%20Driver%20Arrested%20Carrying%20Valid%20NY%20License%20With%20%E2%80%98No%20Name%20Given%E2%80%99%20Printed%20Right%20On%20It"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-C2952510",
@@ -15168,6 +16689,45 @@
     "driver_origin_note": "Source documents: non-domiciled cdl"
   },
   {
+    "id": "INC-2025-E817C933",
+    "date": "2025-10-08",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Bill aims to address \u2018broken\u2019 CDL system - Land Line Media",
+    "sources": [
+      "https://landline.media/search?q=Bill%20aims%20to%20address%20%E2%80%98broken%E2%80%99%20CDL%20system"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-9F410F6F",
     "date": "2025-10-07",
     "state": "MN",
@@ -15714,6 +17274,45 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Oklahoma USA"
+  },
+  {
+    "id": "INC-2025-3AED0CB5",
+    "date": "2025-10-02",
+    "state": "OR",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Oregon DMV stops issuing all non-domiciled CDLs until further notice - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Oregon%20DMV%20stops%20issuing%20all%20non-domiciled%20CDLs%20until%20further%20notice"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-DCFCD361",
@@ -16340,6 +17939,45 @@
     "_geocode_query": "California USA"
   },
   {
+    "id": "INC-2025-7A30E843",
+    "date": "2025-09-30",
+    "state": "TX",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Texas stops issuing CDLs to certain non-citizens in compliance with FMCSA's emergency rule - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Texas%20stops%20issuing%20CDLs%20to%20certain%20non-citizens%20in%20compliance%20with%20FMCSA%27s%20emergency%20rule"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-293FE542",
     "date": "2025-09-29",
     "state": "OK",
@@ -16844,6 +18482,123 @@
     ],
     "added": "2026-05-27",
     "reviewed": true
+  },
+  {
+    "id": "INC-2025-97D646B1",
+    "date": "2025-09-29",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "DOT move against 194,000 non-domiciled drivers supported even by ATA, brokers - overdriveonline.com",
+    "sources": [
+      "https://www.overdriveonline.com/search?q=DOT%20move%20against%20194%2C000%20non-domiciled%20drivers%20supported%20even%20by%20ATA%2C%20brokers"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-36CC458A",
+    "date": "2025-09-29",
+    "state": "FL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Trucker accused of being in US illegally pleads not guilty in Florida crash that killed three - WUSF",
+    "sources": [
+      "https://www.wusf.org/search?q=Trucker%20accused%20of%20being%20in%20US%20illegally%20pleads%20not%20guilty%20in%20Florida%20crash%20that%20killed%20three"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-C9EBE254",
+    "date": "2025-09-29",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "State, federal officials crack down on commercial trucking licenses for undocumented immigrants - KOCO",
+    "sources": [
+      "https://www.koco.com/search?q=State%2C%20federal%20officials%20crack%20down%20on%20commercial%20trucking%20licenses%20for%20undocumented%20immigrants"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-1B0E20D7",
@@ -17352,6 +19107,45 @@
     "reviewed": true
   },
   {
+    "id": "INC-2025-FD8007A7",
+    "date": "2025-09-26",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Trump admin to restrict commercial driver licenses for non-US citizens after fatal truck accidents - Business Today",
+    "sources": [
+      "https://www.businesstoday.in/search?q=Trump%20admin%20to%20restrict%20commercial%20driver%20licenses%20for%20non-US%20citizens%20after%20fatal%20truck%20accidents"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-4E302AF1",
     "date": "2025-09-25",
     "state": "CA",
@@ -17428,6 +19222,45 @@
     ],
     "added": "2026-05-27",
     "reviewed": true
+  },
+  {
+    "id": "INC-2025-1635A2F2",
+    "date": "2025-09-25",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Father Speaks Out After ICE Arrests Criminal Illegal Alien Who Struck and Severely Injured His 5-Year-Old Daughter While Driving 18-Wheeler on CA-Issued Commercial Driver\u2019s License - Homeland Security (.gov)",
+    "sources": [
+      "https://www.dhs.gov/search?q=Father%20Speaks%20Out%20After%20ICE%20Arrests%20Criminal%20Illegal%20Alien%20Who%20Struck%20and%20Severely%20Injured%20His%205-Year-Old%20Daughter%20While%20Driving%2018-Wheeler%20on%20CA-Issued%20Commercial%20Driver%E2%80%99s%20License"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-B3244668",
@@ -18326,6 +20159,45 @@
     "reviewed": true
   },
   {
+    "id": "INC-2025-FF20150A",
+    "date": "2025-09-11",
+    "state": "MI",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "700 pounds of diesel fuel spilled onto Lodge Freeway after semi-truck crash in Detroit - FOX 2 Detroit",
+    "sources": [
+      "https://www.fox2detroit.com/search?q=700%20pounds%20of%20diesel%20fuel%20spilled%20onto%20Lodge%20Freeway%20after%20semi-truck%20crash%20in%20Detroit"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-44C6289B",
     "date": "2025-09-10",
     "state": "UNKNOWN",
@@ -18516,6 +20388,45 @@
     "driver_origin_note": "",
     "_geocoded": true,
     "_geocode_query": "Ohio USA"
+  },
+  {
+    "id": "INC-2025-2371F014",
+    "date": "2025-09-08",
+    "state": "AZ",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Truck driver from Somalia faces deportation after passing through Arizona checkpoint, Border Patrol says - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=Truck%20driver%20from%20Somalia%20faces%20deportation%20after%20passing%20through%20Arizona%20checkpoint%2C%20Border%20Patrol%20says"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-0D4FD045",
@@ -19294,6 +21205,45 @@
     "_geocode_query": "Florida USA"
   },
   {
+    "id": "INC-2025-562C4889",
+    "date": "2025-08-29",
+    "state": "OH",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "OSHP: Passenger dead, two others hospitalized after driver rear-ended semi in Brown County - WCPO 9 Cincinnati",
+    "sources": [
+      "https://www.wcpo.com/search?q=OSHP%3A%20Passenger%20dead%2C%20two%20others%20hospitalized%20after%20driver%20rear-ended%20semi%20in%20Brown%20County"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-4E029B80",
     "date": "2025-08-28",
     "state": "UNKNOWN",
@@ -19564,6 +21514,45 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Florida USA"
+  },
+  {
+    "id": "INC-2025-BE023747",
+    "date": "2025-08-27",
+    "state": "NM",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Bodycam video shows illegal immigrant truck driver speaking limited English with New Mexico officer - Fox News",
+    "sources": [
+      "https://www.foxnews.com/search?q=Bodycam%20video%20shows%20illegal%20immigrant%20truck%20driver%20speaking%20limited%20English%20with%20New%20Mexico%20officer"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-C239CA64",
@@ -19876,6 +21865,123 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "California USA"
+  },
+  {
+    "id": "INC-2025-DB705F13",
+    "date": "2025-08-26",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "\u2018No Deal\u2019: DeSantis says 3 million signatures on petition for leniency towards driver in illegal u-turn will change nothing - CDLLife",
+    "sources": [
+      "https://cdllife.com/search?q=%E2%80%98No%20Deal%E2%80%99%3A%20DeSantis%20says%203%20million%20signatures%20on%20petition%20for%20leniency%20towards%20driver%20in%20illegal%20u-turn%20will%20change%20nothing"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-C983ECF7",
+    "date": "2025-08-26",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Multiple fatal crashes linked to illegal immigrants spark arrests across US in recent days - Fox News",
+    "sources": [
+      "https://www.foxnews.com/search?q=Multiple%20fatal%20crashes%20linked%20to%20illegal%20immigrants%20spark%20arrests%20across%20US%20in%20recent%20days"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-3B283C8F",
+    "date": "2025-08-26",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Sikh group commits to give $100K after crash involving undocumented driver, attorney says - WPEC",
+    "sources": [
+      "https://cbs12.com/search?q=Sikh%20group%20commits%20to%20give%20%24100K%20after%20crash%20involving%20undocumented%20driver%2C%20attorney%20says"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-53F35FE9",
@@ -20232,6 +22338,123 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Florida USA"
+  },
+  {
+    "id": "INC-2025-7AA4ECBA",
+    "date": "2025-08-25",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Worker Visas Paused for CDL Drivers - Work Truck Online",
+    "sources": [
+      "https://www.worktruckonline.com/search?q=Worker%20Visas%20Paused%20for%20CDL%20Drivers"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-B7103FCC",
+    "date": "2025-08-25",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Petition for clemency: 2.7 million urge leniency for undocumented trucker in deadly crash - WPEC",
+    "sources": [
+      "https://cbs12.com/search?q=Petition%20for%20clemency%3A%202.7%20million%20urge%20leniency%20for%20undocumented%20trucker%20in%20deadly%20crash"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-280611FC",
+    "date": "2025-08-25",
+    "state": "FL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Deadly Florida Turnpike crash prompts state crackdown on undocumented drivers - FOX 35 Orlando",
+    "sources": [
+      "https://www.fox35orlando.com/search?q=Deadly%20Florida%20Turnpike%20crash%20prompts%20state%20crackdown%20on%20undocumented%20drivers"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-757A5784",
@@ -20708,6 +22931,45 @@
     "reviewed": true
   },
   {
+    "id": "INC-2025-F59FA2B3",
+    "date": "2025-08-23",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Undocumented immigrant accused in fatal Turnpike crash ordered held without bail - Treasure Coast News",
+    "sources": [
+      "https://www.tcpalm.com/search?q=Undocumented%20immigrant%20accused%20in%20fatal%20Turnpike%20crash%20ordered%20held%20without%20bail"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-0FD20590",
     "date": "2025-08-22",
     "state": "UNKNOWN",
@@ -20940,6 +23202,84 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Arkansas USA"
+  },
+  {
+    "id": "INC-2025-6DC3703F",
+    "date": "2025-08-22",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Administration to halt work visas for truck drivers, Rubio says - Land Line Media",
+    "sources": [
+      "https://landline.media/search?q=Administration%20to%20halt%20work%20visas%20for%20truck%20drivers%2C%20Rubio%20says"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-9D54473B",
+    "date": "2025-08-22",
+    "state": "FL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Truck driver accused of deadly crash on Florida Turnpike touches down in Tallahassee - WCTV",
+    "sources": [
+      "https://www.wctv.tv/search?q=Truck%20driver%20accused%20of%20deadly%20crash%20on%20Florida%20Turnpike%20touches%20down%20in%20Tallahassee"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-3A372712",
@@ -21448,6 +23788,123 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Florida USA"
+  },
+  {
+    "id": "INC-2025-64EA9F08",
+    "date": "2025-08-21",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Driver charged, held by ICE after semi-truck crash kills 3 - BorderReport",
+    "sources": [
+      "https://www.borderreport.com/search?q=Driver%20charged%2C%20held%20by%20ICE%20after%20semi-truck%20crash%20kills%203"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-88FE9CCF",
+    "date": "2025-08-21",
+    "state": "CA",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "California trucker accused of causing deadly crash extradited to Florida - CBS News",
+    "sources": [
+      "https://www.cbsnews.com/search?q=California%20trucker%20accused%20of%20causing%20deadly%20crash%20extradited%20to%20Florida"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-4E72AACE",
+    "date": "2025-08-21",
+    "state": "FL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Undocumented trucker accused in fatal Florida Turnpike crash arrives at Pensacola airport - WEAR-TV",
+    "sources": [
+      "https://weartv.com/search?q=Undocumented%20trucker%20accused%20in%20fatal%20Florida%20Turnpike%20crash%20arrives%20at%20Pensacola%20airport"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-7D935225",
@@ -22748,6 +25205,45 @@
     "_geocode_query": "Florida USA"
   },
   {
+    "id": "INC-2025-B6B75B30",
+    "date": "2025-08-19",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "DeSantis calls on Congress to act after undocumented trucker involved in deadly crash - CBS News",
+    "sources": [
+      "https://www.cbsnews.com/search?q=DeSantis%20calls%20on%20Congress%20to%20act%20after%20undocumented%20trucker%20involved%20in%20deadly%20crash"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-DB330336",
     "date": "2025-08-18",
     "state": "UNKNOWN",
@@ -23656,6 +26152,84 @@
     "_geocode_query": "California USA"
   },
   {
+    "id": "INC-2025-F9DA469C",
+    "date": "2025-08-18",
+    "state": "FL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Inside the semi: New video shows illegal U-Turn that killed 3 on Florida Turnpike - WPEC",
+    "sources": [
+      "https://cbs12.com/search?q=Inside%20the%20semi%3A%20New%20video%20shows%20illegal%20U-Turn%20that%20killed%203%20on%20Florida%20Turnpike"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-11BCB1BA",
+    "date": "2025-08-18",
+    "state": "FL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Illegal migrant suspect in deadly Florida crash was nearly deported \u2014 but allowed to stay after claiming he was afraid - New York Post",
+    "sources": [
+      "https://nypost.com/search?q=Illegal%20migrant%20suspect%20in%20deadly%20Florida%20crash%20was%20nearly%20deported%20%E2%80%94%20but%20allowed%20to%20stay%20after%20claiming%20he%20was%20afraid"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-CD359584",
     "date": "2025-08-17",
     "state": "UNKNOWN",
@@ -24008,6 +26582,45 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2025-164034AC",
+    "date": "2025-08-15",
+    "state": "WY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "3 injured, truck driver cited in Wyoming crash - TheTrucker.com",
+    "sources": [
+      "https://www.thetrucker.com/search?q=3%20injured%2C%20truck%20driver%20cited%20in%20Wyoming%20crash"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-AE96FE47",
     "date": "2025-08-13",
     "state": "UNKNOWN",
@@ -24316,6 +26929,45 @@
     "reviewed": true
   },
   {
+    "id": "INC-2025-3B89D941",
+    "date": "2025-08-11",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Eastbound I-80 closed in Summit County after paint, poles spill across highway - KUTV",
+    "sources": [
+      "https://kutv.com/search?q=Eastbound%20I-80%20closed%20in%20Summit%20County%20after%20paint%2C%20poles%20spill%20across%20highway"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-E91DEC6C",
     "date": "2025-08-06",
     "state": "UNKNOWN",
@@ -24352,6 +27004,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2025-D22401E0",
+    "date": "2025-08-04",
+    "state": "KS",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semi rolls over on road in KC\u2019s Northland, causing gas spill, hazardous cleanup - Kansas City Star",
+    "sources": [
+      "https://www.kansascity.com/search?q=Semi%20rolls%20over%20on%20road%20in%20KC%E2%80%99s%20Northland%2C%20causing%20gas%20spill%2C%20hazardous%20cleanup"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-877B791A",
@@ -24588,6 +27279,45 @@
     "driver_origin_note": "",
     "_geocoded": true,
     "_geocode_query": "I-94 Michigan"
+  },
+  {
+    "id": "INC-2025-86AC6B51",
+    "date": "2025-07-23",
+    "state": "MN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Two-Year-Old Girl Hospitalized After Crash With Semi on Minnesota Highway - KROC-AM",
+    "sources": [
+      "https://krocnews.com/search?q=Two-Year-Old%20Girl%20Hospitalized%20After%20Crash%20With%20Semi%20on%20Minnesota%20Highway"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-2C3873B5",
@@ -24828,6 +27558,84 @@
     "_geocode_query": "Washington USA"
   },
   {
+    "id": "INC-2025-40515ADB",
+    "date": "2025-07-18",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "1 hospitalized after crash in Itasca involving semi-truck and motorcycle - CBS News",
+    "sources": [
+      "https://www.cbsnews.com/search?q=1%20hospitalized%20after%20crash%20in%20Itasca%20involving%20semi-truck%20and%20motorcycle"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-41B840E8",
+    "date": "2025-07-18",
+    "state": "IL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "1 hurt in crash between motorcycle and semi-truck in Itasca, Illinois - CBS News",
+    "sources": [
+      "https://www.cbsnews.com/search?q=1%20hurt%20in%20crash%20between%20motorcycle%20and%20semi-truck%20in%20Itasca%2C%20Illinois"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-0122AFF1",
     "date": "2025-07-16",
     "state": "UNKNOWN",
@@ -24902,6 +27710,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2025-6BE40D15",
+    "date": "2025-07-11",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "One person hospitalized after crash between vehicle and semi-truck at Colonial Blvd and Metro Pkwy - Gulf Coast News and Weather",
+    "sources": [
+      "https://www.gulfcoastnewsnow.com/search?q=One%20person%20hospitalized%20after%20crash%20between%20vehicle%20and%20semi-truck%20at%20Colonial%20Blvd%20and%20Metro%20Pkwy"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-48C58396",
@@ -25874,6 +28721,45 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2025-4B01DC83",
+    "date": "2025-07-01",
+    "state": "TX",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "I-20 truck crash kills four members of the same Fort Worth family - NBC 5 Dallas-Fort Worth",
+    "sources": [
+      "https://www.nbcdfw.com/search?q=I-20%20truck%20crash%20kills%20four%20members%20of%20the%20same%20Fort%20Worth%20family"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-BDDB2F04",
     "date": "2025-06-30",
     "state": "TX",
@@ -26104,6 +28990,84 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": "Source documents: non-domiciled cdl"
+  },
+  {
+    "id": "INC-2025-A7963D96",
+    "date": "2025-06-30",
+    "state": "TX",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Five dead in crash involving 3 semi trucks in Texas - TheTrucker.com",
+    "sources": [
+      "https://www.thetrucker.com/search?q=Five%20dead%20in%20crash%20involving%203%20semi%20trucks%20in%20Texas"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
+    "id": "INC-2025-D7CBF7CC",
+    "date": "2025-06-30",
+    "state": "TX",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Truck driver in 18-wheeler crash on I-20 faces 5 manslaughter charges - FOX 4 News Dallas-Fort Worth",
+    "sources": [
+      "https://www.fox4news.com/search?q=Truck%20driver%20in%2018-wheeler%20crash%20on%20I-20%20faces%205%20manslaughter%20charges"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-C0A7C778",
@@ -26618,6 +29582,45 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2025-CC914545",
+    "date": "2025-06-21",
+    "state": "NY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "New York State Police Investigating Fatal Wrong-Way Crash on I-87 in Rockland County - New York State Police (.gov)",
+    "sources": [
+      "https://troopers.ny.gov/search?q=New%20York%20State%20Police%20Investigating%20Fatal%20Wrong-Way%20Crash%20on%20I-87%20in%20Rockland%20County"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-45DDDF04",
     "date": "2025-06-20",
     "state": "UNKNOWN",
@@ -26888,6 +29891,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2025-3226609F",
+    "date": "2025-06-15",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Deadly I-40 Crash Involving UPS Truck Shuts Down Lanes Near Needles - VVNG",
+    "sources": [
+      "https://www.vvng.com/search?q=Deadly%20I-40%20Crash%20Involving%20UPS%20Truck%20Shuts%20Down%20Lanes%20Near%20Needles"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-02970A29",
@@ -28520,6 +31562,45 @@
     "_geocode_query": "New York USA"
   },
   {
+    "id": "INC-2025-7FAB1B15",
+    "date": "2025-05-08",
+    "state": "NY",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Bronx BMW driver arrested for manslaughter in crash that killed beloved coach - New York Daily News",
+    "sources": [
+      "https://www.nydailynews.com/search?q=Bronx%20BMW%20driver%20arrested%20for%20manslaughter%20in%20crash%20that%20killed%20beloved%20coach"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-E6A3B085",
     "date": "2025-05-07",
     "state": "UNKNOWN",
@@ -29456,6 +32537,45 @@
     "_geocode_query": "Colorado USA"
   },
   {
+    "id": "INC-2025-285E3773",
+    "date": "2025-04-17",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "ICE says driver sentenced in deadly 2024 US 285 crash has been deported - KDVR",
+    "sources": [
+      "https://kdvr.com/search?q=ICE%20says%20driver%20sentenced%20in%20deadly%202024%20US%20285%20crash%20has%20been%20deported"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-51EC8F9A",
     "date": "2025-04-15",
     "state": "UNKNOWN",
@@ -29812,6 +32932,45 @@
     "_geocode_query": "Oregon USA"
   },
   {
+    "id": "INC-2025-C540C409",
+    "date": "2025-04-08",
+    "state": "IL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Chicago aldermen advance new bid to protect drivers from rogue towing companies - CBS News",
+    "sources": [
+      "https://www.cbsnews.com/search?q=Chicago%20aldermen%20advance%20new%20bid%20to%20protect%20drivers%20from%20rogue%20towing%20companies"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-5A5D6A96",
     "date": "2025-04-07",
     "state": "CO",
@@ -29850,6 +33009,45 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Colorado USA"
+  },
+  {
+    "id": "INC-2025-7CA254FA",
+    "date": "2025-04-07",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Semi-truck rollover on I-80 near Mustang early Monday - KTVN",
+    "sources": [
+      "https://www.2news.com/search?q=Semi-truck%20rollover%20on%20I-80%20near%20Mustang%20early%20Monday"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-A13C01DC",
@@ -29968,6 +33166,45 @@
     "reviewed": true,
     "_geocoded": true,
     "_geocode_query": "Colorado USA"
+  },
+  {
+    "id": "INC-2025-65AACD16",
+    "date": "2025-03-31",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Widow calls ICE to ensure deportation of truck driver involved in fatal Highway 285 crash - KUSA.com",
+    "sources": [
+      "https://www.9news.com/search?q=Widow%20calls%20ICE%20to%20ensure%20deportation%20of%20truck%20driver%20involved%20in%20fatal%20Highway%20285%20crash"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-910F0874",
@@ -30202,6 +33439,45 @@
     "driver_origin_note": "",
     "_geocoded": true,
     "_geocode_query": "Michigan USA"
+  },
+  {
+    "id": "INC-2025-6B2663F4",
+    "date": "2025-03-18",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Driver cited for reckless driving, lane violation after 16-vehicle pileup on I-26 - WLOS",
+    "sources": [
+      "https://wlos.com/search?q=Driver%20cited%20for%20reckless%20driving%2C%20lane%20violation%20after%2016-vehicle%20pileup%20on%20I-26"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-3211CDD5",
@@ -30512,6 +33788,45 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2025-0FC1F0C2",
+    "date": "2025-02-28",
+    "state": "NH",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Icy roads, sun glare lead to crashes in parts of New Hampshire - WMUR",
+    "sources": [
+      "https://www.wmur.com/search?q=Icy%20roads%2C%20sun%20glare%20lead%20to%20crashes%20in%20parts%20of%20New%20Hampshire"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   },
   {
     "id": "INC-2025-C66B7321",
@@ -31264,6 +34579,45 @@
     "_geocode_query": "I-69 Texas"
   },
   {
+    "id": "INC-2025-F9FAAE42",
+    "date": "2025-01-17",
+    "state": "IL",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Two dead in I-57 crash in Jefferson County, truck driver cited | Illinois - WSIL-TV",
+    "sources": [
+      "https://www.wsiltv.com/search?q=Two%20dead%20in%20I-57%20crash%20in%20Jefferson%20County%2C%20truck%20driver%20cited%20%7C%20Illinois"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2025-5BF4DE77",
     "date": "2025-01-10",
     "state": "AK",
@@ -31420,5 +34774,44 @@
     "foreign_driver_possible": false,
     "american_driver_flag": false,
     "driver_origin_note": ""
+  },
+  {
+    "id": "INC-2025-D22D9C71",
+    "date": "2025-01-01",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "NO_FAULT_STATED",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Two hospitalized in Pasco car accident involving a semi-truck - Nonstop Local News",
+    "sources": [
+      "https://www.nbcrightnow.com/search?q=Two%20hospitalized%20in%20Pasco%20car%20accident%20involving%20a%20semi-truck"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
   }
 ]

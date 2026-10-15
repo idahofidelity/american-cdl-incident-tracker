@@ -99647,6 +99647,45 @@
     "driver_origin_note": ""
   },
   {
+    "id": "INC-2020-9FBF9ECF",
+    "date": "2020-05-16",
+    "state": "UNKNOWN",
+    "highway": null,
+    "county": null,
+    "lat": null,
+    "lng": null,
+    "fault": "AT_FAULT",
+    "at_fault_driver": null,
+    "carrier_name": null,
+    "carrier_usdot": null,
+    "vehicle_type": null,
+    "severity": {
+      "fatalities": 0,
+      "injuries": 0,
+      "property_damage_only": true
+    },
+    "victims": [],
+    "foreign_driver_flag": false,
+    "foreign_driver_confirmed": false,
+    "foreign_driver_probable": false,
+    "foreign_driver_possible": false,
+    "american_driver_flag": false,
+    "driver_origin_note": "",
+    "foreign_driver_note": "",
+    "cost": {
+      "stated_usd": null,
+      "estimated_usd": 12000,
+      "estimated_basis": "FHWA comprehensive crash cost model (2024 dollars)"
+    },
+    "description": "Tractor trailer driver cited after rollover crash spilled 100 gallons of fuel on I-95 in West Haven - fox61.com",
+    "sources": [
+      "https://www.fox61.com/search?q=Tractor%20trailer%20driver%20cited%20after%20rollover%20crash%20spilled%20100%20gallons%20of%20fuel%20on%20I-95%20in%20West%20Haven"
+    ],
+    "added": "2026-06-01",
+    "reviewed": true,
+    "approved_via": "PR #1 (merged 2026-06-16)"
+  },
+  {
     "id": "INC-2020-D2DE32B7",
     "date": "2020-05-15",
     "state": "CA",
