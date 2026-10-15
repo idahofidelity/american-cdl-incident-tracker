@@ -6,9 +6,8 @@ Called by GitHub Actions (merge.yml) after a scrape/review PR is merged.
 Writes what the site actually reads:
   data/by_year/<year>.json   (master source, pretty-printed as before)
   data/index.json            (rebuilt via split_data.py)
-  data/incidents.json        (compact, only if present; it is ~100 MB and
-                              GitHub rejects files over 100 MB, which is why the
-                              old indent=2 rewrite (116 MB) made the push fail)
+  (data/incidents.json is no longer tracked: it hit GitHub's 100 MB limit.
+   Rebuild it locally with: python -c "import sys; sys.path.insert(0,'scripts'); import classify; classify.build_incidents_json()")
 
 Usage:
   python scripts/merge_pending.py                   # merge all pending
@@ -25,7 +24,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from classify import BY_YEAR, DATA_DIR, dedupe_keys  # noqa: E402
 
-INCIDENTS_FILE = DATA_DIR / "incidents.json"
 PENDING_FILE = DATA_DIR / "pending_review.json"
 
 
@@ -74,11 +72,6 @@ def main():
     for year in sorted(touched):
         years[year].sort(key=lambda x: x.get("date", ""), reverse=True)
         (BY_YEAR / f"{year}.json").write_text(json.dumps(years[year], indent=2))
-
-    if INCIDENTS_FILE.exists() and added:
-        incidents = load_json(INCIDENTS_FILE) + added
-        incidents.sort(key=lambda x: x.get("date", ""), reverse=True)
-        INCIDENTS_FILE.write_text(json.dumps(incidents))  # compact: keep under 100 MB
 
     if not args.file:
         PENDING_FILE.write_text(json.dumps(remaining if args.id else [], indent=2))

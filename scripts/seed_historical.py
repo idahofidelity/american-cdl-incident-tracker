@@ -7,7 +7,8 @@ What it does:
   - Filters to CDL-required vehicles (large trucks, BODY_TYP 60–79)
   - Joins accident + vehicle + driverrf tables for fault classification
   - Extracts USDOT# for carrier lookup
-  - Writes all incidents to data/incidents.json
+  - Writes all incidents to data/incidents.json (untracked, local only;
+    publish by writing them into data/by_year/ with classify.save_by_year)
   - Writes carrier list to data/companies.json
 
 Run ONCE from the project root:
